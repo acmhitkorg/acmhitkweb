@@ -14,7 +14,7 @@ export default function ContactPage() {
 
       <main className="min-h-screen pt-24">
         {/* Hero Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
           <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-br from-blue-500/20 via-teal-500/20 to-transparent blur-3xl animate-pulse" />
 
           <div className="max-w-4xl mx-auto text-center relative">

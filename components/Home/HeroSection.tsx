@@ -4,7 +4,7 @@ import { ArrowRight, Calendar } from "lucide-react"
 
 const HeroSection = () => {
     return (
-        <section className="relative pt-24 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="h-screen flex justify-center items-center relative pt-24 pb-20 px-4 sm:px-6 lg:px-8">
             <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-br from-blue-500/20 via-teal-500/20 to-transparent blur-3xl" />
 
             <div className="max-w-7xl mx-auto relative">

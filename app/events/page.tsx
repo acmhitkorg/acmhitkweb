@@ -15,6 +15,7 @@ export default function EventsPage() {
       <main className="min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-br from-blue-500/20 via-teal-500/20 to-transparent blur-3xl" />
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
               Events & Activities
