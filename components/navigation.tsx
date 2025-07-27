@@ -6,7 +6,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X, Users, Calendar, BookOpen, UserPlus, Mail, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { ThemeSwitcher } from "@/components/ThemeSwitcher"
 import { cn } from "@/lib/utils"
 
 const navigation = [
@@ -59,9 +59,9 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* Theme Toggle & Mobile Menu */}
+          {/* Theme Switcher & Mobile Menu */}
           <div className="flex items-center space-x-2">
-            <ThemeToggle />
+            <ThemeSwitcher />
             <Button
               variant="ghost"
               size="sm"
