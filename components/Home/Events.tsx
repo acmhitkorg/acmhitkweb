@@ -1,7 +1,8 @@
+import Link from "next/link"
+import { ArrowRight, Calendar, Users } from "lucide-react"
+import { upcomingEventsForHomePage } from "@/data/index"
 import { GlassCard } from "@/components/glass-card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Calendar, Users } from "lucide-react"
-import Link from "next/link"
 
 const Events = () => {
     return (
@@ -17,32 +18,7 @@ const Events = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                    {[
-                        {
-                            title: "Web Development Workshop",
-                            date: "March 15, 2025",
-                            time: "2:00 PM - 5:00 PM",
-                            location: "Computer Lab 301",
-                            description: "Learn modern web development with React, Next.js, and Tailwind CSS.",
-                            type: "Workshop"
-                        },
-                        {
-                            title: "AI/ML Symposium",
-                            date: "March 22, 2025",
-                            time: "10:00 AM - 4:00 PM",
-                            location: "Auditorium",
-                            description: "Explore the latest trends in artificial intelligence and machine learning.",
-                            type: "Symposium"
-                        },
-                        {
-                            title: "Code Hackathon 2025",
-                            date: "April 5-6, 2025",
-                            time: "24 Hours",
-                            location: "Main Campus",
-                            description: "48-hour coding marathon with exciting prizes and networking opportunities.",
-                            type: "Hackathon"
-                        }
-                    ].map((event, index) => (
+                    {upcomingEventsForHomePage.map((event, index) => (
                         <GlassCard key={index} className="p-6">
                             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mb-4">
                                 {event.type}

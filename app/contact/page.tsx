@@ -1,128 +1,22 @@
+import Link from "next/link"
+import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Instagram, Linkedin, Github, ExternalLink } from "lucide-react"
+import { contactInfo, socialMedia, teamContacts } from "@/data/index";
 import { Navigation } from "@/components/navigation"
 import { GlassCard } from "@/components/glass-card"
 import { Button } from "@/components/ui/button"
 import { AnimatedBackground } from "@/components/animated-background"
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Instagram, Linkedin, Github, ExternalLink } from "lucide-react"
-import Link from "next/link"
 
 export default function ContactPage() {
-  const contactInfo = [
-    {
-      icon: Mail,
-      title: "Email Us",
-      details: [
-        { label: "General Inquiries", value: "info@acmhitk.org" },
-        { label: "Membership", value: "membership@acmhitk.org" },
-        { label: "Events", value: "events@acmhitk.org" },
-        { label: "Technical Support", value: "tech@acmhitk.org" }
-      ],
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      icon: Phone,
-      title: "Call Us",
-      details: [
-        { label: "Chapter Chair", value: "+91 98765 43210" },
-        { label: "Vice Chair", value: "+91 98765 43211" },
-        { label: "Events Team", value: "+91 98765 43212" }
-      ],
-      color: "from-green-500 to-teal-500"
-    },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      details: [
-        { label: "Heritage Institute of Technology", value: "Kolkata, West Bengal 700107" },
-        { label: "ACM Chapter Room", value: "Computer Science Department, 3rd Floor" },
-        { label: "Campus Location", value: "Chowbaga Road, Anandapur" }
-      ],
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      icon: Clock,
-      title: "Office Hours",
-      details: [
-        { label: "Monday - Friday", value: "10:00 AM - 5:00 PM" },
-        { label: "Saturday", value: "10:00 AM - 2:00 PM" },
-        { label: "Sunday", value: "Closed" },
-        { label: "During Events", value: "Extended Hours" }
-      ],
-      color: "from-orange-500 to-red-500"
-    }
-  ]
-
-  const socialMedia = [
-    {
-      name: "Instagram",
-      icon: Instagram,
-      handle: "@acmhitk",
-      url: "#",
-      description: "Follow us for daily updates, event photos, and behind-the-scenes content.",
-      color: "from-pink-500 to-rose-500"
-    },
-    {
-      name: "LinkedIn",
-      icon: Linkedin,
-      handle: "ACM HITK Student Chapter",
-      url: "#",
-      description: "Connect with us professionally and stay updated with career opportunities.",
-      color: "from-blue-600 to-blue-700"
-    },
-    {
-      name: "GitHub",
-      icon: Github,
-      handle: "acm-hitk",
-      url: "#",
-      description: "Explore our open source projects and contribute to our codebase.",
-      color: "from-gray-700 to-gray-900"
-    },
-    {
-      name: "Discord",
-      icon: MessageCircle,
-      handle: "ACM HITK Community",
-      url: "#",
-      description: "Join our Discord server for real-time discussions and community support.",
-      color: "from-indigo-500 to-purple-600"
-    }
-  ]
-
-  const teamContacts = [
-    {
-      name: "Arjun Sharma",
-      role: "Chapter Chair",
-      email: "chair@acmhitk.org",
-      phone: "+91 98765 43210",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-      responsibilities: "Overall chapter management, strategic planning, external relations"
-    },
-    {
-      name: "Priya Patel",
-      role: "Vice Chair",
-      email: "vicechair@acmhitk.org",
-      phone: "+91 98765 43211",
-      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400",
-      responsibilities: "Event coordination, member engagement, academic partnerships"
-    },
-    {
-      name: "Ananya Das",
-      role: "Event Coordinator",
-      email: "events@acmhitk.org",
-      phone: "+91 98765 43212",
-      image: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400",
-      responsibilities: "Workshop planning, hackathon organization, speaker coordination"
-    }
-  ]
-
   return (
     <>
       <Navigation />
       <AnimatedBackground />
-      
+
       <main className="min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
           <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-br from-blue-500/20 via-teal-500/20 to-transparent blur-3xl animate-pulse" />
-          
+
           <div className="max-w-4xl mx-auto text-center relative">
             <div className="animate-in slide-in-from-bottom-10 duration-1000">
               <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
@@ -147,14 +41,14 @@ export default function ContactPage() {
                 >
                   <GlassCard className="p-6 text-center group relative overflow-hidden h-full">
                     <div className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-5 group-hover:opacity-10 transition-opacity duration-300`} />
-                    
+
                     <div className="relative">
                       <div className={`w-12 h-12 bg-gradient-to-br ${info.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                         <info.icon className="h-6 w-6 text-white" />
                       </div>
-                      
+
                       <h3 className="text-xl font-bold mb-4">{info.title}</h3>
-                      
+
                       <div className="space-y-3">
                         {info.details.map((detail, idx) => (
                           <div key={idx} className="text-left">
@@ -182,11 +76,11 @@ export default function ContactPage() {
                 Fill out the form below and we'll get back to you as soon as possible.
               </p>
             </div>
-            
+
             <div className="animate-in slide-in-from-bottom-10 duration-1000 delay-400">
               <GlassCard className="p-8 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-teal-500/5 to-transparent" />
-                
+
                 <form className="relative space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
@@ -206,7 +100,7 @@ export default function ContactPage() {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">Phone Number</label>
@@ -228,7 +122,7 @@ export default function ContactPage() {
                       </select>
                     </div>
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium mb-2">Message</label>
                     <textarea
@@ -237,7 +131,7 @@ export default function ContactPage() {
                       placeholder="Tell us how we can help you..."
                     ></textarea>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3">
                     <input
                       type="checkbox"
@@ -248,7 +142,7 @@ export default function ContactPage() {
                       Subscribe to our newsletter for updates and events
                     </label>
                   </div>
-                  
+
                   <Button size="lg" className="w-full bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700">
                     Send Message
                     <Send className="ml-2 h-4 w-4" />
@@ -270,7 +164,7 @@ export default function ContactPage() {
                 Reach out directly to our leadership team for specific inquiries.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               {teamContacts.map((member, index) => (
                 <div
@@ -280,7 +174,7 @@ export default function ContactPage() {
                 >
                   <GlassCard className="p-6 text-center group relative overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-teal-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
+
                     <div className="relative">
                       <div className="mb-6">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
@@ -290,11 +184,11 @@ export default function ContactPage() {
                           className="relative w-24 h-24 object-cover rounded-full mx-auto shadow-lg group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
-                      
+
                       <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                       <p className="text-primary font-semibold mb-4">{member.role}</p>
                       <p className="text-xs text-muted-foreground mb-6 leading-relaxed">{member.responsibilities}</p>
-                      
+
                       <div className="space-y-2">
                         <Button variant="ghost" size="sm" className="w-full justify-start group">
                           <Mail className="h-4 w-4 mr-2 group-hover:text-primary transition-colors" />
@@ -324,7 +218,7 @@ export default function ContactPage() {
                 Stay connected and updated with our latest activities and announcements.
               </p>
             </div>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {socialMedia.map((social, index) => (
                 <div
@@ -334,16 +228,15 @@ export default function ContactPage() {
                 >
                   <GlassCard className="p-6 text-center group relative overflow-hidden cursor-pointer">
                     <div className={`absolute inset-0 bg-gradient-to-br ${social.color} opacity-5 group-hover:opacity-10 transition-opacity duration-300`} />
-                    
+
                     <Link href={social.url} className="relative block">
                       <div className={`w-12 h-12 bg-gradient-to-br ${social.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                         <social.icon className="h-6 w-6 text-white" />
                       </div>
-                      
+
                       <h3 className="text-lg font-bold mb-2">{social.name}</h3>
-                      <p className="text-primary text-sm font-medium mb-3">{social.handle}</p>
                       <p className="text-xs text-muted-foreground leading-relaxed">{social.description}</p>
-                      
+
                       <Button variant="ghost" size="sm" className="mt-4 group-hover:bg-primary/10">
                         Follow Us
                         <ExternalLink className="ml-2 h-3 w-3" />
@@ -367,11 +260,11 @@ export default function ContactPage() {
                 Common questions and their answers to help you quickly.
               </p>
             </div>
-            
+
             <div className="animate-in slide-in-from-bottom-10 duration-1000 delay-400">
               <GlassCard className="p-8 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-teal-500/5 to-transparent" />
-                
+
                 <div className="relative grid md:grid-cols-2 gap-8">
                   <div>
                     <h3 className="text-lg font-semibold mb-4">General Information</h3>
@@ -382,7 +275,7 @@ export default function ContactPage() {
                       <p><strong>Office Location:</strong> Computer Science Department, 3rd Floor</p>
                     </div>
                   </div>
-                  
+
                   <div>
                     <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                     <div className="space-y-2">

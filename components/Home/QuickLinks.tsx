@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { GlassCard } from "@/components/glass-card"
-import { ArrowRight, Calendar, Users, BookOpen, ExternalLink, Github, Linkedin, Instagram, Facebook, Youtube } from "lucide-react"
+import { Users, BookOpen, ExternalLink } from "lucide-react"
 import Link from "next/link"
+import { socialMedia } from "@/data/index"
 
 const QuickLinks = () => {
     return (
@@ -61,16 +62,11 @@ const QuickLinks = () => {
                     <p className="text-muted-foreground mb-6">Stay updated with our latest news and events</p>
 
                     <div className="flex justify-center space-x-4">
-                        {[
-                            { icon: Github, href: "https://github.com/acmhitkorg", label: "GitHub" },
-                            { icon: Linkedin, href: "https://www.linkedin.com/company/acm-hitk-association-for-computing-machinery-at-hitk/", label: "LinkedIn" },
-                            { icon: Facebook, href: "https://www.facebook.com/acm.hitk", label: "Facebook" },
-                            { icon: Youtube, href: "https://www.youtube.com/channel/UCLulcFoKMpsi8xicaRIZunQ", label: "YouTube" }
-                        ].map((social, index) => (
+                        {socialMedia.map((social, index) => (
                             <Button key={index} size="lg" variant="outline" asChild className="w-12 h-12 p-0 rounded-full hover:scale-110 transition-transform duration-300">
-                                <a href={social.href} target="_blank" rel="noopener noreferrer">
+                                <a href={social.url} target="_blank" rel="noopener noreferrer">
                                     <social.icon className="h-5 w-5" />
-                                    <span className="sr-only">{social.label}</span>
+                                    <span className="sr-only">{social.name}</span>
                                 </a>
                             </Button>
                         ))}
