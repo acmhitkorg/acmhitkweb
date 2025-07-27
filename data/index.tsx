@@ -190,49 +190,19 @@ export const benefits = [
 export const membershipTiers = [
     {
         name: "General Member",
-        price: "Free",
-        description: "Perfect for students starting their tech journey",
+        price: "₹100/year",
+        description: "For students looking to enhance their tech journey",
         features: [
-            "Access to all workshops and seminars",
+            "Access to all workshops and seminars at 50% discount",
             "Participation in hackathons and competitions",
             "Networking events and meetups",
             "Access to learning resources",
             "Community Discord server",
-            "Monthly newsletter updates"
-        ],
-        popular: false
-    },
-    {
-        name: "Active Member",
-        price: "₹500/year",
-        description: "For dedicated students seeking deeper involvement",
-        features: [
-            "All General Member benefits",
-            "Priority registration for events",
-            "Mentorship program access",
-            "Exclusive technical workshops",
+            "Mentorship from Board Members",
             "Career guidance sessions",
-            "Industry expert interactions",
-            "Project collaboration opportunities",
-            "ACM HITK merchandise"
+            "Project collaboration opportunities"
         ],
         popular: true
-    },
-    {
-        name: "Leadership Track",
-        price: "By Application",
-        description: "For students ready to take on leadership roles",
-        features: [
-            "All Active Member benefits",
-            "Leadership training programs",
-            "Event organization experience",
-            "Direct faculty advisor access",
-            "Alumni network connections",
-            "Conference attendance opportunities",
-            "Research project participation",
-            "Recommendation letters"
-        ],
-        popular: false
     }
 ]
 
@@ -240,24 +210,19 @@ export const joinSteps = [
     {
         step: 1,
         title: "Fill Application Form",
-        description: "Complete our online membership application with your details and interests."
+        description: "Complete our online application with your details and interests. You'll confirm your membership tier as part of this step."
     },
     {
         step: 2,
         title: "Attend Orientation",
-        description: "Join our orientation session to learn about ACM HITK and meet current members."
+        description: "Join our orientation session to get acquainted with ACM HITK and meet other members."
     },
     {
         step: 3,
-        title: "Choose Membership Tier",
-        description: "Select the membership level that best fits your goals and commitment level."
-    },
-    {
-        step: 4,
         title: "Start Your Journey",
-        description: "Begin participating in events, workshops, and community activities immediately."
+        description: "Jump right in! Begin participating in our events, workshops, and community activities."
     }
-]
+];
 
 export const testimonials = [
     {

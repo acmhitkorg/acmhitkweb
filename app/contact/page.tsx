@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Instagram, Linkedin, Github, ExternalLink } from "lucide-react"
+import { Mail, Phone, Send, ExternalLink } from "lucide-react"
 import { contactInfo, socialMedia, teamContacts } from "@/data/index";
 import { Navigation } from "@/components/navigation"
 import { GlassCard } from "@/components/glass-card"
@@ -238,7 +238,7 @@ export default function ContactPage() {
                       <p className="text-xs text-muted-foreground leading-relaxed">{social.description}</p>
 
                       <Button variant="ghost" size="sm" className="mt-4 group-hover:bg-primary/10">
-                        Follow Us
+                        {social.name === 'Youtube' ? 'Subscribe' : 'Follow'}
                         <ExternalLink className="ml-2 h-3 w-3" />
                       </Button>
                     </Link>
@@ -270,9 +270,8 @@ export default function ContactPage() {
                     <h3 className="text-lg font-semibold mb-4">General Information</h3>
                     <div className="space-y-3 text-sm">
                       <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
-                      <p><strong>Best Time to Call:</strong> Monday-Friday, 10 AM - 5 PM</p>
-                      <p><strong>Emergency Contact:</strong> For urgent matters, call +91 98765 43210</p>
-                      <p><strong>Office Location:</strong> Computer Science Department, 3rd Floor</p>
+                      <p><strong>Best Time to message:</strong> Monday-Friday, 10 AM - 5 PM</p>
+                      <p><strong>Office Location:</strong> Department of Computer Science and Engineering, HITK</p>
                     </div>
                   </div>
 
