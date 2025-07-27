@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'ACM HITK - Heritage Institute of Technology ACM Student Chapter',
   description: 'The official ACM Student Chapter of Heritage Institute of Technology, fostering a vibrant community of computing enthusiasts.',
+  icons: { icon: '/acmhitk.ico' }
 };
 
 export default function RootLayout({
