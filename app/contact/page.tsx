@@ -285,9 +285,6 @@ export default function ContactPage() {
                         <Link href="/events">Upcoming Events</Link>
                       </Button>
                       <Button asChild variant="ghost" size="sm" className="w-full justify-start">
-                        <Link href="/resources">Learning Resources</Link>
-                      </Button>
-                      <Button asChild variant="ghost" size="sm" className="w-full justify-start">
                         <Link href="/about">About ACM HITK</Link>
                       </Button>
                     </div>

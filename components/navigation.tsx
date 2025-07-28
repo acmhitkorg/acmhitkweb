@@ -4,7 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Menu, X, Users, Calendar, BookOpen, UserPlus, Mail, Info } from "lucide-react"
+import { Menu, X, Users, Calendar, UserPlus, Mail, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeSwitcher } from "@/components/ThemeSwitcher"
 import { cn } from "@/lib/utils"
@@ -14,7 +14,6 @@ const navigation = [
   { name: "About", href: "/about", icon: Info },
   { name: "Events", href: "/events", icon: Calendar },
   { name: "Team", href: "/team", icon: Users },
-  { name: "Resources", href: "/resources", icon: BookOpen },
   { name: "Join Us", href: "/join", icon: UserPlus },
   { name: "Contact", href: "/contact", icon: Mail },
 ]

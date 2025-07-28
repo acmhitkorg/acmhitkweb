@@ -28,6 +28,33 @@ export const upcomingEventsForHomePage = [
     }
 ];
 
+export const faqs = [
+    {
+        question: "How do I get started with programming?",
+        answer: "Start with a beginner-friendly language like Python or JavaScript. Use interactive platforms like freeCodeCamp or Codecademy to learn the basics, then practice with small projects."
+    },
+    {
+        question: "What programming language should I learn first?",
+        answer: "Python is excellent for beginners due to its simple syntax. JavaScript is great if you're interested in web development. Choose based on your interests: web development (JavaScript), data science (Python), or mobile apps (Java/Kotlin for Android, Swift for iOS)."
+    },
+    {
+        question: "How can I prepare for technical interviews?",
+        answer: "Practice data structures and algorithms on platforms like LeetCode and HackerRank. Study system design concepts, practice coding on a whiteboard, and prepare for behavioral questions."
+    },
+    {
+        question: "What are the benefits of joining ACM HITK?",
+        answer: "Members get access to exclusive workshops, networking opportunities, mentorship programs, career guidance, and hands-on project experience. You'll also be part of a supportive community of like-minded peers."
+    },
+    {
+        question: "How do I contribute to open source projects?",
+        answer: "Start by finding beginner-friendly projects on GitHub with 'good first issue' labels. Read the contribution guidelines, fork the repository, make your changes, and submit a pull request."
+    },
+    {
+        question: "What skills are most in-demand in the tech industry?",
+        answer: "Currently high-demand skills include cloud computing (AWS, Azure), AI/ML, cybersecurity, full-stack web development, mobile development, and DevOps. Soft skills like communication and problem-solving are equally important."
+    }
+]
+
 // Data for /about page
 export const goals = [
     {
@@ -463,172 +490,3 @@ export const currentTeam = {
         }
     ]
 }
-
-// Data for /resource page
-export const learningPaths = [
-    {
-        title: "Web Development",
-        icon: Globe,
-        description: "Master modern web technologies from frontend to backend",
-        color: "from-blue-500 to-cyan-500",
-        resources: [
-            { name: "The Odin Project", type: "Free Course", url: "#", rating: 4.9 },
-            { name: "freeCodeCamp", type: "Interactive", url: "#", rating: 4.8 },
-            { name: "MDN Web Docs", type: "Documentation", url: "#", rating: 4.9 },
-            { name: "React Official Tutorial", type: "Tutorial", url: "#", rating: 4.7 }
-        ]
-    },
-    {
-        title: "Data Structures & Algorithms",
-        icon: Code,
-        description: "Build strong problem-solving foundations for technical interviews",
-        color: "from-purple-500 to-pink-500",
-        resources: [
-            { name: "LeetCode", type: "Practice", url: "#", rating: 4.6 },
-            { name: "GeeksforGeeks", type: "Tutorial", url: "#", rating: 4.5 },
-            { name: "Coursera - Algorithms", type: "Course", url: "#", rating: 4.8 },
-            { name: "HackerRank", type: "Practice", url: "#", rating: 4.4 }
-        ]
-    },
-    {
-        title: "Artificial Intelligence & ML",
-        icon: Brain,
-        description: "Explore the cutting-edge world of AI and machine learning",
-        color: "from-green-500 to-teal-500",
-        resources: [
-            { name: "Coursera ML Course", type: "Course", url: "#", rating: 4.9 },
-            { name: "Kaggle Learn", type: "Interactive", url: "#", rating: 4.7 },
-            { name: "TensorFlow Tutorials", type: "Tutorial", url: "#", rating: 4.6 },
-            { name: "Papers With Code", type: "Research", url: "#", rating: 4.8 }
-        ]
-    },
-    {
-        title: "Cybersecurity",
-        icon: Shield,
-        description: "Learn to protect systems and data from digital threats",
-        color: "from-red-500 to-orange-500",
-        resources: [
-            { name: "Cybrary", type: "Course", url: "#", rating: 4.5 },
-            { name: "OWASP", type: "Documentation", url: "#", rating: 4.7 },
-            { name: "TryHackMe", type: "Interactive", url: "#", rating: 4.8 },
-            { name: "Hack The Box", type: "Practice", url: "#", rating: 4.6 }
-        ]
-    },
-    {
-        title: "Database Management",
-        icon: Database,
-        description: "Master database design, optimization, and management",
-        color: "from-indigo-500 to-purple-500",
-        resources: [
-            { name: "SQLBolt", type: "Interactive", url: "#", rating: 4.7 },
-            { name: "MongoDB University", type: "Course", url: "#", rating: 4.6 },
-            { name: "PostgreSQL Tutorial", type: "Tutorial", url: "#", rating: 4.8 },
-            { name: "Database Design Course", type: "Course", url: "#", rating: 4.5 }
-        ]
-    },
-    {
-        title: "Mobile Development",
-        icon: Laptop,
-        description: "Build native and cross-platform mobile applications",
-        color: "from-yellow-500 to-orange-500",
-        resources: [
-            { name: "Flutter Documentation", type: "Documentation", url: "#", rating: 4.7 },
-            { name: "React Native Tutorial", type: "Tutorial", url: "#", rating: 4.6 },
-            { name: "Android Developers", type: "Documentation", url: "#", rating: 4.8 },
-            { name: "iOS Development", type: "Course", url: "#", rating: 4.5 }
-        ]
-    }
-]
-
-export const tools = [
-    {
-        category: "Development Tools",
-        items: [
-            { name: "Visual Studio Code", description: "Powerful code editor with extensions", type: "Free" },
-            { name: "Git & GitHub", description: "Version control and collaboration", type: "Free" },
-            { name: "Docker", description: "Containerization platform", type: "Free" },
-            { name: "Postman", description: "API development and testing", type: "Freemium" }
-        ]
-    },
-    {
-        category: "Design & Prototyping",
-        items: [
-            { name: "Figma", description: "Collaborative design tool", type: "Freemium" },
-            { name: "Adobe XD", description: "UI/UX design and prototyping", type: "Freemium" },
-            { name: "Canva", description: "Graphic design platform", type: "Freemium" },
-            { name: "Sketch", description: "Digital design toolkit", type: "Paid" }
-        ]
-    },
-    {
-        category: "Cloud Platforms",
-        items: [
-            { name: "AWS", description: "Amazon Web Services cloud platform", type: "Pay-as-use" },
-            { name: "Google Cloud", description: "Google's cloud computing services", type: "Pay-as-use" },
-            { name: "Microsoft Azure", description: "Microsoft's cloud platform", type: "Pay-as-use" },
-            { name: "Heroku", description: "Platform as a service (PaaS)", type: "Freemium" }
-        ]
-    }
-]
-
-export const careerResources = [
-    {
-        title: "Resume & CV Templates",
-        description: "Professional templates for tech resumes",
-        icon: Download,
-        items: [
-            "Software Engineer Resume Template",
-            "Data Scientist CV Template",
-            "UI/UX Designer Portfolio Template",
-            "Fresh Graduate Resume Template"
-        ]
-    },
-    {
-        title: "Interview Preparation",
-        description: "Resources to ace your technical interviews",
-        icon: BookOpen,
-        items: [
-            "System Design Interview Guide",
-            "Behavioral Interview Questions",
-            "Coding Interview Patterns",
-            "Salary Negotiation Tips"
-        ]
-    },
-    {
-        title: "Job & Internship Boards",
-        description: "Find opportunities in top tech companies",
-        icon: ExternalLink,
-        items: [
-            "LinkedIn Jobs",
-            "AngelList (Wellfound)",
-            "Glassdoor",
-            "Indeed Tech Jobs"
-        ]
-    }
-]
-
-export const faqs = [
-    {
-        question: "How do I get started with programming?",
-        answer: "Start with a beginner-friendly language like Python or JavaScript. Use interactive platforms like freeCodeCamp or Codecademy to learn the basics, then practice with small projects."
-    },
-    {
-        question: "What programming language should I learn first?",
-        answer: "Python is excellent for beginners due to its simple syntax. JavaScript is great if you're interested in web development. Choose based on your interests: web development (JavaScript), data science (Python), or mobile apps (Java/Kotlin for Android, Swift for iOS)."
-    },
-    {
-        question: "How can I prepare for technical interviews?",
-        answer: "Practice data structures and algorithms on platforms like LeetCode and HackerRank. Study system design concepts, practice coding on a whiteboard, and prepare for behavioral questions."
-    },
-    {
-        question: "What are the benefits of joining ACM HITK?",
-        answer: "Members get access to exclusive workshops, networking opportunities, mentorship programs, career guidance, and hands-on project experience. You'll also be part of a supportive community of like-minded peers."
-    },
-    {
-        question: "How do I contribute to open source projects?",
-        answer: "Start by finding beginner-friendly projects on GitHub with 'good first issue' labels. Read the contribution guidelines, fork the repository, make your changes, and submit a pull request."
-    },
-    {
-        question: "What skills are most in-demand in the tech industry?",
-        answer: "Currently high-demand skills include cloud computing (AWS, Azure), AI/ML, cybersecurity, full-stack web development, mobile development, and DevOps. Soft skills like communication and problem-solving are equally important."
-    }
-]

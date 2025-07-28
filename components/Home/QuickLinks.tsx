@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { GlassCard } from "@/components/glass-card"
-import { Users, BookOpen, ExternalLink } from "lucide-react"
+import { Users, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import { socialMedia } from "@/data/index"
 
@@ -17,19 +17,13 @@ const QuickLinks = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                     {[
                         {
                             title: "Become a Member",
                             description: "Join our vibrant community and unlock exclusive benefits.",
                             href: "/join",
                             icon: Users
-                        },
-                        {
-                            title: "Explore Resources",
-                            description: "Access curated learning materials and career guidance.",
-                            href: "/resources",
-                            icon: BookOpen
                         },
                         {
                             title: "Meet the Team",
