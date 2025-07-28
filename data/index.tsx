@@ -1,4 +1,4 @@
-import { Users, BookOpen, Award, Heart, Code, Lightbulb, Mail, Phone, MapPin, Clock, MessageCircle, Linkedin, Github, Globe, Download, ExternalLink, Laptop, Brain, Database, Shield, Facebook, Youtube } from "lucide-react"
+import { Users, BookOpen, Award, Heart, Code, Lightbulb, Mail, Phone, MapPin, Clock, MessageCircle, Linkedin, Github, Globe, Download, ExternalLink, Laptop, Brain, Database, Shield, Facebook, Youtube, BookOpenText } from "lucide-react"
 
 // Data for / page
 export const upcomingEventsForHomePage = [
@@ -177,7 +177,7 @@ export const pastEvents = [
 
 export const benefits = [
     {
-        icon: BookOpen,
+        icon: BookOpenText,
         title: "Skill Development",
         description: "Access to exclusive workshops, coding bootcamps, and hands-on projects to enhance your technical skills.",
         color: "from-blue-500 to-cyan-500"
@@ -186,94 +186,27 @@ export const benefits = [
         icon: Users,
         title: "Networking Opportunities",
         description: "Connect with like-minded peers, industry professionals, alumni, and potential mentors in the tech community.",
-        color: "from-purple-500 to-pink-500"
+        color: "from-blue-500 to-cyan-500"
     },
     {
         icon: Award,
         title: "Recognition & Achievements",
         description: "Participate in competitions, hackathons, and showcase your talents on various platforms with certificates.",
-        color: "from-green-500 to-teal-500"
+        color: "from-blue-500 to-cyan-500"
     },
     {
         icon: Heart,
         title: "Community Impact",
         description: "Contribute to meaningful projects that make a positive difference in society and the local community.",
-        color: "from-red-500 to-orange-500"
-    },
-    {
-        icon: Code,
-        title: "Technical Projects",
-        description: "Work on real-world projects, contribute to open source, and build an impressive portfolio.",
-        color: "from-indigo-500 to-purple-500"
+        color: "from-blue-500 to-cyan-500"
     },
     {
         icon: Lightbulb,
         title: "Innovation & Research",
         description: "Participate in research projects, innovation challenges, and cutting-edge technology exploration.",
-        color: "from-yellow-500 to-orange-500"
+        color: "from-blue-500 to-cyan-500"
     }
 ];
-
-export const membershipTiers = [
-    {
-        name: "General Member",
-        price: "₹100/year",
-        description: "For students looking to enhance their tech journey",
-        features: [
-            "Access to all workshops and seminars at 50% discount",
-            "Participation in hackathons and competitions",
-            "Networking events and meetups",
-            "Access to learning resources",
-            "Community Discord server",
-            "Mentorship from Board Members",
-            "Career guidance sessions",
-            "Project collaboration opportunities"
-        ],
-        popular: true
-    }
-]
-
-export const joinSteps = [
-    {
-        step: 1,
-        title: "Fill Application Form",
-        description: "Complete our online application with your details and interests. You'll confirm your membership tier as part of this step."
-    },
-    {
-        step: 2,
-        title: "Attend Orientation",
-        description: "Join our orientation session to get acquainted with ACM HITK and meet other members."
-    },
-    {
-        step: 3,
-        title: "Start Your Journey",
-        description: "Jump right in! Begin participating in our events, workshops, and community activities."
-    }
-];
-
-export const testimonials = [
-    {
-        name: "Rahul Sharma",
-        role: "Software Engineer at Google",
-        year: "Class of 2023",
-        image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-        quote: "ACM HITK transformed my college experience. The workshops and mentorship I received helped me land my dream job at Google."
-    },
-    {
-        name: "Priya Patel",
-        role: "Data Scientist at Microsoft",
-        year: "Class of 2022",
-        image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400",
-        quote: "The community at ACM HITK is incredible. I made lifelong friends and learned skills that I use every day in my career."
-    },
-    {
-        name: "Arjun Kumar",
-        role: "Startup Founder",
-        year: "Class of 2024",
-        image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
-        quote: "ACM HITK gave me the confidence and skills to start my own tech company. The entrepreneurship support was invaluable."
-    }
-]
 
 // Data for /contact page
 
