@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { Mail, Phone, Send, ExternalLink } from "lucide-react"
-import { contactInfo, socialMedia, teamContacts } from "@/data/index";
+import { Mail, Send, ExternalLink, Linkedin } from "lucide-react"
+import { socialMedia, teamContacts } from "@/data/index";
 import { Navigation } from "@/components/navigation"
 import { GlassCard } from "@/components/glass-card"
 import { Button } from "@/components/ui/button"
@@ -25,42 +25,6 @@ export default function ContactPage() {
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Have questions, suggestions, or want to collaborate? We'd love to hear from you.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Information */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {contactInfo.map((info, index) => (
-                <div
-                  key={index}
-                  className="animate-in slide-in-from-bottom-10 duration-1000"
-                  style={{ animationDelay: `${(index + 1) * 100}ms` }}
-                >
-                  <GlassCard className="p-6 text-center group relative overflow-hidden h-full">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${info.color} opacity-5 group-hover:opacity-10 transition-opacity duration-300`} />
-
-                    <div className="relative">
-                      <div className={`w-12 h-12 bg-gradient-to-br ${info.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                        <info.icon className="h-6 w-6 text-white" />
-                      </div>
-
-                      <h3 className="text-xl font-bold mb-4">{info.title}</h3>
-
-                      <div className="space-y-3">
-                        {info.details.map((detail, idx) => (
-                          <div key={idx} className="text-left">
-                            <p className="text-xs text-muted-foreground font-medium">{detail.label}</p>
-                            <p className="text-sm font-medium">{detail.value}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </GlassCard>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -165,39 +129,70 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {teamContacts.map((member, index) => (
                 <div
                   key={index}
                   className="animate-in slide-in-from-bottom-10 duration-1000"
                   style={{ animationDelay: `${(index + 1) * 150}ms` }}
                 >
-                  <GlassCard className="p-6 text-center group relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-teal-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <GlassCard className="p-6 h-full group relative overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-blue-500/10 dark:shadow-blue-500/5">
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-teal-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                    <div className="relative">
-                      <div className="mb-6">
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 -z-10 blur-xl transition-opacity duration-500" />
+
+                    <div className="relative z-10 flex flex-col items-center h-full">
+                      {/* Avatar with Hover Effect */}
+                      <div className="relative mb-6 group-hover:scale-105 transition-transform duration-500">
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full blur-md opacity-0 group-hover:opacity-70 transition-opacity duration-500" />
                         <img
                           src={member.image}
                           alt={member.name}
-                          className="relative w-24 h-24 object-cover rounded-full mx-auto shadow-lg group-hover:scale-105 transition-transform duration-300"
+                          className="relative w-24 h-24 object-cover rounded-full border-2 border-white/20 shadow-lg group-hover:border-blue-500/30 transition-all duration-500"
                         />
                       </div>
 
-                      <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                      <p className="text-primary font-semibold mb-4">{member.role}</p>
-                      <p className="text-xs text-muted-foreground mb-6 leading-relaxed">{member.responsibilities}</p>
+                      {/* Member Info */}
+                      <div className="text-center flex-1 flex flex-col">
+                        <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                          {member.name}
+                        </h3>
+                        <p className="text-primary font-medium mb-4">{member.role}</p>
+                        <div className="flex gap-3 justify-center w-full">
+                          <Button
+                            asChild
+                            variant="outline"
+                            size="sm"
+                            className="group/button flex-1 bg-white/5 hover:bg-blue-500/10 hover:border-blue-500/30 transition-all"
+                          >
+                            <a
+                              href={`mailto:${member.email}`}
+                              className="flex items-center justify-center gap-2"
+                            >
+                              <Mail className="h-4 w-4 text-blue-400 group-hover/button:text-blue-500 transition-colors" />
+                              <span className="text-sm">Email</span>
+                            </a>
+                          </Button>
 
-                      <div className="space-y-2">
-                        <Button variant="ghost" size="sm" className="w-full justify-start group">
-                          <Mail className="h-4 w-4 mr-2 group-hover:text-primary transition-colors" />
-                          {member.email}
-                        </Button>
-                        <Button variant="ghost" size="sm" className="w-full justify-start group">
-                          <Phone className="h-4 w-4 mr-2 group-hover:text-primary transition-colors" />
-                          {member.phone}
-                        </Button>
+                          <Button
+                            asChild
+                            variant="outline"
+                            size="sm"
+                            className="group/button flex-1 bg-white/5 hover:bg-blue-500/10 hover:border-blue-500/30 transition-all"
+                          >
+                            <Link
+                              href={member.linkedinUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center justify-center gap-2"
+                            >
+                              <Linkedin className="h-4 w-4 text-blue-400 group-hover/button:text-blue-500 transition-colors" />
+                              <span className="text-sm">Message</span>
+                            </Link>
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </GlassCard>

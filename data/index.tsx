@@ -209,52 +209,6 @@ export const benefits = [
 ];
 
 // Data for /contact page
-
-export const contactInfo = [
-    {
-        icon: Mail,
-        title: "Email Us",
-        details: [
-            { label: "General Inquiries", value: "info@acmhitk.org" },
-            { label: "Membership", value: "membership@acmhitk.org" },
-            { label: "Events", value: "events@acmhitk.org" },
-            { label: "Technical Support", value: "tech@acmhitk.org" }
-        ],
-        color: "from-blue-500 to-cyan-500"
-    },
-    {
-        icon: Phone,
-        title: "Call Us",
-        details: [
-            { label: "Chapter Chair", value: "+91 98765 43210" },
-            { label: "Vice Chair", value: "+91 98765 43211" },
-            { label: "Events Team", value: "+91 98765 43212" }
-        ],
-        color: "from-green-500 to-teal-500"
-    },
-    {
-        icon: MapPin,
-        title: "Visit Us",
-        details: [
-            { label: "Heritage Institute of Technology", value: "Kolkata, West Bengal 700107" },
-            { label: "ACM Chapter Room", value: "Computer Science Department, 3rd Floor" },
-            { label: "Campus Location", value: "Chowbaga Road, Anandapur" }
-        ],
-        color: "from-purple-500 to-pink-500"
-    },
-    {
-        icon: Clock,
-        title: "Office Hours",
-        details: [
-            { label: "Monday - Friday", value: "10:00 AM - 5:00 PM" },
-            { label: "Saturday", value: "10:00 AM - 2:00 PM" },
-            { label: "Sunday", value: "Closed" },
-            { label: "During Events", value: "Extended Hours" }
-        ],
-        color: "from-orange-500 to-red-500"
-    }
-]
-
 export const socialMedia = [
     {
         name: "GitHub",
@@ -288,29 +242,33 @@ export const socialMedia = [
 
 export const teamContacts = [
     {
-        name: "Arjun Sharma",
+        name: "Sagnik Pramanik",
         role: "Chapter Chair",
-        email: "chair@acmhitk.org",
-        phone: "+91 98765 43210",
-        image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-        responsibilities: "Overall chapter management, strategic planning, external relations"
+        email: "sagnikpramanik95@gmail.com",
+        linkedinUrl: "https://www.linkedin.com/in/sagnik-pramanik/",
+        image: "/Sagnik-Pramanik.jpeg"
     },
     {
-        name: "Priya Patel",
+        name: "Aryan Ghosh",
         role: "Vice Chair",
-        email: "vicechair@acmhitk.org",
-        phone: "+91 98765 43211",
-        image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400",
-        responsibilities: "Event coordination, member engagement, academic partnerships"
+        email: "ghosharyan05@gmail.com",
+        linkedinUrl: "www.linkedin.com/in/aryan-ghosh-83a26631b",
+        image: "/Aryan-Ghosh.png"
     },
     {
-        name: "Ananya Das",
-        role: "Event Coordinator",
-        email: "events@acmhitk.org",
-        phone: "+91 98765 43212",
-        image: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400",
-        responsibilities: "Workshop planning, hackathon organization, speaker coordination"
-    }
+        name: "Mohak Sarkar",
+        role: "Secretary",
+        email: "mohak.sarkar.cse27@heritageit.edu.in",
+        linkedinUrl: "https://www.linkedin.com/in/mohak-sarkar-b0522a303/",
+        image: "/Mohak-Sarkar.jpg"
+    },
+    {
+        name: "Rohit Kumar Dey",
+        role: "Webmaster",
+        email: "rohit.dey302003@gmail.com",
+        linkedinUrl: "https://www.linkedin.com/in/rohit-kumar-dey-3856891a5/",
+        image: "/Rohit-Kumar-Dey.jpg"
+    },
 ]
 
 // Data for /team page
