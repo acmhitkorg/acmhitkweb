@@ -9,10 +9,10 @@ const HeroSection = () => {
 
             <div className="max-w-7xl mx-auto relative">
                 <div className="text-center max-w-4xl mx-auto">
-                    <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 animate-pulse">
+                    {/* <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 animate-pulse">
                         <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-ping" />
                         Now Accepting New Members
-                    </div>
+                    </div> */}
 
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-teal-600 to-blue-600 bg-clip-text text-transparent animate-in slide-in-from-bottom-10 duration-1000">
                         Innovate. Collaborate. Grow.
