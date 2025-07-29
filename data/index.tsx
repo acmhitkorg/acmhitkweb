@@ -375,7 +375,9 @@ data streams."`,
         date: "April 16, 2024",
         type: "Workshop",
         description: "Learn how to contribute to open source projects.",
-        abstract: "Interactive session on the open-source contribution workflow, including how to find beginner-friendly issues, fork repositories, create pull requests, and work with Git. Participants made their first open-source contributions during the workshop.",
+        abstract: `Program Overview 1. Understanding the broad view of Generative AI 2.
+Addressing the Fear 3. Types of Generative AI architectures 4. LLM and LIM 5.
+Building an AI tool (Using Hugging Face) 6. QnA`,
         attendees: 10,
         speaker: "Open Source Community Leaders",
         location: "CS Department Lab",
