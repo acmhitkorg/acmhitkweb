@@ -10,7 +10,7 @@ import { ReactNode } from 'react';
 import { TeamMember, SocialLink } from "@/types";
 
 export function TeamMemberCard({ member }: { member: TeamMember }) {
-  const { name, roleAtACMHITK, roleAtHITK, image, bio, achievements, socials } = member;
+  const { name, roleAtACMHITK, roleAtHITK, currentRole, image, bio, achievements, socials } = member;
 
   const renderSocialIcon = (social: SocialLink) => {
     if (!social.url) return null;
@@ -89,8 +89,11 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
                 {name}
               </h3>
               <p className="text-primary font-medium mb-2">{roleAtACMHITK}</p>
-              {roleAtHITK && (
+              {roleAtHITK && member.type === "student" && (
                 <p className="text-sm text-muted-foreground mb-4">{roleAtHITK}</p>
+              )}
+              {currentRole && member.type === "alumni" && (
+                <p className="text-sm text-muted-foreground mb-4">{currentRole}</p>
               )}
 
               {/* Social Links */}
@@ -159,7 +162,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
                   priority
                 />
               </div>
-              
+
               {/* Social Links */}
               <div className="flex justify-center gap-4">
                 {socials.map((social, index) => (
@@ -211,7 +214,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
 
                 {achievements && (
                   <div className="space-y-3">
-                    <h3 className="text-lg font-semibold text-foreground">Achievements</h3>
+                    <h3 className="text-lg font-semibold text-foreground">Achievements/Contributions</h3>
                     <p className="text-muted-foreground leading-relaxed">{achievements}</p>
                   </div>
                 )}

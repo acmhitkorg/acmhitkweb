@@ -6,10 +6,11 @@ export interface SocialLink {
 
 export interface TeamMember {
     id: number;
-    type: "faculty" | "student" | "alumni";
+    type?: "faculty" | "student" | "alumni";
     name: string;
     roleAtACMHITK: string;
     roleAtHITK: string;
+    currentRole?: string;
     image: string;
     bio: string;
     achievements: string | null;

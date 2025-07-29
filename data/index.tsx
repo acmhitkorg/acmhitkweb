@@ -453,6 +453,28 @@ export const currentTeam: TeamMember[] = [
     {
         id: 7,
         type: "student",
+        name: "Koushiki Das",
+        roleAtACMHITK: "Membership Head",
+        roleAtHITK: "4th Year CSE",
+        image: "/Koushiki-Das.png",
+        bio: `Koushiki Das is a dedicated student from HITK (Class of 2026) with a strong background in research in Artificial Intelligence and Computer Vision. She has gained valuable experience through internships at institutions like IIT Dharwad and New Jersey Institute of Technology, as well as with Indian Oil Corporation Ltd. She is also committed to community service, actively volunteering as a teacher for underserved students.`,
+        achievements: `She focused on finetuning Large Language Models (LLMs) and building an AI-assisted medical appointment bot during her Summer Research Internship at IIT Dharwad. During her Winter Internship at Indian Oil Corp. Ltd, she leveraged computer vision to develop an automated PPE detection system, specifically for safety helmets in a refinery. As a Summer Research Intern at New Jersey Institute of Technology, she worked on solving Fast Fair Bandits using Reinforcement Learning. Koushiki has demonstrated leadership within the ACM HITK student chapter, serving as Vice Membership Head. Additionally, she has been a dedicated Volunteer Teacher at U&I Trust, where she educates underserved students and successfully raised 10K in funds during an annual crowdfunding session.`,
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:koushikid2020@gmail.com",
+                icon: "Mail"
+            },
+            {
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/koushiki-das-572b50289/",
+                icon: "Linkedin"
+            }
+        ]
+    },
+    {
+        id: 8,
+        type: "student",
         name: "Srijit Roy",
         roleAtACMHITK: "Board-Member",
         roleAtHITK: "3rd Year CSE",
@@ -468,7 +490,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 8,
+        id: 9,
         type: "student",
         name: "Souryadip Mallick",
         roleAtACMHITK: "Board Member",
@@ -495,7 +517,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 9,
+        id: 10,
         type: "student",
         name: "Shambaditya Sarkar",
         roleAtACMHITK: "Board-Member",
@@ -517,7 +539,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 10,
+        id: 11,
         type: "student",
         name: "Debajit Guha",
         roleAtACMHITK: "Board Member, member of planning and organizing committee, SIG(AI-ML-DS), attendance committee",
@@ -539,7 +561,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 11,
+        id: 12,
         type: "student",
         name: "Mehul Roy",
         roleAtACMHITK: "Board-Member",
@@ -561,7 +583,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 12,
+        id: 13,
         type: "student",
         name: "Sneha Lahiri",
         roleAtACMHITK: "Board Member",
@@ -588,7 +610,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 13,
+        id: 14,
         type: "student",
         name: "Atyasha Bhattacharyya",
         roleAtACMHITK: "Board-Member (SIG Data Science)",
@@ -615,7 +637,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 14,
+        id: 15,
         type: "student",
         name: "Shuvayu Dasgupta",
         roleAtACMHITK: "SIG-AIML",
@@ -642,7 +664,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 15,
+        id: 16,
         type: "student",
         name: "Sohon Ganguly",
         roleAtACMHITK: "Board Member",
@@ -664,7 +686,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 16,
+        id: 17,
         type: "student",
         name: "Ankita Roy",
         roleAtACMHITK: "Board-Member (SIG-AIML)",
@@ -686,7 +708,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 17,
+        id: 18,
         type: "student",
         name: "Anwesha Goswami",
         roleAtACMHITK: "Board Member",
@@ -713,7 +735,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 18,
+        id: 19,
         type: "student",
         name: "Yogesh Kumar",
         roleAtACMHITK: "Board-Member",
@@ -745,7 +767,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 19,
+        id: 20,
         type: "student",
         name: "Debeshee Sen",
         roleAtACMHITK: "Board Member",
@@ -772,7 +794,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 20,
+        id: 21,
         type: "student",
         name: "Ankan Das",
         roleAtACMHITK: "Board-Member, Event Planning",
@@ -794,7 +816,7 @@ export const currentTeam: TeamMember[] = [
         ]
     },
     {
-        id: 21,
+        id: 22,
         type: "student",
         name: "Anushka Nath",
         roleAtACMHITK: "Board Member",
@@ -822,13 +844,15 @@ export const currentTeam: TeamMember[] = [
     },
 ]
 
-export const alumni = [
+export const alumni: TeamMember[] = [
     {
         id: 0,
-        name: "Sabyasachee Banerjee",
+        type: "alumni",
+        name: "Dr. Sabyasachee Banerjee",
         roleAtACMHITK: "Faculty Sponsor(2018-2025)",
-        roleAtHITK: "Assistant Professor",
-        image: "/Dr-Sabyasachee-Banerjee.jpg",
+        roleAtHITK: "Assistant Professor, Department of Computer Science and Engineering",
+        currentRole: "Assistant Professor, Department of Computer Science and Engineering",
+        image: "/Dr-Sabyasachi-Banerjee.jpg",
         bio: `Sabyasachee Banerjee (Dr.) is an Assistant Professor in the Department of Computer Science and Engineering at Heritage Institute of Technology, Kolkata. He holds a Ph.D. in Computer Science & Engineering from Jadavpur University, with research focused on layout optimization, thermal issues, and testing of 3D Integrated Circuits. With over a decade of teaching experience, he has guided multiple undergraduate and postgraduate projects, resulting in several international publications. Dr. Banerjee has served as a reviewer for reputed journals, coordinated academic events as the faculty sponsor of the ACM Student Chapter at HITK. His research interests include 3D SoC design and testing, VLSI design automation, and optimization algorithms.`,
         achievements: null,
         socials: [
@@ -851,9 +875,40 @@ export const alumni = [
     },
     {
         id: 1,
+        type: "alumni",
+        name: "Agnish Ghosh",
+        roleAtACMHITK: "Webmaster(2022-2023)",
+        roleAtHITK: "CSE'24",
+        currentRole: "Contributor/Maintainer at the Ethereum Foundation and Ethereum Core Developer at Status",
+        image: "/Agnish-Ghosh.png",
+        bio: `Agnish Ghosh is a highly accomplished individual, distinguished by his profound expertise and dedication to advancing the Ethereum ecosystem. He possesses extensive experience in cutting-edge blockchain development, intricate cryptography, and robust decentralized systems. His comprehensive skill set ranges from optimizing cryptographic primitives vital for Ethereum upgrades to spearheading the implementation of critical protocol improvements. He graduated from Heritage Institute of Technology, Kolkata with a B.Tech in CSE in 2024.`,
+        achievements: `As a Contributor/Maintainer on the c-kzg-4844 cryptography team at the Ethereum Foundation, he developed computationally fast and low-memory overhead cryptography for verifying blobs and data columns, crucial for Ethereum client teams and ensuring backward compatibility for Deneb and Peerdas upgrades. 
+        As an Ethereum Core Developer at Status, he is instrumental in achieving statelessness by migrating Ethereum from Merkle trees to Verkle trees, and is the sole project owner and programmer of Nimbus Ethereum CL’s Peerdas implementation, a key upgrade for optimizing blob transactions expected with the Fusaka hard fork. He contributed to Rollups as a Service and explored secure privacy-preserving groups on EVM chains as a Software Engineer - Blockchain & Cryptography at BaseLayer. At Cipherem, he focused on EVM Equivalent zkRollups and finding solutions for Ethereum infrastructure as a Research And Development Engineer, and was involved in building a self-sovereign social network as a Blockchain Developer. He completed a 5-month internship as a Protocol Fellow at Ethereum and was a Devconnect Scholarship Recipient. He co-founded and led R&D at Metafy. He served as Webmaster for the ACM chapter at HITK and held the position of Technical Lead at Google Developer Students'​ Club HIT. As an Undergraduate Student Researcher at the Indian Association for the Cultivation of Science, his research included prompt generation for Zero-Shot Relation Extraction and Contrastive Learning in Distantly Supervised Named Entity Relation Extraction, applying NLP principles like Coreferencing and developing optimized O(n) clustering algorithms that reduced time in establishing inter-sentence relations by 96%. He also worked as a Campus Builder for Binance. He co-founded and developed the backend for an app aimed at verifying and providing COVID-19 resources as a Co-Founder and Backend Developer at Kolkata Covid Resources. As an SDE Intern at Coinhunt.cc, he worked on a randomized rendering algorithm in React.js, improving rendering latencies by 80%, and built a crypto-payments gateway by integrating APIs from Metamask, Phantom Wallet, and Coinbase, optimizing user payment experience by 75%.`,
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:iamagnix@gmail.com",
+                icon: "Mail"
+            },
+            {
+                name: "LinkedIn",
+                url: 'https://www.linkedin.com/in/agnish-ghosh-15902a211/',
+                icon: "Linkedin"
+            },
+            {
+                name: "Website",
+                url: "https://www.agnish.in/",
+                icon: "Globe"
+            }
+        ]
+    },
+    {
+        id: 2,
+        type: "alumni",
         name: "Ashmi Banerjee",
         roleAtACMHITK: "Webmaster(2014-15), Chair (2015-16)",
         roleAtHITK: "CSE'16",
+        currentRole: "PhD Student at Technical University Munich",
         image: "/Ashmi-Banerjee.jpg",
         bio: "CSE 2016 batch, MSc TU Munich 2019, ongoing PhD at TUM",
         achievements: `https://ashmibanerjee.com/#awards`,
@@ -876,28 +931,53 @@ export const alumni = [
         ]
     },
     {
-        id: 2,
-        name: "Agnish Ghosh",
-        roleAtACMHITK: "Webmaster(2022-2023)",
+        id: 3,
+        type: "alumni",
+        name: "Protyasha Kundu",
+        roleAtACMHITK: "Chair & Treasurer(2023-2025)",
         roleAtHITK: "CSE'24",
-        image: "/Agnish-Ghosh.jpg",
-        bio: "CSE 2016 batch, MSc TU Munich 2019, ongoing PhD at TUM",
-        achievements: null,
+        currentRole: "MTech Student at ISI Kolkata",
+        image: "/Protyasha-Kundu.jpg",
+        bio: `I am Protyasha Kundu. I am currently pursuing MTech in Cryptology and Security at ISI Kolkata. I have major interest in Networks and Network Security System. From July 2024 till March 2025 i was working for Ernst & Young as a Senior Analyst in Tech Consulting for GPS service line. I am a 2024 graduate from Heritage Institute of Technologym, Kolkata.`,
+        achievements: `She was honored with the Best Paper Award at ICISS 2024. Academically, she performed exceptionally well, ranking in the Top 11 in the TIFR GS exam in 2025 and securing the 3rd position in the CSE 2020 Batch at HITK.For ACM HITK, she has been actively involved in organizing and hosting numerous successful events. These include multiple guest lectures featuring prominent speakers such as Chandra Shekhar Mukherjee, Asmita Banerjee, and Prof. Sourav Chakraborty. Additionally, she played a key role in organizing the TechQuiz under the ACM HITK Student Chapter.`,
         socials: [
             {
                 name: "Email",
-                url: "mailto:iamagnix@gmail.com",
+                url: "mailto:protyashakundu12901@gmail.com",
                 icon: "Mail"
             },
             {
                 name: "LinkedIn",
-                url: 'https://www.linkedin.com/in/agnish-ghosh-15902a211/',
+                url: "https://www.linkedin.com/mwlite/profile/in/protyasha-kundu-69744a214/",
+                icon: "Linkedin"
+            }
+        ]
+    },
+    {
+        id: 4,
+        type: "alumni",
+        name: "Swapnil Aichbhaumik",
+        roleAtACMHITK: "Board-Member, Joint Secretary, Treasurer(2022-2025)",
+        roleAtHITK: "CSE'25",
+        currentRole: "Associate Software Engineer at EY GDS",
+        image: "/Swapnil-Aichbhaumik.jpg",
+        bio: `Swapnil Aichbhaumik is a Computer Science and Engineering graduate with a primary focus on Product Engineering and Development. He gained practical experience as a Product Engineering Intern at SETV Global and is currently serving as an Associate Software Engineer at EY GDS.`,
+        achievements: `For ACM HITK, he organized Brainstorm '23 and Tech quiz' 23`,
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:Swapnil.Aichbhaumik@gds.ey.com",
+                icon: "Mail"
+            },
+            {
+                name: "LinkedIn",
+                url: `http://www.linkedin.com/in/swapnil-aichbhaumik-28a980224`,
                 icon: "Linkedin"
             },
             {
-                name: "Website",
-                url: "https://www.agnish.in/",
-                icon: "Globe"
+                name: "Github",
+                url: "https://github.com/Swap-nil-2003",
+                icon: "Github"
             }
         ]
     }
