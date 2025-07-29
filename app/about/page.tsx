@@ -130,7 +130,7 @@ export default function AboutPage() {
                     ACM is the world's largest educational & scientific computing society. ACM Student Chapters provide unique opportunities for networking, mentoring, and bonding over common interests. They provide support both within the student community and to local communities outside the institution.
                   </p>
                   <p className="text-lg leading-relaxed text-muted-foreground">
-                    ACM Student Chapter at HITK was founded by <span className="font-medium text-foreground">Prof. Dr. Subhashis Majumdar</span>, HOD CSE & Dean UG Affairs at HITK and <span className="font-medium text-foreground">Prof. Dr. Partha Basuchowdhuri</span>, Former Associate Professor, CSE at HITK on <span className="font-medium text-foreground">18th December 2011</span>.
+                    ACM Student Chapter at HITK was founded by <span className="font-medium text-foreground">Prof. (Dr.) Subhashis Majumdar</span>, HOD CSE & Dean UG Affairs at HITK and <span className="font-medium text-foreground">Prof. (Dr.) Partha Basuchowdhuri</span>, Former Associate Professor, CSE at HITK on <span className="font-medium text-foreground">18th December 2011</span>.
                   </p>
                 </div>
               </div>

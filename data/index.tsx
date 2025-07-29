@@ -179,112 +179,206 @@ export const pastEvents = [
     // 2025 Events
     {
         id: 1,
-        title: "Python Programming Workshop",
-        date: "February 28, 2025",
-        type: "Workshop",
+        title: "The celebrated birthday problem",
+        date: "August 8, 2024",
+        type: "Seminar",
         description: "Introduction to Python programming for beginners.",
-        abstract: "This workshop introduced participants to the fundamentals of Python programming language, covering basic syntax, data structures, and problem-solving approaches. The session included hands-on coding exercises and real-world examples.",
-        attendees: 45,
-        speaker: "Dr. Sarah Johnson",
-        location: "Tech Building, Room 101",
+        abstract: `"Birthday Paradox and its Algorithmic Applications" by Dr. Bhaswar B.
+Bhattacharya Abstract: What is the chance that among a group of friends, at least
+2 of them have the same birthday? This is the celebrated birthday problem, which
+connects many seemingly disparate problems both within and beyond
+mathematics. In this talk, we will discuss different variations of the birthday
+paradox and their applications in computer science, specifically distributional
+property testing and computation of discrete logarithms. (ii)"God Forever
+Geometrizes" by Dr. Bhargab B. Bhattacharya Abstract: As Plato observed, nature
+is governed by the eternal laws of geometry. In this talk, we show some
+fascinating examples to demonstrate how geometry manifests in physics and in
+ancient architectures. Next, from the perspective of computational geometry, we
+demystify the problem of cutting a pizza or a sandwich. Finally, we demonstrate
+how 2D point-set polygonization yields assistance to differently-abled persons.`,
+        attendees: 82,
+        speaker: "Dr. Bhaswar B. Bhattacharya",
+        location: "THA Hall, Heritage Academy",
         photos: []
     },
     {
         id: 2,
-        title: "Data Structures & Algorithms Contest",
-        date: "February 15, 2025",
-        type: "Competition",
+        title: "God Forever Geometrizes",
+        date: "August 8, 2024",
+        type: "Seminar",
         description: "Programming contest focusing on DSA problem-solving.",
-        abstract: "Annual competitive programming event where participants solved algorithmic challenges within time constraints. The competition tested problem-solving skills and coding efficiency across various difficulty levels.",
-        attendees: 80,
-        speaker: "Prof. Michael Chen",
-        location: "Computer Lab 3",
+        abstract: `As Plato observed, nature is governed by the eternal laws of geometry.
+In this talk, we show some fascinating examples to demonstrate how geometry
+manifests in physics and in ancient architecture. Next, from the perspective of
+computational geometry, we demystify the problem of cutting a pizza or a
+sandwich. Finally, we demonstrate how 2D point-set polygonization yields
+assistance to differently-abled persons.`,
+        attendees: 82,
+        speaker: "Dr. Bhargab B. Bhattacharya",
+        location: "THA Hall, Heritage Academy",
         photos: []
     },
     {
         id: 3,
-        title: "Mobile App Development Seminar",
-        date: "January 30, 2025",
+        title: " Technical Debt in Machine Learning Systems",
+        date: "September 4, 2024",
         type: "Seminar",
         description: "Flutter and React Native development session.",
-        abstract: "Comprehensive seminar on cross-platform mobile app development using Flutter and React Native. The session covered best practices, performance optimization, and real-world case studies.",
-        attendees: 60,
-        speaker: "Alex Rodriguez",
-        location: "Engineering Auditorium",
+        abstract: `In the context of software development, technical debt relates to the
+cost of refactoring or rework in the future that arises out of the prioritization of
+immediate expedience over long-term design. This talk discusses the accrual
+and management of technical debt in machine learning systems.`,
+        attendees: 36,
+        speaker: "Uday Shaw",
+        location: "ICT Building",
         photos: []
     },
-
-    // 2024 Events
     {
         id: 4,
-        title: "Web Development Bootcamp",
-        date: "November 15, 2024",
-        type: "Workshop",
+        title: `Evaluation of Large Language Models: The Good, The Bad, and The
+Opportunities`,
+        date: "Auguest 4, 2023",
+        type: "Seminar",
         description: "Hands-on training in modern web development technologies.",
-        abstract: "Intensive bootcamp covering full-stack web development with React, Node.js, and MongoDB. Participants built and deployed a complete web application by the end of the workshop.",
-        attendees: 55,
-        speaker: "Emily Wilson",
+        abstract: ` The recent sensation ChatGPT, powered by large language models
+(LLM) can be used to mimic a human conversationalist, ChatGPT is versatile.
+Among countless examples, it can write and debug computer programs,
+compose music, teleplays, fairy tales, and student essays, answer test questions,
+etc. It is an open issue: How can deep learning be incorporated to make it more
+efficient and reduce its drawbacks?`,
+        attendees: 100,
+        speaker: "",
         location: "CS Department Lab",
         photos: []
     },
     {
         id: 5,
-        title: "AI & Machine Learning Symposium",
-        date: "October 5, 2024",
+        title: "Semiconductors to AI: Shaping Our Digital Future",
+        date: "August 8, 2023",
         type: "Seminar",
         description: "Exploring the latest trends in artificial intelligence.",
-        abstract: "Expert panel discussion on cutting-edge AI research and applications. Topics included deep learning, computer vision, and ethical considerations in AI development.",
-        attendees: 120,
-        speaker: "Dr. James Kim",
+        abstract: ` The talk begins with the evolution of computers and the synergistic
+roles played by the twin disciplines of electronics engineering and computer
+science and how that synergy brought computers to its all-pervasive present
+state. After showing the spectacular growth of semiconductor devices and the
+ubiquitous nature of this technology, the talk hints at how this growth fuelled
+renewed interest in artificial intelligence and machine learning and the revolution
+that we all are currently witnessing because of that. In particular, the discourse
+shows the current advances in natural language processing and its potential
+impact on our everyday life. The talk concludes by showing some of those
+impacts of AI/ML and their possible far-reaching effects on our society ? both
+good and adverse.`,
+        attendees: 23,
+        speaker: "",
         location: "Main Auditorium",
         photos: []
     },
-
-    // 2023 Events
     {
         id: 6,
-        title: "Cybersecurity Workshop",
-        date: "August 22, 2023",
-        type: "Workshop",
-        description: "Practical cybersecurity skills and ethical hacking techniques.",
-        abstract: "Interactive workshop covering network security, penetration testing, and secure coding practices. Participants engaged in hands-on labs and capture-the-flag challenges.",
-        attendees: 40,
-        speaker: "Dr. Robert Miller",
-        location: "Security Lab",
+        title: "Recommender Systems: Your Fairy Godmother of Choices",
+        date: "September 27, 2023",
+        type: "Seminar",
+        description: `Have you ever wondered how online platforms magically suggest
+products, movies, or music that seem tailor-made for you? It's not magic; it's the
+power of Recommender Systems (RS). Join us in this informative and hands-on
+session as we demystify the world of RS and learn how these digital fairy
+godmothers work their magic to enhance user experiences. In the first part of our
+talk, we'll dive deep into the world of Recommender Systems, shedding light on
+their applications, workings, and various types. You'll gain a comprehensive
+understanding of the foundations of RS, setting the stage for your journey into
+the world of personalized recommendations. In the second part, get ready to put
+your knowledge to the test as we guide you through the process of building a
+simple RS model. We'll use a user-friendly framework, making it accessible to
+everyone. We'll share practical tips and best practices to help you fine-tune your
+RS and ensure it provides meaningful recommendations. Join us for this exciting
+journey into the world of Recommender Systems, and discover how they can be
+your own fairy godmother of choices, making every digital interaction feel like it
+was designed just for you.`,
+        attendees: 47,
+        speaker: "",
+        location: "Main Auditorium",
         photos: []
     },
     {
         id: 7,
-        title: "Annual Hackathon",
-        date: "May 10-12, 2023",
-        type: "Competition",
+        title: "Computability and Complexity Theory - A Brief Introduction",
+        date: "December 14, 2023",
+        type: "Workshop",
+        description: "Practical cybersecurity skills and ethical hacking techniques.",
+        abstract: `What does it mean for something to be computable? What are some of
+the mathematical properties of general-purpose computers? What are their
+limitations? These are typical questions that are of interest to computability
+theorists. In this talk, we shall discuss answers to some of these questions and
+more. We shall also discuss some common results of Complexity Theory, by
+applying some space/time restriction on our model of computation.`,
+        attendees: 20,
+        speaker: "",
+        location: "Security Lab",
+        photos: []
+    },
+    {
+        id: 8,
+        title: "Brain Research - Implications in Science, Engineering and Society",
+        date: "February 9, 2024",
+        type: "Seminar",
         description: "48-hour coding competition for innovative tech solutions.",
-        abstract: "Annual hackathon where participants formed teams to build innovative projects. The event featured workshops, mentorship sessions, and networking opportunities with industry professionals.",
-        attendees: 150,
+        abstract: `The brain is one of the most connected organs of an organism. It
+directly connects to all the organs through a network of neurons. The brain
+interacts with the body through a combination of electrochemical and chemical
+processes. The brain also controls the body indirectly through hormones and
+neuropeptides. Similarly, the body also controls the brain by modulating its
+function through indirect and direct means. Besides, the brain is at the center of
+self-awareness and societal organization. All these require highly complex,
+real-time data processing and decision-making system. How does the brain
+manage it? Although the answer is not as simple as the question, neuroscience
+research does, however, clarify a great deal about controlling, modifying, and
+mimicking some of the brain functions in artificial systems. Understanding the
+brain involves a range of disciplines ranging from genetics and psychology to
+computer science.`,
+        attendees: 45,
         speaker: "Various Industry Experts",
         location: "Innovation Center",
         photos: []
     },
     {
-        id: 8,
-        title: "Blockchain Workshop",
-        date: "March 15, 2023",
+        id: 9,
+        title: "Solving the Classic Distinct Element Problem with a Strikingly Simple Algorithm that Captivated Donald Knuth",
+        date: "April 15, 2024",
         type: "Workshop",
         description: "Introduction to blockchain technology and smart contracts.",
-        abstract: "Hands-on workshop covering the fundamentals of blockchain, Ethereum, and smart contract development using Solidity. Participants built and deployed their first smart contract.",
-        attendees: 35,
-        speaker: "Dr. Lisa Wong",
+        abstract: `We will present a very simple streaming algorithm on F_0 estimation
+that also caught the eye of Donald E. Knuth. In a recent article, Donald E. Knuth
+started with the following two paragraphs: "Sourav Chakraborty, N. V.
+Vinodchandran, and Kuldeep S. Meel have recently proposed an interesting
+algorithm for the following problem: A stream of elements (a1, a2,..., am) is
+input, one at a time, and we want to know how many of them are distinct. In
+other words, if A = {a1, a2,..., am} is the set of elements in the stream, with
+multiplicities ignored, we want to know |A|, the size of that set. But we don?t
+have much memory; in fact, |A| is probably a lot larger than the number of
+elements that we can hold in memory at any one time. What is a good strategy for
+computing an unbiased estimate of |A|? Their algorithm is not only interesting, it
+is extremely simple. Furthermore, it?s wonderfully suited to teaching students
+who are learning the basics of computer science. (Indeed, ever since I saw it, a
+few days ago, I?ve been unable to resist trying to explain the ideas to just about
+everybody I meet.) Therefore I?m pretty sure that something like this will
+eventually become a standard textbook topic. This note is an initial
+approximation to what I might write about it if I were preparing a textbook about
+data streams."`,
+        attendees: 15,
+        speaker: "",
         location: "Blockchain Lab",
         photos: []
     },
     {
-        id: 9,
-        title: "Open Source Contribution Workshop",
-        date: "January 20, 2023",
+        id: 10,
+        title: "Generative A.I. workshop",
+        date: "April 16, 2024",
         type: "Workshop",
         description: "Learn how to contribute to open source projects.",
-        abstract: "Interactive session on the open-source contribution workflow, including how to find beginner-friendly issues, fork repositories, create pull requests, and work with Git. Participants made their first open-source contributions during the workshop.",
-        attendees: 40,
+        abstract: `Program Overview 1. Understanding the broad view of Generative AI 2.
+Addressing the Fear 3. Types of Generative AI architectures 4. LLM and LIM 5.
+Building an AI tool (Using Hugging Face) 6. QnA`,
+        attendees: 10,
         speaker: "Open Source Community Leaders",
         location: "CS Department Lab",
         photos: []
