@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Target, Eye, BookOpen, Lightbulb, Handshake } from "lucide-react"
+import Image from "next/image";
 import { goals } from "@/data"
 import { Navigation } from "@/components/navigation"
 import { GlassCard } from "@/components/glass-card"
@@ -133,19 +134,15 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className="hidden md:block">
-                <div className="bg-gradient-to-br from-blue-500/20 to-teal-500/20 p-1 rounded-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                  <div className="bg-background p-4 rounded-xl shadow-lg">
-                    <div className="aspect-w-1 aspect-h-1">
-                      <div className="w-full h-64 bg-gradient-to-br from-blue-500/10 to-teal-500/20 rounded-lg flex items-center justify-center">
-                        <div className="text-center p-6">
-                          <div className="text-6xl font-bold text-blue-500">2011</div>
-                          <div className="text-lg font-medium mt-2 text-teal-500">Founded</div>
-                          <div className="text-sm text-muted-foreground mt-4">December 18th</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="w-full h-full flex items-center">
+                <div className="relative w-full h-64 md:h-full overflow-hidden rounded-xl shadow-lg">
+                  <Image
+                    src="/about-us-img0.png"
+                    alt="ACM HITK Founding Members"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
                 </div>
               </div>
             </div>
