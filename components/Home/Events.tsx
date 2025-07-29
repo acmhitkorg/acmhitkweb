@@ -45,10 +45,20 @@ const Events = () => {
                                 {event.description}
                             </p>
 
-                            <Button size="sm" variant="outline" className="w-full group">
-                                Register Now
-                                <ArrowRight className="ml-2 h-3 w-3 group-hover:translate-x-1 transition-transform" />
-                            </Button>
+                            <div className="relative group/button">
+                                <Button 
+                                    size="sm" 
+                                    variant="outline" 
+                                    className="w-full opacity-50 cursor-not-allowed"
+                                    disabled
+                                >
+                                    Registration Not Open Yet
+                                </Button>
+                                <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover/button:opacity-100 transition-opacity whitespace-nowrap">
+                                    Registration details coming soon
+                                    <div className="absolute bottom-0 left-1/2 -mb-1 w-2 h-2 bg-gray-800 transform -translate-x-1/2 rotate-45"></div>
+                                </div>
+                            </div>
                         </GlassCard>
                     ))}
                 </div>

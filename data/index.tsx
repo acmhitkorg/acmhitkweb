@@ -4,28 +4,28 @@ import { Users, BookOpen, Award, Heart, Code, Lightbulb, Mail, Phone, MapPin, Cl
 // Data for / page
 export const upcomingEventsForHomePage = [
     {
-        title: "Web Development Workshop",
-        date: "March 15, 2025",
-        time: "2:00 PM - 5:00 PM",
-        location: "Computer Lab 301",
-        description: "Learn modern web development with React, Next.js, and Tailwind CSS.",
+        title: "The Program That Can't Be Written: Understanding the Halting Problem",
+        date: "August 2025",
+        time: "To be announced",
+        location: "To be announced",
+        description: "An interactive workshop session exploring the fascinating concept of the Halting Problem in computer science.",
         type: "Workshop"
     },
     {
-        title: "AI/ML Symposium",
-        date: "March 22, 2025",
-        time: "10:00 AM - 4:00 PM",
-        location: "Auditorium",
-        description: "Explore the latest trends in artificial intelligence and machine learning.",
-        type: "Symposium"
+        title: "Bug Bash",
+        date: "August 2025",
+        time: "To be announced",
+        location: "To be announced",
+        description: "A solo debugging and code refactoring challenge, ending with a live Glitch Boss round to test real-time problem-solving efficiency.",
+        type: "Competition"
     },
     {
-        title: "Code Hackathon 2025",
-        date: "April 5-6, 2025",
-        time: "24 Hours",
-        location: "Main Campus",
-        description: "48-hour coding marathon with exciting prizes and networking opportunities.",
-        type: "Hackathon"
+        title: "BrainByte Tech Talk & Quiz",
+        date: "September 2025",
+        time: "To be announced",
+        location: "To be announced",
+        description: "A tech talk by Prof. (Dr.) Nabendu Chaki followed by an interactive quiz session led by Mr. Snehashis Banerjee.",
+        type: "Seminar"
     }
 ];
 
@@ -91,91 +91,207 @@ export const goals = [
 export const upcomingEvents = [
     {
         id: 1,
-        title: "Web Development Workshop: React & Next.js",
-        date: "March 15, 2025",
-        time: "2:00 PM - 5:00 PM",
-        location: "Computer Lab 301",
+        title: "The Program That Can't Be Written: Understanding the Halting Problem",
+        date: "August 2025",
+        time: "To be announced",
+        location: "To be announced",
         type: "Workshop",
-        description: "Learn modern web development with React, Next.js, and Tailwind CSS. This hands-on workshop will cover component-based architecture, routing, and responsive design principles.",
-        speaker: "John Doe - Senior Frontend Developer at TechCorp",
+        description: "An interactive workshop session exploring the fascinating concept of the Halting Problem in computer science. This session will help participants understand one of the fundamental limits of computation.",
+        speaker: "To be announced",
         capacity: "50 participants",
-        status: "Open"
+        status: "Coming Soon"
     },
     {
         id: 2,
-        title: "AI/ML Symposium: Future of Intelligence",
-        date: "March 22, 2025",
-        time: "10:00 AM - 4:00 PM",
-        location: "Main Auditorium",
-        type: "Symposium",
-        description: "Explore the latest trends in artificial intelligence and machine learning with industry experts. Sessions include deep learning, computer vision, and ethical AI.",
-        speaker: "Dr. Sarah Johnson - AI Research Scientist",
-        capacity: "200 participants",
-        status: "Filling Fast"
+        title: "Bug Bash",
+        date: "August 2025",
+        time: "To be announced",
+        location: "To be announced",
+        type: "Competition",
+        description: "A solo debugging and code refactoring challenge that tests your problem-solving skills under pressure. The event will conclude with a live Glitch Boss round where participants will need to fix bugs in real-time.",
+        speaker: "To be announced",
+        capacity: "30 participants",
+        status: "Coming Soon"
     },
     {
         id: 3,
-        title: "Code Hackathon 2025: Innovation Challenge",
-        date: "April 5-6, 2025",
-        time: "48 Hours",
-        location: "Main Campus",
-        type: "Hackathon",
-        description: "48-hour coding marathon with exciting prizes and networking opportunities. Build innovative solutions to real-world problems with your team.",
-        speaker: "Multiple Industry Mentors",
-        capacity: "100 teams",
-        status: "Open"
+        title: "BrainByte Tech Talk & Quiz",
+        date: "September 2025",
+        time: "To be announced",
+        location: "To be announced",
+        type: "Seminar",
+        description: "An enlightening session featuring Prof. (Dr.) Nabendu Chaki, Chairperson of ACM Eastern Region, followed by an engaging quiz session conducted by Mr. Snehashis Banerjee.",
+        speaker: "Prof. (Dr.) Nabendu Chaki & Mr. Snehashis Banerjee",
+        capacity: "150 participants",
+        status: "Coming Soon"
     },
     {
         id: 4,
-        title: "Cybersecurity Bootcamp",
-        date: "April 12, 2025",
-        time: "9:00 AM - 6:00 PM",
-        location: "Security Lab",
-        type: "Bootcamp",
-        description: "Intensive bootcamp covering ethical hacking, penetration testing, and security best practices. Includes hands-on labs and certification preparation.",
-        speaker: "Mike Wilson - Cybersecurity Consultant",
-        capacity: "30 participants",
-        status: "Limited Seats"
+        title: "CodeSprint 1.0",
+        date: "October 2025",
+        time: "To be announced",
+        location: "To be announced",
+        type: "Competition",
+        description: "A fast-paced solo DSA showdown where coders race against time to crack algorithmic challenges. Test your problem-solving speed and accuracy in this exciting competition.",
+        speaker: "To be announced",
+        capacity: "100 participants",
+        status: "Coming Soon"
+    },
+    {
+        id: 5,
+        title: "Idea Storm",
+        date: "February 2026",
+        time: "To be announced",
+        location: "To be announced",
+        type: "Ideathon",
+        description: "A high-energy ideathon where participants pitch innovative ideas and battle for the spotlight. Bring your creativity and problem-solving skills to the table!",
+        speaker: "To be announced",
+        capacity: "20 teams",
+        status: "Coming Soon"
+    },
+    {
+        id: 6,
+        title: "Code & Clue: ACM Tech Treasure Hunt",
+        date: "February 2026",
+        time: "To be announced",
+        location: "To be announced",
+        type: "Competition",
+        description: "A coding and puzzle-based treasure hunt combining logic, encryption, and problem-solving. Teams of 3-5 will compete across various checkpoints leading to an exciting finale. An offline workshop may be included to prepare participants.",
+        speaker: "To be announced",
+        capacity: "15 teams",
+        status: "Coming Soon"
+    },
+    {
+        id: 7,
+        title: "Distinguished Speaker Tech Talk",
+        date: "March 2026",
+        time: "To be announced",
+        location: "To be announced",
+        type: "Seminar",
+        description: "An engaging session featuring an industry expert sharing insights on emerging technologies and current industry trends. This talk aims to inspire students and provide valuable career guidance.",
+        speaker: "To be announced",
+        capacity: "200 participants",
+        status: "Coming Soon"
     }
 ];
 
 export const pastEvents = [
+    // 2025 Events
     {
+        id: 1,
         title: "Python Programming Workshop",
         date: "February 28, 2025",
         type: "Workshop",
         description: "Introduction to Python programming for beginners.",
+        abstract: "This workshop introduced participants to the fundamentals of Python programming language, covering basic syntax, data structures, and problem-solving approaches. The session included hands-on coding exercises and real-world examples.",
         attendees: 45,
-        photos: "Available"
+        speaker: "Dr. Sarah Johnson",
+        location: "Tech Building, Room 101",
+        photos: []
     },
     {
+        id: 2,
         title: "Data Structures & Algorithms Contest",
         date: "February 15, 2025",
         type: "Competition",
         description: "Programming contest focusing on DSA problem-solving.",
+        abstract: "Annual competitive programming event where participants solved algorithmic challenges within time constraints. The competition tested problem-solving skills and coding efficiency across various difficulty levels.",
         attendees: 80,
-        photos: "Available"
+        speaker: "Prof. Michael Chen",
+        location: "Computer Lab 3",
+        photos: []
     },
     {
+        id: 3,
         title: "Mobile App Development Seminar",
         date: "January 30, 2025",
         type: "Seminar",
         description: "Flutter and React Native development session.",
+        abstract: "Comprehensive seminar on cross-platform mobile app development using Flutter and React Native. The session covered best practices, performance optimization, and real-world case studies.",
         attendees: 60,
-        photos: "Available"
+        speaker: "Alex Rodriguez",
+        location: "Engineering Auditorium",
+        photos: []
+    },
+
+    // 2024 Events
+    {
+        id: 4,
+        title: "Web Development Bootcamp",
+        date: "November 15, 2024",
+        type: "Workshop",
+        description: "Hands-on training in modern web development technologies.",
+        abstract: "Intensive bootcamp covering full-stack web development with React, Node.js, and MongoDB. Participants built and deployed a complete web application by the end of the workshop.",
+        attendees: 55,
+        speaker: "Emily Wilson",
+        location: "CS Department Lab",
+        photos: []
     },
     {
-        title: "Open Source Contribution Workshop",
-        date: "January 20, 2025",
+        id: 5,
+        title: "AI & Machine Learning Symposium",
+        date: "October 5, 2024",
+        type: "Seminar",
+        description: "Exploring the latest trends in artificial intelligence.",
+        abstract: "Expert panel discussion on cutting-edge AI research and applications. Topics included deep learning, computer vision, and ethical considerations in AI development.",
+        attendees: 120,
+        speaker: "Dr. James Kim",
+        location: "Main Auditorium",
+        photos: []
+    },
+
+    // 2023 Events
+    {
+        id: 6,
+        title: "Cybersecurity Workshop",
+        date: "August 22, 2023",
         type: "Workshop",
-        description: "How to contribute to open source projects on GitHub.",
+        description: "Practical cybersecurity skills and ethical hacking techniques.",
+        abstract: "Interactive workshop covering network security, penetration testing, and secure coding practices. Participants engaged in hands-on labs and capture-the-flag challenges.",
+        attendees: 40,
+        speaker: "Dr. Robert Miller",
+        location: "Security Lab",
+        photos: []
+    },
+    {
+        id: 7,
+        title: "Annual Hackathon",
+        date: "May 10-12, 2023",
+        type: "Competition",
+        description: "48-hour coding competition for innovative tech solutions.",
+        abstract: "Annual hackathon where participants formed teams to build innovative projects. The event featured workshops, mentorship sessions, and networking opportunities with industry professionals.",
+        attendees: 150,
+        speaker: "Various Industry Experts",
+        location: "Innovation Center",
+        photos: []
+    },
+    {
+        id: 8,
+        title: "Blockchain Workshop",
+        date: "March 15, 2023",
+        type: "Workshop",
+        description: "Introduction to blockchain technology and smart contracts.",
+        abstract: "Hands-on workshop covering the fundamentals of blockchain, Ethereum, and smart contract development using Solidity. Participants built and deployed their first smart contract.",
         attendees: 35,
-        photos: "Available"
+        speaker: "Dr. Lisa Wong",
+        location: "Blockchain Lab",
+        photos: []
+    },
+    {
+        id: 9,
+        title: "Open Source Contribution Workshop",
+        date: "January 20, 2023",
+        type: "Workshop",
+        description: "Learn how to contribute to open source projects.",
+        abstract: "Interactive session on the open-source contribution workflow, including how to find beginner-friendly issues, fork repositories, create pull requests, and work with Git. Participants made their first open-source contributions during the workshop.",
+        attendees: 40,
+        speaker: "Open Source Community Leaders",
+        location: "CS Department Lab",
+        photos: []
     }
 ];
 
 // Data for /join page
-
 export const benefits = [
     {
         icon: BookOpenText,
