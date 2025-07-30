@@ -24,7 +24,11 @@ export const upcomingEventsForHomePage = [
         date: "September 2025",
         time: "To be announced",
         location: "To be announced",
-        description: "A tech talk by Prof. (Dr.) Nabendu Chaki followed by an interactive quiz session led by Mr. Snehashis Banerjee.",
+        description: `A tech talk by an ACM delegate,
+followed by an interactive quiz
+session led by an eminent person
+from the industry, around
+September.`,
         type: "Seminar"
     }
 ];
@@ -120,8 +124,8 @@ export const upcomingEvents = [
         time: "To be announced",
         location: "To be announced",
         type: "Seminar",
-        description: "An enlightening session featuring Prof. (Dr.) Nabendu Chaki, Chairperson of ACM Eastern Region, followed by an engaging quiz session conducted by Mr. Snehashis Banerjee.",
-        speaker: "Prof. (Dr.) Nabendu Chaki & Mr. Snehashis Banerjee",
+        description: "A tech talk by an ACM delegate, followed by an interactive quiz session led by an eminent person from the industry, around September.",
+        speaker: "To be announced",
         capacity: "150 participants",
         status: "Coming Soon"
     },
