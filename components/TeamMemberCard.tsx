@@ -12,52 +12,6 @@ import { TeamMember, SocialLink } from "@/types";
 export function TeamMemberCard({ member }: { member: TeamMember }) {
   const { name, roleAtACMHITK, roleAtHITK, currentRole, image, bio, achievements, socials } = member;
 
-  const renderSocialIcon = (social: SocialLink) => {
-    if (!social.url) return null;
-
-    const commonClasses = "h-4 w-4 transition-colors hover:opacity-80";
-
-    // If icon is a ReactNode, render it directly
-    if (typeof social.icon !== 'string') {
-      return (
-        <Link
-          href={social.name === 'Email' ? `mailto:${social.url.split('mailto:').pop()}` : social.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={social.name}
-          className="text-gray-500 hover:text-primary dark:text-gray-400"
-        >
-          {social.icon}
-        </Link>
-      );
-    }
-
-    // Fallback to string-based icon names
-    const iconMap: Record<string, ReactNode> = {
-      'LinkedIn': <Linkedin className={commonClasses} />,
-      'GitHub': <Github className={commonClasses} />,
-      'Email': <Mail className={commonClasses} />,
-      'Website': <Globe className={commonClasses} />,
-      'Globe': <Globe className={commonClasses} />,
-    };
-
-    const icon = iconMap[social.name] || null;
-
-    if (!icon) return null;
-
-    return (
-      <Link
-        href={social.name === 'Email' ? `mailto:${social.url.split('mailto:').pop()}` : social.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={social.name}
-        className="text-gray-500 hover:text-primary dark:text-gray-400"
-      >
-        {icon}
-      </Link>
-    );
-  };
-
   return (
     <Dialog>
       <div className="group relative overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-blue-500/10 dark:shadow-blue-500/5">
@@ -92,7 +46,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
               {roleAtHITK && member.type === "student" && (
                 <p className="text-sm text-muted-foreground mb-4">{roleAtHITK}</p>
               )}
-              {currentRole && member.type === "alumni" && (
+              {currentRole && (member.type === "alumni_faculty" || member.type === "alumni_student") && (
                 <p className="text-sm text-muted-foreground mb-4">{currentRole}</p>
               )}
 
@@ -102,26 +56,17 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
                   {/* Social Icons */}
                   <div className="flex items-center gap-2">
                     {socials.map((social, index) => {
-                      const isEmail = social.name === 'Email';
                       return (
                         <Link
                           key={index}
-                          href={isEmail ? `mailto:${social.url.split('mailto:').pop()}` : social.url}
+                          href={social.url}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-foreground transition-colors p-1.5 rounded-full hover:bg-muted"
-                          title={isEmail ? 'Email' : social.name}
+                          title={social.name}
                           onClick={(e) => e.stopPropagation()}
                         >
-                          {isEmail ? (
-                            <Mail className="h-4 w-4" />
-                          ) : social.name === 'LinkedIn' ? (
-                            <Linkedin className="h-4 w-4" />
-                          ) : social.name === 'GitHub' ? (
-                            <Github className="h-4 w-4" />
-                          ) : (
-                            <Globe className="h-4 w-4" />
-                          )}
+                          {social.icon}
                         </Link>
                       );
                     })}
@@ -168,7 +113,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
                 {socials.map((social, index) => (
                   <Link
                     key={index}
-                    href={social.name === 'Email' ? `mailto:${social.url.split('mailto:').pop()}` : social.url}
+                    href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={cn(
@@ -178,15 +123,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
                     )}
                     aria-label={social.name}
                   >
-                    {social.name === 'Email' ? (
-                      <Mail className="h-5 w-5" />
-                    ) : social.name === 'LinkedIn' ? (
-                      <Linkedin className="h-5 w-5" />
-                    ) : social.name === 'GitHub' ? (
-                      <Github className="h-5 w-5" />
-                    ) : (
-                      <Globe className="h-5 w-5" />
-                    )}
+                    {social.icon}
                   </Link>
                 ))}
               </div>

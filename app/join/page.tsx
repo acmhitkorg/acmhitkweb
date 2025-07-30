@@ -30,13 +30,6 @@ export default function JoinPage() {
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                 Become part of a vibrant community of computing enthusiasts and accelerate your journey in technology.
               </p>
-
-              <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-                <Link href="/join">
-                  <span>Join Our Community</span>
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
             </div>
           </div>
         </section>

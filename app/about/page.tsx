@@ -161,6 +161,89 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Gratitude Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                Our Gratitude
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                We are deeply grateful to the visionary leaders and institutions whose unwavering support and guidance have been instrumental in shaping ACM HITK's journey. Their belief in our mission to foster computing excellence continues to inspire us.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-500/5 to-teal-500/10 p-8 rounded-2xl backdrop-blur-sm mb-12">
+              <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+                Our heartfelt thanks to our founders, <span className="font-medium text-foreground">Prof. (Dr.) Subhashis Majumdar</span> and <span className="font-medium text-foreground">Prof. (Dr.) Partha Basuchowdhuri</span>, for their vision and dedication in establishing the ACM Student Chapter at HITK on <span className="font-medium text-foreground">18th December 2011</span>. Their leadership laid the foundation for our vibrant computing community.
+              </p>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                We are equally grateful to the leadership of <Link href='https://heritageit.edu/' className="font-medium text-foreground">Heritage Institute of Technology</Link> and <span className="font-medium text-foreground">Kalyan Bharti Trust</span> for their continuous support and for providing an environment that encourages technological innovation and academic excellence.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="relative w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg">
+                  <Image
+                    src="/PKAgarwal-CEO-KBT.jpg"
+                    alt="Shri P. K. Agarwal"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold">Shri P. K. Agarwal</h3>
+                <p className="text-sm text-muted-foreground">CEO</p>
+                <p className="text-sm text-muted-foreground">Kalyan Bharti Trust</p>
+              </div>
+
+              <div className="text-center">
+                <div className="relative w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg">
+                  <Image
+                    src="/Mr-BasabChaudhuri4-Principal.jpg"
+                    alt="Dr. Basab Chaudhuri"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold">Dr. Basab Chaudhuri</h3>
+                <p className="text-sm text-muted-foreground">Principal</p>
+                <p className="text-sm text-muted-foreground">Heritage Group of Institutions</p>
+              </div>
+
+              <div className="text-center">
+                <div className="relative w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg">
+                  <Image
+                    src="/Dr-Subhashis-Majumder.png"
+                    alt="Prof. (Dr.) Subhashis Majumder"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold">Prof. (Dr.) Subhashis Majumder</h3>
+                <p className="text-sm text-muted-foreground">HOD, CSE Department</p>
+                <p className="text-sm text-muted-foreground">Dean UG Affairs, HITK</p>
+                <p className="text-xs text-muted-foreground mt-1">Co-founder, ACM HITK</p>
+              </div>
+
+              <div className="text-center">
+                <div className="relative w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg">
+                  <Image
+                    src="/Dr-Partha-Basuchowdhuri.png"
+                    alt="Prof. (Dr.) Partha Basuchowdhuri"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold">Prof. (Dr.) Partha Basuchowdhuri</h3>
+                <p className="text-sm text-muted-foreground">Former Associate Professor, CSE</p>
+                <p className="text-sm text-muted-foreground">Heritage Institute of Technology</p>
+                <p className="text-xs text-muted-foreground mt-1">Co-founder, ACM HITK</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Values & Culture */}
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-muted/20">
           <div className="max-w-7xl mx-auto">

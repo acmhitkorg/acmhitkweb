@@ -225,8 +225,10 @@ export default function ContactPage() {
                     <div className={`absolute inset-0 bg-gradient-to-br ${social.color} opacity-5 group-hover:opacity-10 transition-opacity duration-300`} />
 
                     <Link href={social.url} className="relative block">
-                      <div className={`w-12 h-12 bg-gradient-to-br ${social.color} rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                        <social.icon className="h-6 w-6 text-white" />
+                      <div className="relative">
+                        <div className={`w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                          <social.icon className="h-6 w-6" />
+                        </div>
                       </div>
 
                       <h3 className="text-lg font-bold mb-2">{social.name}</h3>
