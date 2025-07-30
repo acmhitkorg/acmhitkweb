@@ -440,7 +440,7 @@ export const socialMedia = [
         icon: Facebook,
         url: "https://www.facebook.com/acm.hitk",
         description: "Follow us for daily updates, event photos, and behind-the-scenes content.",
-        color: "from-pink-500 to-rose-500"
+        color: "from-blue-500 to-cyan-500"
     },
     {
         name: "Youtube",
