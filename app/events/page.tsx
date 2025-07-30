@@ -2,17 +2,34 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { Calendar, Clock, MapPin, Users, ExternalLink, ArrowRight, Filter } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, ExternalLink, ArrowRight } from 'lucide-react';
 import { upcomingEvents, pastEvents } from '@/data/index';
 import { Navigation } from '@/components/navigation';
 import { GlassCard } from '@/components/glass-card';
 import { Button } from '@/components/ui/button';
 import { AnimatedBackground } from '@/components/animated-background';
 import { EventModal } from '@/components/Events/EventModal';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+
+// Define the event type based on the actual data structure
+interface Event {
+  id: number;
+  title: string;
+  date: string;
+  time: string;
+  location: string;
+  type: string;
+  description: string;
+  speaker: string;
+  attendees?: number;
+  photos?: string[];
+  status?: string;
+  capacity?: string;
+  abstract?: string;
+  year?: number;
+}
 
 // Helper function to extract unique years from events
-const getUniqueYears = (events: typeof pastEvents) => {
+const getUniqueYears = (events: Event[]) => {
   const years = new Set<number>();
   events.forEach(event => {
     const year = new Date(event.date).getFullYear();
@@ -21,18 +38,31 @@ const getUniqueYears = (events: typeof pastEvents) => {
   return Array.from(years).sort((a, b) => b - a); // Sort in descending order
 };
 
-type EventType = typeof pastEvents[number] & { year?: number };
-
 export default function EventsPage() {
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
-  const [selectedEvent, setSelectedEvent] = useState<EventType | null>(null);
-  const [activeTab, setActiveTab] = useState<'upcoming' | 'past'>('upcoming');
+  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
-  // Add year to each past event for filtering
+  // Format and enhance past events with year for filtering
   const enhancedPastEvents = useMemo(() => 
-    pastEvents.map(event => ({
+    (pastEvents as unknown as Event[]).map(event => ({
       ...event,
-      year: new Date(event.date).getFullYear()
+      year: new Date(event.date).getFullYear(),
+      time: event.time || 'TBA',
+      speaker: event.speaker || 'Speaker TBA',
+      attendees: event.attendees || 0,
+      photos: event.photos || []
+    })),
+    []
+  );
+
+  // Format upcoming events
+  const formattedUpcomingEvents = useMemo(() => 
+    (upcomingEvents as unknown as Event[]).map(event => ({
+      ...event,
+      time: event.time || 'TBA',
+      speaker: event.speaker || 'Speaker TBA',
+      attendees: 0,
+      photos: []
     })),
     []
   );
@@ -45,14 +75,13 @@ export default function EventsPage() {
 
   // Filter events based on selected year
   const filteredPastEvents = useMemo(
-    () => 
-      selectedYear === 'all' 
-        ? enhancedPastEvents 
-        : enhancedPastEvents.filter(event => event.year === selectedYear),
+    () => selectedYear === 'all' 
+      ? enhancedPastEvents 
+      : enhancedPastEvents.filter(event => event.year === selectedYear),
     [enhancedPastEvents, selectedYear]
   );
 
-  const handleEventClick = (event: EventType) => {
+  const handleEventClick = (event: Event) => {
     setSelectedEvent(event);
   };
 
@@ -75,212 +104,219 @@ export default function EventsPage() {
           </div>
         </section>
 
-        {/* Events Tabs */}
+        {/* Upcoming Events Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <Tabs 
-              defaultValue="upcoming" 
-              className="w-full"
-              onValueChange={(value) => setActiveTab(value as 'upcoming' | 'past')}
-            >
-              <div className="flex flex-col sm:flex-row justify-between items-center mb-12 gap-4">
-                <div className="text-center sm:text-left">
-                  <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                    {activeTab === 'upcoming' ? 'Upcoming Events' : 'Past Events'}
-                  </h2>
-                  <p className="text-lg text-muted-foreground">
-                    {activeTab === 'upcoming' 
-                      ? "Don't miss these exciting opportunities to learn and grow with us."
-                      : "Take a look at our successful events and the impact we've made in our community."}
-                  </p>
-                </div>
-                
-                <TabsList className="bg-background/50 backdrop-blur-sm">
-                  <TabsTrigger value="upcoming">Upcoming</TabsTrigger>
-                  <TabsTrigger value="past">Past Events</TabsTrigger>
-                </TabsList>
-              </div>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                Upcoming Events
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Don't miss these exciting opportunities to learn and grow with us.
+              </p>
+            </div>
 
-              {/* Upcoming Events Tab */}
-              <TabsContent value="upcoming" className="space-y-8">
-                {upcomingEvents.length > 0 ? (
-                  upcomingEvents.map((event) => (
-                    <GlassCard key={event.id} className="p-6 hover:shadow-lg transition-shadow">
-                      <div className="flex flex-col md:flex-row gap-6">
-                        <div className="md:w-2/3">
-                          <div className="flex flex-wrap items-center gap-2 mb-3">
-                            <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                              event.type === 'Workshop' ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300' :
-                              event.type === 'Competition' ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300' :
-                              event.type === 'Seminar' ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300' :
-                              'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300'
-                            }`}>
-                              {event.type}
-                            </span>
-                            <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                              event.status === 'Open' ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300' :
-                              event.status === 'Filling Fast' ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300' :
-                              'bg-gray-100 text-gray-700 dark:bg-gray-800/30 dark:text-gray-300'
-                            }`}>
-                              {event.status}
-                            </span>
-                          </div>
+            {formattedUpcomingEvents.length > 0 ? (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {formattedUpcomingEvents.map((event) => (
+                  <GlassCard 
+                    key={event.id} 
+                    className="group relative overflow-hidden p-6 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white/95 to-blue-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-200/80 dark:border-gray-700/50 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
+                  >
+                    {/* Animated gradient background */}
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/40 via-transparent to-purple-100/20 dark:from-blue-900/10 dark:to-purple-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    {/* Subtle noise texture */}
+                    <div className="absolute inset-0 opacity-5 dark:opacity-[0.02]" style={{
+                      backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 400 400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.1\'/%3E%3C/svg%3E")'
+                    }} />
+                    
+                    {/* Event type badge with gradient */}
+                    <div className={`relative z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-4 border backdrop-blur-sm
+                      ${
+                        event.type === 'Workshop' 
+                          ? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
+                          : event.type === 'Seminar'
+                            ? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
+                            : 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
+                      }`}>
+                      {event.type}
+                    </div>
 
-                          <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                          <p className="text-muted-foreground mb-4">{event.description}</p>
+                    <h3 className="relative z-10 text-xl font-bold mb-4 bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-200 bg-clip-text text-transparent transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-700 dark:group-hover:from-white dark:group-hover:to-gray-300">
+                      {event.title}
+                    </h3>
 
-                          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
-                            <div className="flex items-center">
-                              <Users className="h-4 w-4 mr-2 text-primary" />
-                              <span>{event.speaker || 'Speaker TBA'}</span>
-                            </div>
-                            <div className="flex items-center">
-                              <Users className="h-4 w-4 mr-2 text-primary" />
-                              <span>{event.capacity}</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="md:w-1/3 flex flex-col justify-between gap-4">
-                          <div className="space-y-2">
-                            <div className="flex items-center text-sm">
-                              <Calendar className="h-4 w-4 mr-2 text-primary" />
-                              <span>{event.date}</span>
-                            </div>
-                            <div className="flex items-center text-sm">
-                              <Clock className="h-4 w-4 mr-2 text-primary" />
-                              <span>{event.time}</span>
-                            </div>
-                            <div className="flex items-center text-sm">
-                              <MapPin className="h-4 w-4 mr-2 text-primary" />
-                              <span>{event.location}</span>
-                            </div>
-                          </div>
-
-                          <div className="space-y-2">
-                            <div className="relative group/button">
-                              <Button 
-                                className="w-full bg-gradient-to-r from-blue-400 to-teal-400 cursor-not-allowed"
-                                disabled
-                              >
-                                Registration Not Open Yet
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                              </Button>
-                              <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover/button:opacity-100 transition-opacity whitespace-nowrap">
-                                Registration details coming soon
-                                <div className="absolute bottom-0 left-1/2 -mb-1 w-2 h-2 bg-gray-800 transform -translate-x-1/2 rotate-45"></div>
-                              </div>
-                            </div>
-                            <Button 
-                              variant="outline" 
-                              className="w-full opacity-50 cursor-not-allowed"
-                              disabled
-                            >
-                              Add to Calendar
-                              <Calendar className="ml-2 h-4 w-4" />
-                            </Button>
-                          </div>
-                        </div>
+                    {/* Event details with colored icons */}
+                    <div className="relative z-10 space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-5">
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-2 text-blue-500/80 dark:text-blue-400/80" />
+                        <span>{event.time}</span>
                       </div>
-                    </GlassCard>
-                  ))
-                ) : (
-                  <div className="text-center py-12">
-                    <p className="text-muted-foreground">No upcoming events scheduled at the moment. Please check back later!</p>
-                  </div>
-                )}
-              </TabsContent>
+                      <div className="flex items-center">
+                        <MapPin className="h-4 w-4 mr-2 text-green-500/80 dark:text-green-400/80" />
+                        <span>{event.location}</span>
+                      </div>
+                      <div className="flex items-center">
+                        <Users className="h-4 w-4 mr-2 text-purple-500/80 dark:text-purple-400/80" />
+                        <span className="font-medium">{event.speaker}</span>
+                      </div>
+                    </div>
 
-              {/* Past Events Tab */}
-              <TabsContent value="past" className="space-y-6">
-                {availableYears.length > 0 && (
-                  <div className="mb-6 flex flex-wrap gap-2 items-center">
-                    <Filter className="h-4 w-4 mr-1 text-muted-foreground" />
-                    <span className="text-sm font-medium mr-2">Filter by year:</span>
-                    <Button
-                      variant={selectedYear === 'all' ? 'default' : 'outline'}
-                      size="sm"
-                      onClick={() => setSelectedYear('all')}
-                      className="text-xs"
+                    {/* Description with fade effect */}
+                    <div className="relative z-10 mb-6 overflow-hidden">
+                      <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
+                        {event.description}
+                      </p>
+                      <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent dark:opacity-0 group-hover:opacity-0 transition-opacity" />
+                    </div>
+
+                    {/* Action button with glass effect */}
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
+                      onClick={() => handleEventClick(event)}
                     >
-                      All Years
+                      <span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
+                        View Details
+                      </span>
+                      <ArrowRight className="ml-2 h-4 w-4 text-blue-500 dark:text-blue-400 group-hover/button:translate-x-1 transition-transform" />
                     </Button>
-                    {availableYears.map((year) => (
-                      <Button
-                        key={year}
-                        variant={selectedYear === year ? 'default' : 'outline'}
-                        size="sm"
-                        onClick={() => setSelectedYear(year)}
-                        className="text-xs"
-                      >
-                        {year}
-                      </Button>
-                    ))}
-                  </div>
-                )}
+                  </GlassCard>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <Calendar className="h-12 w-12 mx-auto text-muted-foreground/30 mb-4" />
+                <h3 className="text-xl font-medium text-muted-foreground">No upcoming events scheduled</h3>
+                <p className="text-muted-foreground mt-2">Check back later for updates on our next events!</p>
+              </div>
+            )}
+          </div>
+        </section>
 
-                {filteredPastEvents.length > 0 ? (
-                  <div className="grid md:grid-cols-2 gap-6">
-                    {filteredPastEvents.map((event) => (
-                      <GlassCard 
-                        key={event.id} 
-                        className="p-6 hover:shadow-lg transition-shadow cursor-pointer"
-                        onClick={() => handleEventClick(event)}
-                      >
-                        <div className="flex flex-col h-full">
-                          <div className="flex items-center gap-2 mb-3">
-                            <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                              event.type === 'Workshop' ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/30' :
-                              event.type === 'Competition' ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/30' :
-                              'bg-green-100 text-green-700 dark:bg-green-900/30'
-                            }`}>
-                              {event.type}
-                            </span>
-                            <span className="text-xs text-muted-foreground">
-                              {new Date(event.date).toLocaleDateString('en-US', {
-                                year: 'numeric',
-                                month: 'short',
-                                day: 'numeric'
-                              })}
-                            </span>
-                          </div>
-                          
-                          <h3 className="text-lg font-semibold mb-2">{event.title}</h3>
-                          <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                            {event.description}
-                          </p>
-                          
-                          <div className="mt-auto pt-4 border-t border-border/50">
-                            <div className="flex justify-between items-center">
-                              <div className="flex items-center text-sm text-muted-foreground">
-                                <Users className="h-4 w-4 mr-1" />
-                                <span>{event.attendees} attendees</span>
-                              </div>
-                              <Button 
-                                variant="ghost" 
-                                size="sm" 
-                                className="text-primary hover:text-primary/80"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  handleEventClick(event);
-                                }}
-                              >
-                                View Details
-                                <ArrowRight className="ml-1 h-4 w-4" />
-                              </Button>
-                            </div>
-                          </div>
+        {/* Past Events Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/10">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                Past Events
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Take a look at our successful events and the impact we've made in our community.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2 justify-center sm:justify-end mb-8">
+              <Button
+                variant={selectedYear === 'all' ? 'default' : 'outline'}
+                size="sm"
+                onClick={() => setSelectedYear('all')}
+                className="text-sm"
+              >
+                All Years
+              </Button>
+              {availableYears.map((year) => (
+                <Button
+                  key={year}
+                  variant={selectedYear === year ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => setSelectedYear(year)}
+                  className="text-sm"
+                >
+                  {year}
+                </Button>
+              ))}
+            </div>
+
+            {filteredPastEvents.length > 0 ? (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredPastEvents.map((event) => (
+                  <GlassCard key={event.id} className="group relative overflow-hidden p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 bg-gradient-to-br from-white/90 to-gray-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-100/60 dark:border-gray-700/50">
+                    {/* Animated gradient background */}
+                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-50/30 via-transparent to-blue-50/10 dark:from-gray-800/10 dark:to-blue-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    
+                    {/* Subtle noise texture */}
+                    <div className="absolute inset-0 opacity-5 dark:opacity-[0.02]" style={{
+                      backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 400 400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.1\'/%3E%3C/svg%3E")'
+                    }} />
+                    
+                    <div className="relative z-10 flex items-center justify-between mb-4">
+                      <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border backdrop-blur-sm
+                        ${
+                          event.type === 'Workshop' 
+                            ? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
+                            : event.type === 'Seminar'
+                              ? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
+                              : 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
+                      }`}>
+                        {event.type}
+                      </div>
+                      <div className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 group-has-[.event-date]:hover:text-gray-700 dark:group-has-[.event-date]:hover:text-gray-300 transition-colors">
+                        <Calendar className="h-3.5 w-3.5 mr-1.5 text-gray-400/80 dark:text-gray-500/80" />
+                        <span className="event-date">
+                          {new Date(event.date).toLocaleDateString('en-US', {
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric'
+                          })}
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <h3 className="relative z-10 text-xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-200 bg-clip-text text-transparent">
+                      {event.title}
+                    </h3>
+                    
+                    {/* Event details with colored icons */}
+                    <div className="relative z-10 space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-5">
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-2 text-blue-500/80 dark:text-blue-400/80" />
+                        <span>{event.time}</span>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="h-4 w-4 mr-2 text-green-500/80 dark:text-green-400/80" />
+                        <span>{event.location}</span>
+                      </div>
+                      {event.speaker && (
+                        <div className="flex items-center">
+                          <Users className="h-4 w-4 mr-2 text-purple-500/80 dark:text-purple-400/80" />
+                          <span className="font-medium">{event.speaker}</span>
                         </div>
-                      </GlassCard>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="text-center py-12">
-                    <p className="text-muted-foreground">No past events found for the selected year.</p>
-                  </div>
-                )}
-              </TabsContent>
-            </Tabs>
+                      )}
+                    </div>
+                    
+                    {/* Description with fade effect */}
+                    <div className="relative z-10 mb-6 overflow-hidden">
+                      <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
+                        {event.description}
+                      </p>
+                      <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent dark:opacity-0 group-hover:opacity-0 transition-opacity" />
+                    </div>
+                    
+                    {/* Action button with glass effect */}
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
+                      onClick={() => handleEventClick(event)}
+                    >
+                      <span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
+                        View Details
+                      </span>
+                      <ArrowRight className="ml-2 h-4 w-4 text-blue-500 dark:text-blue-400 group-hover/button:translate-x-1 transition-transform" />
+                    </Button>
+                  </GlassCard>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-12">
+                <Calendar className="h-12 w-12 mx-auto text-muted-foreground/30 mb-4" />
+                <h3 className="text-xl font-medium text-muted-foreground">No events found</h3>
+                <p className="text-muted-foreground mt-2">Try selecting a different year or check back later for updates.</p>
+              </div>
+            )}
           </div>
         </section>
 
