@@ -548,17 +548,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:sagnikpramanik95@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/sagnik-pramanik/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/sagnik-p",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -575,17 +575,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:ghosharyan05@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/aryan-ghosh-83a26631b",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/Aryan-Ghosh-Code",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -602,12 +602,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:mohak.sarkar.cse27@heritageit.edu.in",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/mohak-sarkar-b0522a303/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -624,22 +624,22 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:rohit.dey302003@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/rohit-kumar-dey-3856891a5/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/rohits-web03",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             },
             {
                 name: "Website",
                 url: "https://rohitdev-psi.vercel.app/",
-                icon: "Globe"
+                icon: <Globe className="h-4 w-4" />
             }
         ]
     },
@@ -656,7 +656,7 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:debolinadebnath14@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             }
         ]
     },
@@ -673,12 +673,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:koushikid2020@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/koushiki-das-572b50289/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -695,7 +695,7 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:rsrijit436@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             }
         ]
     },
@@ -704,7 +704,7 @@ export const currentTeam: TeamMember[] = [
         type: "student",
         name: "Souryadip Mallick",
         roleAtACMHITK: "Board Member",
-        roleAtHITK: "4th Year CSE Student",
+        roleAtHITK: "3rd Year CSE Student",
         image: "/Souryadip-Mallick.jpg",
         bio: "Computer Science undergraduate at Heritage Institute of Technology with a passion for full-stack web development and programming in Java, C++, Python, and JavaScript. My fields of interest are Data Science and Machine Learning, which I’m currently exploring, and I’m also strengthening my problem-solving skills through Data Structures and Algorithms.",
         achievements: null,
@@ -712,17 +712,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:souryadipmallick@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/souryadip-mallick-03b303294",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/souryadip-official",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -739,12 +739,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:shambaditya.sarkar.cse27@heritageit.edu.in",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/shambaditya-sarkar-929443317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi_app",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -761,12 +761,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:debajit.guha.cse27@heritageit.edu.in",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/debajit-guha-77a0ab28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi_app",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -783,12 +783,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:mehulroy6840@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/mehul-roy-319b58323",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -805,17 +805,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:snehalahiri09@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/sneha-lahiri-11753b22a",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/Sana9909",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -832,17 +832,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:atyasha.bhattacharyya.ds26@heritageit.edu.in",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/atyasha-bhattacharyya-025780214",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/atyasha2054",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -859,17 +859,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:shuvayudasgupta91004@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/shuvayu-dasgupta-b0821a281",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/Shuvayu12",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -886,12 +886,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:sohan.ganguly.cse28@heritageit.edu.in",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/sohon-ganguly-44b508313",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -908,12 +908,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:roy864ankita@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/ankita-roy-399367319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi_app",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -930,17 +930,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:goswamianwesha16@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/anwesha-goswami-388119282",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/anweshagoswami",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -957,22 +957,22 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:fbyogesh111@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/yogesh-kumar-299298260/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/Coden-inja",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             },
             {
                 name: "Website",
                 url: "https://yogesh-portfolio-nu-swart.vercel.app/",
-                icon: "Globe"
+                icon: <Globe className="h-4 w-4" />
             }
         ]
     },
@@ -989,17 +989,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:debeshee.sen.cse27@heritageit.edu.in",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/debeshee-sen-31857527a",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/DebesheeSen",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -1016,12 +1016,12 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:ankandas2@acm.org",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/ankan-das-551916204/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -1038,17 +1038,17 @@ export const currentTeam: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:anushka.nath.cse26@heritageit.edu.in",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/anushka-nath-574427263",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/anushkanath09",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -1069,17 +1069,17 @@ export const alumni: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:sabyasachi.banerjee@heritageit.edu",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/dr-sabyasachee-banerjee-13578319",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "GitHub",
                 url: "https://github.com/sabyasachee-banerjee",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     },
@@ -1098,17 +1098,22 @@ export const alumni: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:iamagnix@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: 'https://www.linkedin.com/in/agnish-ghosh-15902a211/',
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/agnxsh",
+                icon: <Github className="h-4 w-4" />
             },
             {
                 name: "Website",
                 url: "https://www.agnish.in/",
-                icon: "Globe"
+                icon: <Globe className="h-4 w-4" />
             }
         ]
     },
@@ -1126,17 +1131,17 @@ export const alumni: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:ashmi.banerjee@tum.de",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/ashmi-banerjee/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "Website",
                 url: "https://ashmibanerjee.com",
-                icon: "Globe"
+                icon: <Globe className="h-4 w-4" />
             }
         ]
     },
@@ -1154,12 +1159,12 @@ export const alumni: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:protyashakundu12901@gmail.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/mwlite/profile/in/protyasha-kundu-69744a214/",
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             }
         ]
     },
@@ -1177,17 +1182,17 @@ export const alumni: TeamMember[] = [
             {
                 name: "Email",
                 url: "mailto:Swapnil.Aichbhaumik@gds.ey.com",
-                icon: "Mail"
+                icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
                 url: `http://www.linkedin.com/in/swapnil-aichbhaumik-28a980224`,
-                icon: "Linkedin"
+                icon: <Linkedin className="h-4 w-4" />
             },
             {
                 name: "Github",
                 url: "https://github.com/Swap-nil-2003",
-                icon: "Github"
+                icon: <Github className="h-4 w-4" />
             }
         ]
     }
