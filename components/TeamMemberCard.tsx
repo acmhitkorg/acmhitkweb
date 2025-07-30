@@ -46,7 +46,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
               {roleAtHITK && member.type === "student" && (
                 <p className="text-sm text-muted-foreground mb-4">{roleAtHITK}</p>
               )}
-              {currentRole && member.type === "alumni" && (
+              {currentRole && (member.type === "alumni_faculty" || member.type === "alumni_student") && (
                 <p className="text-sm text-muted-foreground mb-4">{currentRole}</p>
               )}
 
