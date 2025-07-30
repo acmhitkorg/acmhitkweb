@@ -33,7 +33,7 @@ const AboutUs = () => {
                                 <h3 className="text-lg font-semibold text-center mb-6 bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
                                     Our Impact
                                 </h3>
-                                <div className="grid grid-cols-3 gap-4">
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                     <div className="flex flex-col items-center p-4 rounded-lg bg-background/50 dark:bg-foreground/5 hover:bg-foreground/5 dark:hover:bg-foreground/10 transition-colors">
                                         <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">100+</div>
                                         <div className="text-sm text-muted-foreground mt-1">Members</div>
