@@ -1088,8 +1088,11 @@ export const pastMembers: TeamMember[] = [
         type: "alumni_faculty",
         name: "Dr. Partha Basuchowdhuri",
         roleAtACMHITK: "Faculty Sponsor(2016-2018)",
-        roleAtHITK: "Assistant Professor, Department of Computer Science and Engineering",
-        currentRole: "Assistant Professor, Department of Computer Science and Engineering",
+        roleAtHITK: `Assistant Professor (June 2010 - June 2018), Associate
+Professor (July 2018 - June 2019) in the Dept. of Computer
+Science and Engineering. Founding faculty sponsor of the
+ACM student chapter at HITK.`,
+        currentRole: "Associate Professor, School Chair @ School of Mathematical and Computational Sciences, Indian Association for the Cultivation of Science, Kolkata",
         image: "/Dr-Partha-Basuchowdhuri.png",
         bio: `Dr. Partha Basuchowdhuri holds Bachelor's, Master's, and PhD degrees from IIEST Shibpur, Louisiana State University, and Jadavpur University, respectively. His research at HITK focused on social network analysis and data mining. He completed post-doctoral tenures at Queen's University Belfast and the Digital Enterprise Research Institute (DERI) in Ireland. Currently, he serves as an Associate Professor and School Chair at the Indian Association for the Cultivation of Science (IACS).`,
         achievements: `Led the DBT-VInnova project titled "AI-based Detection of Acute Respiratory Distress Syndrome (AI-DARDS)" with a 25 Lakh grant for IACS. Received the Best Teaching Award at Heritage Institute of Technology in 2015. Published in PAKDD, ASONAM, CoDS-COMAD, KAIS, IEEE Transactions on Big Data, and Innovations in Systems and Software Engineering. Awarded US National Science Foundation funding for Master's thesis research.`,
@@ -1116,8 +1119,10 @@ export const pastMembers: TeamMember[] = [
         type: "alumni_faculty",
         name: "Dr. Dinabandhu Bhandari",
         roleAtACMHITK: "Faculty Sponsor(2015-2016)",
-        roleAtHITK: "Assistant Professor, Department of Computer Science and Engineering",
-        currentRole: "Assistant Professor, Department of Computer Science and Engineering",
+        roleAtHITK: `Professor in the Department of Computer Science and
+Engineering (July 2013 - Present). Previously Associate
+Professor (January 2013 - June 2017).`,
+        currentRole: "Professor, Department of Computer Science and Engineering, HITK",
         image: "/Dr-Dinabandhu-Bhandari.jpeg",
         bio: `Dr. Dinabandhu Bhandari has accumulated over 30 years of experience in academia and industry. His professional journey includes tenures at Heritage Institute of Technology, Indian Statistical Institute, TCS, Capgemini, and Cognizant. He specializes in Soft Computing, Pattern Recognition, and Machine Learning. Dr. Bhandari holds a PhD and M.Tech in Computer Science from Jadavpur University.`,
         achievements: `Served as a technical consultant implementing intelligent systems. Developed innovative methodologies for article/book structuring and mining sector solutions. Authored research papers with over 1,600 Google Scholar citations. Ranked #1 in citations at HITK by AD Scientific Index.`,
@@ -1139,7 +1144,7 @@ export const pastMembers: TeamMember[] = [
         ]
     },
     {
-        id: 1,
+        id: 3,
         type: "alumni_student",
         name: "Agnish Ghosh",
         roleAtACMHITK: "Webmaster(2022-2023)",
@@ -1173,7 +1178,7 @@ export const pastMembers: TeamMember[] = [
         ]
     },
     {
-        id: 2,
+        id: 4,
         type: "alumni_student",
         name: "Ashmi Banerjee",
         roleAtACMHITK: "Webmaster(2014-15), Chair (2015-16)",
@@ -1201,7 +1206,7 @@ export const pastMembers: TeamMember[] = [
         ]
     },
     {
-        id: 3,
+        id: 5,
         type: "alumni_student",
         name: "Protyasha Kundu",
         roleAtACMHITK: "Chair & Treasurer(2023-2025)",
@@ -1224,7 +1229,7 @@ export const pastMembers: TeamMember[] = [
         ]
     },
     {
-        id: 4,
+        id: 6,
         type: "alumni_student",
         name: "Swapnil Aichbhaumik",
         roleAtACMHITK: "Board-Member, Joint Secretary, Treasurer(2022-2025)",
@@ -1250,5 +1255,111 @@ export const pastMembers: TeamMember[] = [
                 icon: <Github className="h-4 w-4" />
             }
         ]
+    },
+    {
+        id: 7,
+        type: "alumni_student",
+        name: "Swarnadeep Saha",
+        roleAtACMHITK: "Secretary(2023-24). Treasurer(2022-23)",
+        roleAtHITK: "CSE'24",
+        currentRole: "Mtech(CSE) Student at IIIT Hyderabad",
+        image: "/Swarnadeep-Saha.jpg",
+        bio: "Deeply curious masters student, looking for novel problems to learn and solve. Interested in solving practical problems with impact on real people. Currently pursuing M.Tech in IIIT Hyderabad (CSE)",
+        achievements: `1. Recipient of Reliance Foundation Scholarship awarded to top 100 PG students across the country.
+2. Received Best Paper Award in International Conference for publishing novel research.
+3. PGEE AIR 5.`,
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:swarnadeep0602@gmail.com",
+                icon: <Mail className="h-4 w-4" />
+            },
+            {
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/spotswan/",
+                icon: <Linkedin className="h-4 w-4" />
+            },
+            {
+                name: "Github",
+                url: "https://github.com/spotswan",
+                icon: <Github className="h-4 w-4" />
+            }
+        ]
+    },
+    {
+        id: 8,
+        type: "alumni_student",
+        name: "Upasana Roy",
+        roleAtACMHITK: "Chairperson(2024-25) , Vice-Chairperson(2023-24)",
+        roleAtHITK: "CSE'25",
+        currentRole: "SDE 1, Cozeva - Applied Research Works India Private Limited",
+        image: "/Upasana-Roy.jpg",
+        bio: `I am currently working as SDE 1 at Cozeva - Applied Research Works India Private Limited. At ACM, I have collaborated with other board members to organize different events like Tech quizzes, Tech Talks, Seminars, Brainstorming events for better Chapter engagement among the students and attended ACM Regional Chapter Meet to represent our HITK ACM chapter.`,
+        achievements: "Currently working as SDE 1 at Cozeva - Applied Research Works India Private Limited (from June 2025). There I have contributed to Full stack Projects.Organized several events like Brainstorm'24, Brainstorm'25, etc. Organized Tech Talks about Birthday Paradoxes, God Forever Geometrizes, Unlocking the secret of language with large language models, etc. Represented our HITK chapter at ACM Regional meet 2024. Also presented our chapter to the freshers of our college for increasing engagement.",
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:upasanaroy2002@gmail.com",
+                icon: <Mail className="h-4 w-4" />
+            },
+            {
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/upasana-roy-27874a229",
+                icon: <Linkedin className="h-4 w-4" />
+            },
+            {
+                name: "Github",
+                url: "https://github.com/Upasana-Roy",
+                icon: <Github className="h-4 w-4" />
+            }
+        ]
+    }, {
+        id: 9,
+        type: "alumni_student",
+        name: "Devjit Sarkar",
+        roleAtACMHITK: "Joint Secretary(2024-2025)",
+        roleAtHITK: "CSE'26",
+        currentRole: "Summer Intern, Hyland",
+        image: "/Devjit-Sarkar.jpg",
+        bio: "I am a 4th-year Computer Science student currently preparing for my Master's while actively seeking opportunities in the tech industry. As the Joint Secretary of ACM HITK, I contributed by designing event flyers and overseeing the successful execution of Brainstorm 2025. My involvement has helped strengthen the chapter’s outreach and event planning efforts.",
+        achievements: `I have achieved four 10.0 SGPAs over six semesters, reflecting my consistent academic performance. I'm currently contributing to a JNI-based reimplementation of the Phoenix OCR engine for text and table extraction—an effort I'm particularly proud of under my internship at Hyland, Kolkata. Additionally, I was part of the winning team at the National Hackathon StatusCode1, hosted by IIIT-Kalyani at IISER-Kolkata, a testament to our teamwork and technical innovation. Winner of ACM's Flagship event BrainStorm in 2023, and 2024`,
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:sardevjit7203@gmail.com",
+                icon: <Mail className="h-4 w-4" />
+            },
+            {
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/devjit-sarkar-5185b123b/",
+                icon: <Linkedin className="h-4 w-4" />
+            },
+            {
+                name: "Github",
+                url: "https://github.com/devjit-sarkar",
+                icon: <Github className="h-4 w-4" />
+            }
+        ]
+    }
+]
+
+export const testimonials = [
+    {
+        name: "Swarnadeep Saha",
+        image: "/Swarnadeep-Saha.jpg",
+        role: "Mtech(CSE) Student at IIIT Hyderabad",
+        testimonial: "Learned how to manage different aspects of event organization. Learned how to work closely with professors and other fellow students."
+    },
+    {
+        name: "Upasana Roy",
+        image: "/Upasana-Roy.jpg",
+        role: "SDE 1, Cozeva - Applied Research Works India Private Limited",
+        testimonial: "Being part of the HITK ACM Student Chapter was an incredible journey! Tech talks gave me the chance to interact with professors and researchers, to know the recent trends and developments in the industry and I even got to present my own ideas. From attending events to organizing events myself, the chapter helped me grow both technically and personally. If you’re a member—don’t hold back. Collaborate, lead, speak up, and make the most of every opportunity."
+    },
+    {
+        name: "Devjit Sarkar",
+        image: "/Devjit-Sarkar.jpg",
+        role: "Summer Intern, Hyland",
+        testimonial: "Being part of the HITK ACM Student Chapter was an overall positive and enriching experience. I had the opportunity to witness several inspiring talks and work alongside passionate peers. A fond memory that stands out is Brainstorm 2025—from collaboratively crafting challenging quiz questions to troubleshooting technical issues on the event day, the teamwork and energy were unforgettable. My advice to current members: stay curious, get involved, and make the most of every opportunity the chapter offers."
     }
 ]
