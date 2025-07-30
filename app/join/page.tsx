@@ -5,6 +5,7 @@ import { Navigation } from "@/components/navigation"
 import { GlassCard } from "@/components/glass-card"
 import { Button } from "@/components/ui/button"
 import { AnimatedBackground } from "@/components/animated-background"
+import { Testimonials } from "@/components/Testimonials"
 
 export default function JoinPage() {
   return (
@@ -70,6 +71,9 @@ export default function JoinPage() {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <Testimonials />
 
         {/* CTA Section */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">

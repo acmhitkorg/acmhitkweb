@@ -1358,12 +1358,12 @@ export const testimonials = [
         name: "Upasana Roy",
         image: "/Upasana-Roy.jpg",
         role: "SDE 1, Cozeva - Applied Research Works India Private Limited",
-        testimonial: "Being part of the HITK ACM Student Chapter was an incredible journey! Tech talks gave me the chance to interact with professors and researchers, to know the recent trends and developments in the industry and I even got to present my own ideas. From attending events to organizing events myself, the chapter helped me grow both technically and personally. If you’re a member—don’t hold back. Collaborate, lead, speak up, and make the most of every opportunity."
+        testimonial: "Being part of the HITK ACM Student Chapter was an incredible journey! Tech talks gave me the chance to interact with professors and researchers, to know the recent trends and developments in the industry and I even got to present my own ideas. From attending events to organizing events myself, the chapter helped me grow both technically and personally. If you’re a member, don’t hold back. Collaborate, lead, speak up, and make the most of every opportunity."
     },
     {
         name: "Devjit Sarkar",
         image: "/Devjit-Sarkar.jpg",
         role: "Summer Intern, Hyland",
-        testimonial: "Being part of the HITK ACM Student Chapter was an overall positive and enriching experience. I had the opportunity to witness several inspiring talks and work alongside passionate peers. A fond memory that stands out is Brainstorm 2025—from collaboratively crafting challenging quiz questions to troubleshooting technical issues on the event day, the teamwork and energy were unforgettable. My advice to current members: stay curious, get involved, and make the most of every opportunity the chapter offers."
+        testimonial: "Being part of the HITK ACM Student Chapter was an overall positive and enriching experience. I had the opportunity to witness several inspiring talks and work alongside passionate peers. A fond memory that stands out is Brainstorm 2025, from collaboratively crafting challenging quiz questions to troubleshooting technical issues on the event day, the teamwork and energy were unforgettable. My advice to current members: stay curious, get involved, and make the most of every opportunity the chapter offers."
     }
 ]

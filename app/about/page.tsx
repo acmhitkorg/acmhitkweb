@@ -182,7 +182,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="relative w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg">
                   <Image
@@ -223,10 +223,10 @@ export default function AboutPage() {
                 <h3 className="text-lg font-semibold">Prof. (Dr.) Subhashis Majumder</h3>
                 <p className="text-sm text-muted-foreground">HOD, CSE Department</p>
                 <p className="text-sm text-muted-foreground">Dean UG Affairs, HITK</p>
-                <p className="text-xs text-muted-foreground mt-1">Founder, ACM HITK</p>
+                <p className="text-xs text-muted-foreground mt-1">Co-founder, ACM HITK</p>
               </div>
 
-{/*               <div className="text-center">
+              <div className="text-center">
                 <div className="relative w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg">
                   <Image
                     src="/Dr-Partha-Basuchowdhuri.png"
@@ -239,7 +239,7 @@ export default function AboutPage() {
                 <p className="text-sm text-muted-foreground">Former Associate Professor, CSE</p>
                 <p className="text-sm text-muted-foreground">Heritage Institute of Technology</p>
                 <p className="text-xs text-muted-foreground mt-1">Co-founder, ACM HITK</p>
-              </div> */}
+              </div>
             </div>
           </div>
         </section>
