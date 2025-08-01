@@ -1060,6 +1060,29 @@ export const currentTeam: TeamMember[] = [
 
 export const pastMembers: TeamMember[] = [
     {
+        id: 0,
+        type: "alumni_faculty",
+        name: "Reshma Roychoudhuri",
+        roleAtACMHITK: "Faculty Sponsor(2013-2014)",
+        roleAtHITK: "Assistant Professor, Department of Computer Science and Engineering, HITK",
+        currentRole: "Assistant Professor, Department of Computer Science and Engineering, HITK",
+        image: "/Reshma-Roychoudhuri.jpeg",
+        bio: `With 6 plus years of experience in IT industry I joined Heritage in 2012 to explore my passion  for teaching. I have always been involved in various club activities and responsibilities in school, college, and even in my IT woekplace. Being entrusted with ACM started an enriching journey here in Heritage, one that I still cherish. We ( me and the team then) started the annual flagship event, Brainstorm, in a bid to revive the club registrations. It is heartwarming to see the legacy continue and to witness the growth of the club under different faculty and student members`,
+        achievements: `Started the annual flagship event Brainstorm at ACM HITK Student Chapter`,
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:reshma.roychoudhuri@heritageit.edu",
+                icon: <Mail className="h-4 w-4" />
+            },
+            {
+                name: "LinkedIn",
+                url: 'https://www.linkedin.com/in/reshma-roychoudhuri-b660432b/',
+                icon: <Linkedin className="h-4 w-4" />
+            }
+        ]
+    },
+    {
         id: 1,
         type: "alumni_faculty",
         name: "Dr. Dinabandhu Bhandari",
@@ -1348,6 +1371,12 @@ ACM student chapter at HITK.`,
 ]
 
 export const testimonials = [
+    {
+        name: "Reshma Roychoudhuri",
+        image: "/Reshma-Roychoudhuri.jpeg",
+        role: "Assistant Professor, Department of Computer Science and Engineering, HITK",
+        testimonial: "ACM will always have a special place in my heart. The passion and hardwork of the past and current teams, and the quality of the talks sets it apart. I am hoping that the chapter increases it's reach and promotes inclusivity even more in the coming years."
+    },
     {
         name: "Swarnadeep Saha",
         image: "/Swarnadeep-Saha.jpg",
