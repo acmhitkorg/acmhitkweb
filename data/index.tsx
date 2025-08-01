@@ -251,8 +251,8 @@ compose music, teleplays, fairy tales, and student essays, answer test questions
 etc. It is an open issue: How can deep learning be incorporated to make it more
 efficient and reduce its drawbacks?`,
         attendees: 100,
-        speaker: "",
-        location: "CS Department Lab",
+        speaker: "Dr Tanmoy Chakraborty",
+        location: "SV Auditorium, CB Block, HITK",
         photos: []
     },
     {
@@ -274,7 +274,7 @@ impacts of AI/ML and their possible far-reaching effects on our society ? both
 good and adverse.`,
         attendees: 23,
         speaker: "",
-        location: "Main Auditorium",
+        location: "",
         photos: []
     },
     {
@@ -299,8 +299,8 @@ journey into the world of Recommender Systems, and discover how they can be
 your own fairy godmother of choices, making every digital interaction feel like it
 was designed just for you.`,
         attendees: 47,
-        speaker: "",
-        location: "Main Auditorium",
+        speaker: "Ashmi Banerjee",
+        location: "CB 504, CB Block, HITK",
         photos: []
     },
     {
@@ -317,7 +317,7 @@ more. We shall also discuss some common results of Complexity Theory, by
 applying some space/time restriction on our model of computation.`,
         attendees: 20,
         speaker: "",
-        location: "Security Lab",
+        location: "",
         photos: []
     },
     {
@@ -340,8 +340,8 @@ mimicking some of the brain functions in artificial systems. Understanding the
 brain involves a range of disciplines ranging from genetics and psychology to
 computer science.`,
         attendees: 45,
-        speaker: "Various Industry Experts",
-        location: "Innovation Center",
+        speaker: "",
+        location: "",
         photos: []
     },
     {
@@ -370,7 +370,7 @@ approximation to what I might write about it if I were preparing a textbook abou
 data streams."`,
         attendees: 15,
         speaker: "",
-        location: "Blockchain Lab",
+        location: "",
         photos: []
     },
     {
@@ -383,8 +383,8 @@ data streams."`,
 Addressing the Fear 3. Types of Generative AI architectures 4. LLM and LIM 5.
 Building an AI tool (Using Hugging Face) 6. QnA`,
         attendees: 10,
-        speaker: "Open Source Community Leaders",
-        location: "CS Department Lab",
+        speaker: "",
+        location: "",
         photos: []
     }
 ];

@@ -43,12 +43,12 @@ export default function EventsPage() {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
   // Format and enhance past events with year for filtering
-  const enhancedPastEvents = useMemo(() => 
+  const enhancedPastEvents = useMemo(() =>
     (pastEvents as unknown as Event[]).map(event => ({
       ...event,
       year: new Date(event.date).getFullYear(),
-      time: event.time || 'TBA',
-      speaker: event.speaker || 'Speaker TBA',
+      time: event.time || '',
+      speaker: event.speaker || '',
       attendees: event.attendees || 0,
       photos: event.photos || []
     })),
@@ -56,7 +56,7 @@ export default function EventsPage() {
   );
 
   // Format upcoming events
-  const formattedUpcomingEvents = useMemo(() => 
+  const formattedUpcomingEvents = useMemo(() =>
     (upcomingEvents as unknown as Event[]).map(event => ({
       ...event,
       time: event.time || 'TBA',
@@ -75,8 +75,8 @@ export default function EventsPage() {
 
   // Filter events based on selected year
   const filteredPastEvents = useMemo(
-    () => selectedYear === 'all' 
-      ? enhancedPastEvents 
+    () => selectedYear === 'all'
+      ? enhancedPastEvents
       : enhancedPastEvents.filter(event => event.year === selectedYear),
     [enhancedPastEvents, selectedYear]
   );
@@ -119,26 +119,25 @@ export default function EventsPage() {
             {formattedUpcomingEvents.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {formattedUpcomingEvents.map((event) => (
-                  <GlassCard 
-                    key={event.id} 
+                  <GlassCard
+                    key={event.id}
                     className="group relative overflow-hidden p-6 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white/95 to-blue-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-200/80 dark:border-gray-700/50 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
                   >
                     {/* Animated gradient background */}
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100/40 via-transparent to-purple-100/20 dark:from-blue-900/10 dark:to-purple-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    
+
                     {/* Subtle noise texture */}
                     <div className="absolute inset-0 opacity-5 dark:opacity-[0.02]" style={{
                       backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 400 400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.1\'/%3E%3C/svg%3E")'
                     }} />
-                    
+
                     {/* Event type badge with gradient */}
                     <div className={`relative z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-4 border backdrop-blur-sm
-                      ${
-                        event.type === 'Workshop' 
-                          ? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
-                          : event.type === 'Seminar'
-                            ? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
-                            : 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
+                      ${event.type === 'Workshop'
+                        ? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
+                        : event.type === 'Seminar'
+                          ? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
+                          : 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
                       }`}>
                       {event.type}
                     </div>
@@ -149,18 +148,18 @@ export default function EventsPage() {
 
                     {/* Event details with colored icons */}
                     <div className="relative z-10 space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-5">
-                      <div className="flex items-center">
+                      {event.time && <div className="flex items-center">
                         <Clock className="h-4 w-4 mr-2 text-blue-500/80 dark:text-blue-400/80" />
                         <span>{event.time}</span>
-                      </div>
-                      <div className="flex items-center">
+                      </div>}
+                      {event.location && <div className="flex items-center">
                         <MapPin className="h-4 w-4 mr-2 text-green-500/80 dark:text-green-400/80" />
                         <span>{event.location}</span>
-                      </div>
-                      <div className="flex items-center">
+                      </div>}
+                      {event.speaker && <div className="flex items-center">
                         <Users className="h-4 w-4 mr-2 text-purple-500/80 dark:text-purple-400/80" />
                         <span className="font-medium">{event.speaker}</span>
-                      </div>
+                      </div>}
                     </div>
 
                     {/* Description with fade effect */}
@@ -172,9 +171,9 @@ export default function EventsPage() {
                     </div>
 
                     {/* Action button with glass effect */}
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
+                    <Button
+                      variant="outline"
+                      size="sm"
                       className="w-full group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
                       onClick={() => handleEventClick(event)}
                     >
@@ -236,24 +235,23 @@ export default function EventsPage() {
                   <GlassCard key={event.id} className="group relative overflow-hidden p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 bg-gradient-to-br from-white/90 to-gray-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-100/60 dark:border-gray-700/50">
                     {/* Animated gradient background */}
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-50/30 via-transparent to-blue-50/10 dark:from-gray-800/10 dark:to-blue-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    
+
                     {/* Subtle noise texture */}
                     <div className="absolute inset-0 opacity-5 dark:opacity-[0.02]" style={{
                       backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 400 400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.1\'/%3E%3C/svg%3E")'
                     }} />
-                    
+
                     <div className="relative z-10 flex items-center justify-between mb-4">
                       <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border backdrop-blur-sm
-                        ${
-                          event.type === 'Workshop' 
-                            ? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
-                            : event.type === 'Seminar'
-                              ? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
-                              : 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
-                      }`}>
+                        ${event.type === 'Workshop'
+                          ? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
+                          : event.type === 'Seminar'
+                            ? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
+                            : 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
+                        }`}>
                         {event.type}
                       </div>
-                      <div className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 group-has-[.event-date]:hover:text-gray-700 dark:group-has-[.event-date]:hover:text-gray-300 transition-colors">
+                      {event.date && <div className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 group-has-[.event-date]:hover:text-gray-700 dark:group-has-[.event-date]:hover:text-gray-300 transition-colors">
                         <Calendar className="h-3.5 w-3.5 mr-1.5 text-gray-400/80 dark:text-gray-500/80" />
                         <span className="event-date">
                           {new Date(event.date).toLocaleDateString('en-US', {
@@ -262,23 +260,23 @@ export default function EventsPage() {
                             year: 'numeric'
                           })}
                         </span>
-                      </div>
+                      </div>}
                     </div>
-                    
+
                     <h3 className="relative z-10 text-xl font-bold mb-3 bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-200 bg-clip-text text-transparent">
                       {event.title}
                     </h3>
-                    
+
                     {/* Event details with colored icons */}
                     <div className="relative z-10 space-y-3 text-sm text-gray-600 dark:text-gray-300 mb-5">
-                      <div className="flex items-center">
+                      {event.time && <div className="flex items-center">
                         <Clock className="h-4 w-4 mr-2 text-blue-500/80 dark:text-blue-400/80" />
                         <span>{event.time}</span>
-                      </div>
-                      <div className="flex items-center">
+                      </div>}
+                      {event.location && <div className="flex items-center">
                         <MapPin className="h-4 w-4 mr-2 text-green-500/80 dark:text-green-400/80" />
                         <span>{event.location}</span>
-                      </div>
+                      </div>}
                       {event.speaker && (
                         <div className="flex items-center">
                           <Users className="h-4 w-4 mr-2 text-purple-500/80 dark:text-purple-400/80" />
@@ -286,7 +284,7 @@ export default function EventsPage() {
                         </div>
                       )}
                     </div>
-                    
+
                     {/* Description with fade effect */}
                     <div className="relative z-10 mb-6 overflow-hidden">
                       <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
@@ -294,11 +292,11 @@ export default function EventsPage() {
                       </p>
                       <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent dark:opacity-0 group-hover:opacity-0 transition-opacity" />
                     </div>
-                    
+
                     {/* Action button with glass effect */}
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
+                    <Button
+                      variant="outline"
+                      size="sm"
                       className="w-full group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
                       onClick={() => handleEventClick(event)}
                     >
@@ -339,7 +337,7 @@ export default function EventsPage() {
         </section>
 
         {/* Event Modal */}
-        <EventModal 
+        <EventModal
           isOpen={!!selectedEvent}
           onClose={() => setSelectedEvent(null)}
           event={selectedEvent}
