@@ -831,6 +831,27 @@ export const currentTeam: TeamMember[] = [
     },
     {
         type: "student",
+        name: "Sohom Das",
+        roleAtACMHITK: "Board Member",
+        roleAtHITK: "4th Year, CSE'26",
+        image: "/Sohom-Das.jpeg",
+        bio: "Sohom Das is from 4th year, CSE'26. He is a passionate designer who has keen interest in cricket also.",
+        achievements: "Founder of Webworks Studio",
+        socials: [
+            {
+                name: "Email",
+                url: "mailto:sohom.11a.60.17112003@gmail.com",
+                icon: <Mail className="h-4 w-4" />
+            },
+            {
+                name: "LinkedIn",
+                url: "https://www.linkedin.com/in/sohom-das-245791267/",
+                icon: <Linkedin className="h-4 w-4" />
+            }
+        ]
+    },
+    {
+        type: "student",
         name: "Ankan Das",
         roleAtACMHITK: "Board Member",
         roleAtHITK: "3rd Year, CSE'27",
