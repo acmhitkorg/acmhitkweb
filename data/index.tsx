@@ -1060,35 +1060,36 @@ export const currentTeam: TeamMember[] = [
 
 export const pastMembers: TeamMember[] = [
     {
-        id: 0,
+        id: 1,
         type: "alumni_faculty",
-        name: "Dr. Sabyasachee Banerjee",
-        roleAtACMHITK: "Faculty Sponsor(2018-2025)",
-        roleAtHITK: "Assistant Professor, Department of Computer Science and Engineering",
-        currentRole: "Assistant Professor, Department of Computer Science and Engineering, HITK",
-        image: "/Dr-Sabyasachi-Banerjee.jpg",
-        bio: `Sabyasachee Banerjee (Dr.) is an Assistant Professor in the Department of Computer Science and Engineering at Heritage Institute of Technology, Kolkata. He holds a Ph.D. in Computer Science & Engineering from Jadavpur University, with research focused on layout optimization, thermal issues, and testing of 3D Integrated Circuits. With over a decade of teaching experience, he has guided multiple undergraduate and postgraduate projects, resulting in several international publications. Dr. Banerjee has served as a reviewer for reputed journals, coordinated academic events as the faculty sponsor of the ACM Student Chapter at HITK. His research interests include 3D SoC design and testing, VLSI design automation, and optimization algorithms.`,
-        achievements: null,
+        name: "Dr. Dinabandhu Bhandari",
+        roleAtACMHITK: "Faculty Sponsor(2015-2016)",
+        roleAtHITK: `Professor in the Department of Computer Science and
+Engineering (July 2013 - Present). Previously Associate
+Professor (January 2013 - June 2017).`,
+        currentRole: "Professor, Department of Computer Science and Engineering, HITK",
+        image: "/Dr-Dinabandhu-Bhandari.jpeg",
+        bio: `Dr. Dinabandhu Bhandari has accumulated over 30 years of experience in academia and industry. His professional journey includes tenures at Heritage Institute of Technology, Indian Statistical Institute, TCS, Capgemini, and Cognizant. He specializes in Soft Computing, Pattern Recognition, and Machine Learning. Dr. Bhandari holds a PhD and M.Tech in Computer Science from Jadavpur University.`,
+        achievements: `Served as a technical consultant implementing intelligent systems. Developed innovative methodologies for article/book structuring and mining sector solutions. Authored research papers with over 1,600 Google Scholar citations. Ranked #1 in citations at HITK by AD Scientific Index.`,
         socials: [
             {
                 name: "Email",
-                url: "mailto:sabyasachi.banerjee@heritageit.edu",
+                url: "mailto:dinabandhu.bhandari@heritageit.edu",
                 icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
-                url: "https://www.linkedin.com/in/dr-sabyasachee-banerjee-13578319",
+                url: "https://in.linkedin.com/in/dinabandhu-bhandari-22b68111",
                 icon: <Linkedin className="h-4 w-4" />
-            },
-            {
-                name: "Website",
-                url: "https://scholar.google.co.in/citations?user=hH3VlT0AAAAJ&hl=en",
+            }, {
+                name: 'Website',
+                url: 'https://www.researchgate.net/profile/Dinabandhu-Bhandari',
                 icon: <Globe className="h-4 w-4" />
             }
         ]
     },
     {
-        id: 1,
+        id: 2,
         type: "alumni_faculty",
         name: "Dr. Partha Basuchowdhuri",
         roleAtACMHITK: "Faculty Sponsor(2016-2018)",
@@ -1119,36 +1120,35 @@ ACM student chapter at HITK.`,
         ]
     },
     {
-        id: 2,
+        id: 3,
         type: "alumni_faculty",
-        name: "Dr. Dinabandhu Bhandari",
-        roleAtACMHITK: "Faculty Sponsor(2015-2016)",
-        roleAtHITK: `Professor in the Department of Computer Science and
-Engineering (July 2013 - Present). Previously Associate
-Professor (January 2013 - June 2017).`,
-        currentRole: "Professor, Department of Computer Science and Engineering, HITK",
-        image: "/Dr-Dinabandhu-Bhandari.jpeg",
-        bio: `Dr. Dinabandhu Bhandari has accumulated over 30 years of experience in academia and industry. His professional journey includes tenures at Heritage Institute of Technology, Indian Statistical Institute, TCS, Capgemini, and Cognizant. He specializes in Soft Computing, Pattern Recognition, and Machine Learning. Dr. Bhandari holds a PhD and M.Tech in Computer Science from Jadavpur University.`,
-        achievements: `Served as a technical consultant implementing intelligent systems. Developed innovative methodologies for article/book structuring and mining sector solutions. Authored research papers with over 1,600 Google Scholar citations. Ranked #1 in citations at HITK by AD Scientific Index.`,
+        name: "Dr. Sabyasachee Banerjee",
+        roleAtACMHITK: "Faculty Sponsor(2018-2025)",
+        roleAtHITK: "Assistant Professor, Department of Computer Science and Engineering",
+        currentRole: "Assistant Professor, Department of Computer Science and Engineering, HITK",
+        image: "/Dr-Sabyasachi-Banerjee.jpg",
+        bio: `Sabyasachee Banerjee (Dr.) is an Assistant Professor in the Department of Computer Science and Engineering at Heritage Institute of Technology, Kolkata. He holds a Ph.D. in Computer Science & Engineering from Jadavpur University, with research focused on layout optimization, thermal issues, and testing of 3D Integrated Circuits. With over a decade of teaching experience, he has guided multiple undergraduate and postgraduate projects, resulting in several international publications. Dr. Banerjee has served as a reviewer for reputed journals, coordinated academic events as the faculty sponsor of the ACM Student Chapter at HITK. His research interests include 3D SoC design and testing, VLSI design automation, and optimization algorithms.`,
+        achievements: null,
         socials: [
             {
                 name: "Email",
-                url: "mailto:dinabandhu.bhandari@heritageit.edu",
+                url: "mailto:sabyasachi.banerjee@heritageit.edu",
                 icon: <Mail className="h-4 w-4" />
             },
             {
                 name: "LinkedIn",
-                url: "https://in.linkedin.com/in/dinabandhu-bhandari-22b68111",
+                url: "https://www.linkedin.com/in/dr-sabyasachee-banerjee-13578319",
                 icon: <Linkedin className="h-4 w-4" />
-            }, {
-                name: 'Website',
-                url: 'https://www.researchgate.net/profile/Dinabandhu-Bhandari',
+            },
+            {
+                name: "Website",
+                url: "https://scholar.google.co.in/citations?user=hH3VlT0AAAAJ&hl=en",
                 icon: <Globe className="h-4 w-4" />
             }
         ]
     },
     {
-        id: 3,
+        id: 4,
         type: "alumni_student",
         name: "Agnish Ghosh",
         roleAtACMHITK: "Webmaster(2022-2023)",
@@ -1182,7 +1182,7 @@ Professor (January 2013 - June 2017).`,
         ]
     },
     {
-        id: 4,
+        id: 5,
         type: "alumni_student",
         name: "Ashmi Banerjee",
         roleAtACMHITK: "Webmaster(2014-15), Chair (2015-16)",
@@ -1210,7 +1210,7 @@ Professor (January 2013 - June 2017).`,
         ]
     },
     {
-        id: 5,
+        id: 6,
         type: "alumni_student",
         name: "Protyasha Kundu",
         roleAtACMHITK: "Chair & Treasurer(2023-2025)",
@@ -1233,7 +1233,7 @@ Professor (January 2013 - June 2017).`,
         ]
     },
     {
-        id: 6,
+        id: 7,
         type: "alumni_student",
         name: "Swapnil Aichbhaumik",
         roleAtACMHITK: "Board-Member, Joint Secretary, Treasurer(2022-2025)",
@@ -1261,7 +1261,7 @@ Professor (January 2013 - June 2017).`,
         ]
     },
     {
-        id: 7,
+        id: 8,
         type: "alumni_student",
         name: "Swarnadeep Saha",
         roleAtACMHITK: "Secretary(2023-24). Treasurer(2022-23)",
@@ -1291,7 +1291,7 @@ Professor (January 2013 - June 2017).`,
         ]
     },
     {
-        id: 8,
+        id: 9,
         type: "alumni_student",
         name: "Upasana Roy",
         roleAtACMHITK: "Chairperson(2024-25) , Vice-Chairperson(2023-24)",
@@ -1318,7 +1318,7 @@ Professor (January 2013 - June 2017).`,
             }
         ]
     }, {
-        id: 9,
+        id: 10,
         type: "alumni_student",
         name: "Devjit Sarkar",
         roleAtACMHITK: "Joint Secretary(2024-2025)",
