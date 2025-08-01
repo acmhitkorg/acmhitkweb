@@ -40,8 +40,8 @@ export default function TeamPage() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
-            {faculty.map((member) => (
-              <div key={member.id} className="w-full">
+            {faculty.map((member, index) => (
+              <div key={index} className="w-full">
                 <TeamMemberCard member={member} />
               </div>
             ))}
@@ -58,8 +58,8 @@ export default function TeamPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {students.map((member) => (
-              <div key={member.id}>
+            {students.map((member, index) => (
+              <div key={index}>
                 <TeamMemberCard member={member} />
               </div>
             ))}

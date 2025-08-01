@@ -201,12 +201,12 @@ export default function AboutPage() {
                 <div className="relative w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full border-4 border-white shadow-lg">
                   <Image
                     src="/Mr-BasabChaudhuri4-Principal.jpg"
-                    alt="Dr. Basab Chaudhuri"
+                    alt="Prof. (Dr.) Basab Chaudhuri"
                     fill
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-semibold">Dr. Basab Chaudhuri</h3>
+                <h3 className="text-lg font-semibold">Prof. (Dr.) Basab Chaudhuri</h3>
                 <p className="text-sm text-muted-foreground">Principal</p>
                 <p className="text-sm text-muted-foreground">Heritage Group of Institutions</p>
               </div>

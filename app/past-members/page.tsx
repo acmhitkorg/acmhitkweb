@@ -44,8 +44,8 @@ export default function PastMembersPage() {
 
           {alumniFaculty.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {alumniFaculty.map((member) => (
-                <div key={member.id} className="w-full">
+              {alumniFaculty.map((member, index) => (
+                <div key={index} className="w-full">
                   <TeamMemberCard member={member} />
                 </div>
               ))}
@@ -68,8 +68,8 @@ export default function PastMembersPage() {
 
           {alumniStudents.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {alumniStudents.map((member) => (
-                <div key={member.id} className="w-full">
+              {alumniStudents.map((member, index) => (
+                <div key={index} className="w-full">
                   <TeamMemberCard member={member} />
                 </div>
               ))}

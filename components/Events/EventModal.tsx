@@ -82,7 +82,7 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
           )}
 
           <div className="space-y-4">
-            {event.speaker && (
+            {event.speaker !== "" && (
               <div>
                 <h4 className="font-medium text-foreground text-sm sm:text-base">Speaker</h4>
                 <p className="text-muted-foreground text-sm sm:text-base">{event.speaker}</p>
