@@ -77,7 +77,7 @@ export function TeamMemberCard({ member }: { member: TeamMember }) {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="text-xs h-8 px-3 rounded-full bg-background/50 hover:bg-background/80 backdrop-blur-sm border-border/50 hover:border-blue-500/50 transition-all group/button"
+                      className="text-sm h-8 px-3 rounded-full bg-background/50 hover:bg-background/80 backdrop-blur-sm border-border/50 hover:border-blue-500/50 transition-all group/button"
                     >
                       View More
                       <ArrowRight className="ml-1 h-3 w-3 opacity-70 group-hover/button:translate-x-0.5 transition-transform" />
