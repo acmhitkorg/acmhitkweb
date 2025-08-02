@@ -1,13 +1,17 @@
-import { pastMembers } from "@/data/index"
-import { Navigation } from "@/components/navigation"
-import { AnimatedBackground } from "@/components/animated-background"
-import { TeamMemberCard } from "@/components/TeamMemberCard"
-import { TeamMember } from "@/types"
+import { pastMembers } from "@/data/index";
+import { Navigation } from "@/components/navigation";
+import { AnimatedBackground } from "@/components/animated-background";
+import { TeamMemberCard } from "@/components/TeamMemberCard";
+import { TeamMember } from "@/types";
 
 export default function PastMembersPage() {
   // Filter alumni into faculty and students
-  const alumniFaculty = pastMembers.filter(member => member.type === 'alumni_faculty');
-  const alumniStudents = pastMembers.filter(member => member.type === 'alumni_student');
+  const alumniFaculty = pastMembers
+    .filter((member) => member.type === "alumni_faculty")
+    .reverse();
+  const alumniStudents = pastMembers.filter(
+    (member) => member.type === "alumni_student",
+  );
 
   return (
     <div className="min-h-screen">
@@ -51,7 +55,9 @@ export default function PastMembersPage() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-gray-500 dark:text-gray-400">No alumni faculty members to display.</p>
+            <p className="text-center text-gray-500 dark:text-gray-400">
+              No alumni faculty members to display.
+            </p>
           )}
         </section>
 
@@ -62,7 +68,8 @@ export default function PastMembersPage() {
               Alumni Students
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              Former student members who have contributed to our chapter's success
+              Former student members who have contributed to our chapter's
+              success
             </p>
           </div>
 
@@ -75,10 +82,12 @@ export default function PastMembersPage() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-gray-500 dark:text-gray-400">No alumni students to display.</p>
+            <p className="text-center text-gray-500 dark:text-gray-400">
+              No alumni students to display.
+            </p>
           )}
         </section>
       </main>
     </div>
-  )
+  );
 }
