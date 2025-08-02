@@ -8,6 +8,7 @@ import { Menu, X, Users, Calendar, UserPlus, Mail, Info, GraduationCap, Camera }
 import { Button } from "@/components/ui/button"
 import { ThemeSwitcher } from "@/components/ThemeSwitcher"
 import { cn } from "@/lib/utils"
+import { useBanner } from "@/context/BannerContext"
 
 const navigation = [
   { name: "Home", href: "/", icon: null },
@@ -23,9 +24,15 @@ const navigation = [
 export function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false)
   const pathname = usePathname()
+  const { isBannerVisible } = useBanner()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/50">
+    <nav
+      className={cn(
+        "fixed left-0 right-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/50 transition-all duration-200",
+        isBannerVisible ? "top-[4.3rem] md:top-[3.5rem]" : "top-0"
+      )}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

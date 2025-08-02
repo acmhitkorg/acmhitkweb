@@ -18,6 +18,7 @@ interface Event {
   time: string;
   location: string;
   type: string;
+  cardDescription: string;
   description: string;
   speaker: string;
   attendees?: number;
@@ -165,7 +166,7 @@ export default function EventsPage() {
                     {/* Description with fade effect */}
                     <div className="relative z-10 mb-6 overflow-hidden">
                       <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
-                        {event.description}
+                        {event.cardDescription}
                       </p>
                       <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent dark:opacity-0 group-hover:opacity-0 transition-opacity" />
                     </div>
