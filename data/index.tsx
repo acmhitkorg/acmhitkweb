@@ -31,9 +31,9 @@ export const upcomingEventsForHomePage = [
   {
     title:
       "Program Paradox",
-    date: "7th August 2025",
-    time: "3:00 PM to 5:00 PM",
-    location: "TBA",
+    date: "8th August 2025",
+    time: "2:30 PM to 5:00 PM",
+    location: "The Heritage Academy Auditorium",
     status: "Registration Open",
     registration_deadline: "2025-08-06T23:59:00+05:30", // 11:59 PM IST
     description:
@@ -173,9 +173,9 @@ export const upcomingEvents = [
     id: 1,
     title:
       "Program Paradox",
-    date: "2025-08-07",
-    time: "3:00 PM to 5:00 PM",
-    location: "TBA",
+    date: "2025-08-08",
+    time: "2:30 PM to 5:00 PM",
+    location: "The Heritage Academy Auditorium",
     type: "Workshop",
     cardDescription: "An interactive workshop session exploring the fascinating concept of the Halting Problem in computer science.",
     description: `
@@ -185,9 +185,9 @@ export const upcomingEvents = [
         <div>
           <h3 class="text-lg font-semibold mb-2">Event Details</h3>
           <ul class="space-y-1">
-            <li><strong>Date:</strong> August 7, 2025</li>
-            <li><strong>Time:</strong> 3:00 PM to 5:00 PM</li>
-            <li><strong>Venue:</strong> To Be Announced</li>
+            <li><strong>Date:</strong> August 8, 2025</li>
+            <li><strong>Time:</strong> 2:30 PM to 5:00 PM</li>
+            <li><strong>Venue:</strong> The Heritage Academy Auditorium</li>
             <li><strong>Speakers:</strong> Mohak Sarkar & Aryan Ghosh</li>
             <li><strong>Eligibility:</strong> Open to all students, staff, and faculty of HITK</li>
           </ul>
@@ -196,6 +196,10 @@ export const upcomingEvents = [
         <div>
           <h3 class="text-lg font-semibold mb-2">Schedule</h3>
           <div class="space-y-2">
+            <div class="bg-muted/50 p-3 rounded-lg">
+              <h4 class="font-medium">2:30 PM - 3:00 PM: Introduction</h4>
+              <p class="text-sm text-muted-foreground">Introduction to the Halting Problem</p>
+            </div>
             <div class="bg-muted/50 p-3 rounded-lg">
               <h4 class="font-medium">3:00 PM - 4:00 PM: Interactive Workshop</h4>
               <p class="text-sm text-muted-foreground">Dive into the Halting Problem with hands-on activities</p>
