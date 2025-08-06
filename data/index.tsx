@@ -1366,6 +1366,28 @@ ACM student chapter at HITK.`,
   },
   {
     type: "alumni_student",
+    name: "Ananya Majumdar",
+    roleAtACMHITK: "Membership Head(2021-2022), Vice Chair(2022-2023)",
+    roleAtHITK: "CSE'23",
+    currentRole: "Technology Consulting - Analyst I, EY",
+    image: "/Ananya-Majumdar.png",
+    bio: "Ananya Majumdar graduated from Heritage Institute of Technology in 2023, thereafter, started working at Ernst & Young.",
+    achievements: null,
+    socials: [
+      {
+        name: "Email",
+        url: "mailto:majumdarananya2000@gmail.com",
+        icon: <Mail className="h-5 w-5" />,
+      },
+      {
+        name: "LinkedIn",
+        url: "http://linkedin.com/in/ananya-majumdar-09712b254",
+        icon: <Linkedin className="h-5 w-5" />,
+      }
+    ],
+  },
+  {
+    type: "alumni_student",
     name: "Agnish Ghosh",
     roleAtACMHITK: "Webmaster(2022-2023)",
     roleAtHITK: "CSE'24",
@@ -1445,6 +1467,33 @@ ACM student chapter at HITK.`,
       {
         name: "Github",
         url: "https://github.com/spotswan",
+        icon: <Github className="h-5 w-5" />,
+      },
+    ],
+  },
+  {
+    type: "alumni_student",
+    name: "Rajarshi Saha",
+    roleAtACMHITK: "Asst. Membership Head(2023-2024), Membership Head(2024-25)",
+    roleAtHITK: "CSE'25",
+    currentRole: "Associate Software Engineer, EY GDS",
+    image: "/Rajarshi-Saha.jpeg",
+    bio: "Rajarshi Saha is currently working as an Associate Software Engineer at EY GDS. He is a full-stack developer with experience across diverse technology domains, including the development of Progressive Web Apps and building multiple applications that involve Blockchain and Machine Learning. From 2023 to 2025, he actively organized several tech talks and events for the ACM HITK Student Chapter.",
+    achievements: `Rajarshi organized Brainstorm'24, multiple tech-talks. He represented ACM-HITK Chapter at ACM Regional Meet 2024 and was actively involved in driving student membership registrations for the 2023-25 term.`,
+    socials: [
+      {
+        name: "Email",
+        url: "mailto:saharajarshi14@gmail.com",
+        icon: <Mail className="h-5 w-5" />,
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/rajarshi-saha14/",
+        icon: <Linkedin className="h-5 w-5" />,
+      },
+      {
+        name: "Github",
+        url: "https://github.com/rajarshigit14",
         icon: <Github className="h-5 w-5" />,
       },
     ],
@@ -1547,6 +1596,13 @@ export const testimonials = [
     role: "Mtech(CSE) Student at IIIT Hyderabad",
     testimonial:
       "Learned how to manage different aspects of event organization. Learned how to work closely with professors and other fellow students.",
+  },
+  {
+    name: "Rajarshi Saha",
+    image: "/Rajarshi-Saha.jpeg",
+    role: "Associate Software Engineer, EY GDS",
+    testimonial:
+      "I had a great time being a part of the HITK ACM Student Chapter, and I hope the current members enjoy their journey and gain valuable experiences during their tenure. Take the chapter to greater heights, and organize as many events as possible. Wishing you guys all the best!",
   },
   {
     name: "Upasana Roy",
