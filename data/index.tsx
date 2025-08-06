@@ -31,9 +31,9 @@ export const upcomingEventsForHomePage = [
   {
     title:
       "Program Paradox",
-    date: "7th August 2025",
-    time: "3:00 PM to 5:00 PM",
-    location: "TBA",
+    date: "8th August 2025",
+    time: "2:30 PM to 5:00 PM",
+    location: "The Heritage Academy Auditorium",
     status: "Registration Open",
     registration_deadline: "2025-08-06T23:59:00+05:30", // 11:59 PM IST
     description:
@@ -173,9 +173,9 @@ export const upcomingEvents = [
     id: 1,
     title:
       "Program Paradox",
-    date: "2025-08-07",
-    time: "3:00 PM to 5:00 PM",
-    location: "TBA",
+    date: "2025-08-08",
+    time: "2:30 PM to 5:00 PM",
+    location: "The Heritage Academy Auditorium",
     type: "Workshop",
     cardDescription: "An interactive workshop session exploring the fascinating concept of the Halting Problem in computer science.",
     description: `
@@ -185,9 +185,9 @@ export const upcomingEvents = [
         <div>
           <h3 class="text-lg font-semibold mb-2">Event Details</h3>
           <ul class="space-y-1">
-            <li><strong>Date:</strong> August 7, 2025</li>
-            <li><strong>Time:</strong> 3:00 PM to 5:00 PM</li>
-            <li><strong>Venue:</strong> To Be Announced</li>
+            <li><strong>Date:</strong> August 8, 2025</li>
+            <li><strong>Time:</strong> 2:30 PM to 5:00 PM</li>
+            <li><strong>Venue:</strong> The Heritage Academy Auditorium</li>
             <li><strong>Speakers:</strong> Mohak Sarkar & Aryan Ghosh</li>
             <li><strong>Eligibility:</strong> Open to all students, staff, and faculty of HITK</li>
           </ul>
@@ -196,6 +196,10 @@ export const upcomingEvents = [
         <div>
           <h3 class="text-lg font-semibold mb-2">Schedule</h3>
           <div class="space-y-2">
+            <div class="bg-muted/50 p-3 rounded-lg">
+              <h4 class="font-medium">2:30 PM - 3:00 PM: Introduction</h4>
+              <p class="text-sm text-muted-foreground">Introduction to the Halting Problem</p>
+            </div>
             <div class="bg-muted/50 p-3 rounded-lg">
               <h4 class="font-medium">3:00 PM - 4:00 PM: Interactive Workshop</h4>
               <p class="text-sm text-muted-foreground">Dive into the Halting Problem with hands-on activities</p>
@@ -1366,6 +1370,28 @@ ACM student chapter at HITK.`,
   },
   {
     type: "alumni_student",
+    name: "Ananya Majumdar",
+    roleAtACMHITK: "Membership Head(2021-2022), Vice Chair(2022-2023)",
+    roleAtHITK: "CSE'23",
+    currentRole: "Technology Consulting - Analyst I, EY",
+    image: "/Ananya-Majumdar.png",
+    bio: "Ananya Majumdar graduated from Heritage Institute of Technology in 2023, thereafter, started working at Ernst & Young.",
+    achievements: null,
+    socials: [
+      {
+        name: "Email",
+        url: "mailto:majumdarananya2000@gmail.com",
+        icon: <Mail className="h-5 w-5" />,
+      },
+      {
+        name: "LinkedIn",
+        url: "http://linkedin.com/in/ananya-majumdar-09712b254",
+        icon: <Linkedin className="h-5 w-5" />,
+      }
+    ],
+  },
+  {
+    type: "alumni_student",
     name: "Agnish Ghosh",
     roleAtACMHITK: "Webmaster(2022-2023)",
     roleAtHITK: "CSE'24",
@@ -1445,6 +1471,33 @@ ACM student chapter at HITK.`,
       {
         name: "Github",
         url: "https://github.com/spotswan",
+        icon: <Github className="h-5 w-5" />,
+      },
+    ],
+  },
+  {
+    type: "alumni_student",
+    name: "Rajarshi Saha",
+    roleAtACMHITK: "Asst. Membership Head(2023-2024), Membership Head(2024-25)",
+    roleAtHITK: "CSE'25",
+    currentRole: "Associate Software Engineer, EY GDS",
+    image: "/Rajarshi-Saha.jpeg",
+    bio: "Rajarshi Saha is currently working as an Associate Software Engineer at EY GDS. He is a full-stack developer with experience across diverse technology domains, including the development of Progressive Web Apps and building multiple applications that involve Blockchain and Machine Learning. From 2023 to 2025, he actively organized several tech talks and events for the ACM HITK Student Chapter.",
+    achievements: `Rajarshi organized Brainstorm'24, multiple tech-talks. He represented ACM-HITK Chapter at ACM Regional Meet 2024 and was actively involved in driving student membership registrations for the 2023-25 term.`,
+    socials: [
+      {
+        name: "Email",
+        url: "mailto:saharajarshi14@gmail.com",
+        icon: <Mail className="h-5 w-5" />,
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/rajarshi-saha14/",
+        icon: <Linkedin className="h-5 w-5" />,
+      },
+      {
+        name: "Github",
+        url: "https://github.com/rajarshigit14",
         icon: <Github className="h-5 w-5" />,
       },
     ],
@@ -1547,6 +1600,13 @@ export const testimonials = [
     role: "Mtech(CSE) Student at IIIT Hyderabad",
     testimonial:
       "Learned how to manage different aspects of event organization. Learned how to work closely with professors and other fellow students.",
+  },
+  {
+    name: "Rajarshi Saha",
+    image: "/Rajarshi-Saha.jpeg",
+    role: "Associate Software Engineer, EY GDS",
+    testimonial:
+      "I had a great time being a part of the HITK ACM Student Chapter, and I hope the current members enjoy their journey and gain valuable experiences during their tenure. Take the chapter to greater heights, and organize as many events as possible. Wishing you guys all the best!",
   },
   {
     name: "Upasana Roy",
