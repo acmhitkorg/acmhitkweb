@@ -34,7 +34,7 @@ export const upcomingEventsForHomePage = [
     date: "8th August 2025",
     time: "2:30 PM to 5:00 PM",
     location: "The Heritage Academy Auditorium",
-    status: "Registration Open",
+    status: "closed",
     registration_deadline: "2025-08-06T23:59:00+05:30", // 11:59 PM IST
     description:
       "An interactive workshop session exploring the fascinating concept of the Halting Problem in computer science.",

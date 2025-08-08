@@ -74,7 +74,7 @@ const Events = () => {
                             </div>
 
                             {/* Registration button */}
-                            {event.registration_link && event.status === 'Registration Open' ? (
+                            {event.registration_link && event.registration_deadline > new Date().toISOString() ? (
                                 <a
                                     href={event.registration_link}
                                     target="_blank"
@@ -101,11 +101,11 @@ const Events = () => {
                                         disabled
                                     >
                                         <span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
-                                            {event.status || 'Registration Coming Soon'}
+                                            {event.status === "open" || event.status === "closed" ? "Registration Closed" : 'Registration Coming Soon'}
                                         </span>
                                     </Button>
                                     {!event.status && (
-                                        <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-xs rounded py-1 px-2 opacity-0 group-hover/button:opacity-100 transition-opacity whitespace-nowrap">
+                                        <div className="absolute bg0 -top-10 left-1/2 -translate-x-1/2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-xs rounded py-1 px-2 opacity-0 group-hover/button:opacity-100 transition-opacity whitespace-nowrap">
                                             Registration details coming soon
                                             <div className="absolute bottom-0 left-1/2 -mb-1 w-2 h-2 bg-gray-800 dark:bg-gray-200 transform -translate-x-1/2 rotate-45"></div>
                                         </div>
