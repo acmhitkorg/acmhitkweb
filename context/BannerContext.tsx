@@ -10,7 +10,7 @@ type BannerContextType = {
 const BannerContext = createContext<BannerContextType | undefined>(undefined);
 
 export function BannerProvider({ children }: { children: ReactNode }) {
-    const [isBannerVisible, setIsBannerVisible] = useState(true);
+    const [isBannerVisible, setIsBannerVisible] = useState(false);
 
     const setBannerVisible = (visible: boolean) => {
         setIsBannerVisible(visible);

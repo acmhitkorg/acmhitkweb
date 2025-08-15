@@ -9,25 +9,7 @@ import { GlassCard } from '@/components/glass-card';
 import { Button } from '@/components/ui/button';
 import { AnimatedBackground } from '@/components/animated-background';
 import { EventModal } from '@/components/Events/EventModal';
-
-// Define the event type based on the actual data structure
-interface Event {
-  id: number;
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  type: string;
-  cardDescription: string;
-  description: string;
-  speaker: string;
-  attendees?: number;
-  photos?: string[];
-  status?: string;
-  capacity?: string;
-  abstract?: string;
-  year?: number;
-}
+import { Event } from '@/types';
 
 // Helper function to extract unique years from events
 const getUniqueYears = (events: Event[]) => {
@@ -119,9 +101,9 @@ export default function EventsPage() {
 
             {formattedUpcomingEvents.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {formattedUpcomingEvents.map((event) => (
+                {formattedUpcomingEvents.map((event, index) => (
                   <GlassCard
-                    key={event.id}
+                    key={index}
                     className="group relative overflow-hidden p-6 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white/95 to-blue-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-200/80 dark:border-gray-700/50 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
                   >
                     {/* Animated gradient background */}
@@ -164,7 +146,7 @@ export default function EventsPage() {
                     </div>
 
                     {/* Description with fade effect */}
-                    <div className="relative z-10 mb-6 overflow-hidden">
+                    <div className="relative z-10 mb-10 overflow-hidden">
                       <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
                         {event.cardDescription}
                       </p>
@@ -175,7 +157,7 @@ export default function EventsPage() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
+                      className="absolute bottom-4 w-[90%] left-1/2 -translate-x-1/2 group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
                       onClick={() => handleEventClick(event)}
                     >
                       <span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
@@ -232,8 +214,8 @@ export default function EventsPage() {
 
             {filteredPastEvents.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredPastEvents.map((event) => (
-                  <GlassCard key={event.id} className="group relative overflow-hidden p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 bg-gradient-to-br from-white/90 to-gray-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-100/60 dark:border-gray-700/50">
+                {filteredPastEvents.map((event, index) => (
+                  <GlassCard key={index} className="group relative overflow-hidden p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 bg-gradient-to-br from-white/90 to-gray-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-100/60 dark:border-gray-700/50">
                     {/* Animated gradient background */}
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-50/30 via-transparent to-blue-50/10 dark:from-gray-800/10 dark:to-blue-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
@@ -287,9 +269,9 @@ export default function EventsPage() {
                     </div>
 
                     {/* Description with fade effect */}
-                    <div className="relative z-10 mb-6 overflow-hidden">
-                      <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
-                        {event.description}
+                    <div className="relative z-10 mb-10 overflow-hidden flex-1">
+                      <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
+                        {event.cardDescription}
                       </p>
                       <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent dark:opacity-0 group-hover:opacity-0 transition-opacity" />
                     </div>
@@ -298,7 +280,7 @@ export default function EventsPage() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="w-full group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
+                      className="absolute bottom-4 w-[90%] left-1/2 -translate-x-1/2 group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
                       onClick={() => handleEventClick(event)}
                     >
                       <span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">

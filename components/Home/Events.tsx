@@ -1,10 +1,12 @@
 import Link from "next/link"
 import { ArrowRight, Calendar, Clock, MapPin, Users, ExternalLink } from "lucide-react"
-import { upcomingEventsForHomePage } from "@/data/index"
+import { upcomingEvents } from "@/data/index"
 import { GlassCard } from "@/components/glass-card"
 import { Button } from "@/components/ui/button"
 
 const Events = () => {
+    const upcomingEventsForHomePage = upcomingEvents.slice(0, 3);
+    console.log("Status Logs: ", upcomingEventsForHomePage[0].status, !upcomingEventsForHomePage[0].status);
     return (
         <section className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -68,13 +70,13 @@ const Events = () => {
                             {/* Description with fade effect */}
                             <div className="relative z-10 mb-6 overflow-hidden">
                                 <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
-                                    {event.description}
+                                    {event.cardDescription}
                                 </p>
                                 <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent dark:opacity-0 group-hover:opacity-0 transition-opacity" />
                             </div>
 
                             {/* Registration button */}
-                            {event.registration_link && event.status === 'Registration Open' ? (
+                            {event.registration_link && event.registration_deadline && event.registration_deadline > new Date().toISOString() ? (
                                 <a
                                     href={event.registration_link}
                                     target="_blank"
@@ -101,11 +103,11 @@ const Events = () => {
                                         disabled
                                     >
                                         <span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
-                                            {event.status || 'Registration Coming Soon'}
+                                            {event.status === "open" || event.status === "closed" ? "Registration Closed" : 'Registration Coming Soon'}
                                         </span>
                                     </Button>
                                     {!event.status && (
-                                        <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-xs rounded py-1 px-2 opacity-0 group-hover/button:opacity-100 transition-opacity whitespace-nowrap">
+                                        <div className="absolute bg0 -top-10 left-1/2 -translate-x-1/2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 text-xs rounded py-1 px-2 opacity-0 group-hover/button:opacity-100 transition-opacity whitespace-nowrap">
                                             Registration details coming soon
                                             <div className="absolute bottom-0 left-1/2 -mb-1 w-2 h-2 bg-gray-800 dark:bg-gray-200 transform -translate-x-1/2 rotate-45"></div>
                                         </div>
