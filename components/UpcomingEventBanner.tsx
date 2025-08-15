@@ -5,41 +5,30 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useBanner } from "@/context/BannerContext";
-
-interface Event {
-    id: number;
-    title: string;
-    date: string;
-    time: string;
-    location: string;
-    type: string;
-    cardDescription: string;
-    description?: string;
-    status?: string;
-    registration_deadline?: string;
-    registration_link?: string;
-    bannerImage?: string;
-    speaker?: string;
-    capacity?: string;
-    photos?: string[];
-    image?: string;
-    pictures?: string[];
-}
+import { Event } from "@/types";
 
 export function UpcomingEventBanner({ event }: { event: Event }) {
     const { setBannerVisible } = useBanner();
     const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
-        const dismissedBanner = localStorage.getItem(`banner-${event.id}-dismissed`);
-        if (dismissedBanner === 'true') {
+        const dismissedBanner = localStorage.getItem(`banner-dismissed`);
+        if (event && event.registration_deadline && event.registration_deadline > new Date().toISOString()) {
+            if (dismissedBanner === 'true') {
+                setIsVisible(false);
+                setBannerVisible(false);
+            } else {
+                setIsVisible(true);
+                setBannerVisible(true);
+            }
+        } else {
             setIsVisible(false);
             setBannerVisible(false);
         }
-    }, [event.id, setBannerVisible]);
+    }, [event, setBannerVisible]);
 
     const handleDismiss = () => {
-        localStorage.setItem(`banner-${event.id}-dismissed`, 'true');
+        localStorage.setItem(`banner-dismissed`, 'true');
         setIsVisible(false);
         setBannerVisible(false);
     };

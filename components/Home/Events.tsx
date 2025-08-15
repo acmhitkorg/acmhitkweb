@@ -1,10 +1,12 @@
 import Link from "next/link"
 import { ArrowRight, Calendar, Clock, MapPin, Users, ExternalLink } from "lucide-react"
-import { upcomingEventsForHomePage } from "@/data/index"
+import { upcomingEvents } from "@/data/index"
 import { GlassCard } from "@/components/glass-card"
 import { Button } from "@/components/ui/button"
 
 const Events = () => {
+    const upcomingEventsForHomePage = upcomingEvents.slice(0, 3);
+    console.log("Status Logs: ", upcomingEventsForHomePage[0].status, !upcomingEventsForHomePage[0].status);
     return (
         <section className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -68,13 +70,13 @@ const Events = () => {
                             {/* Description with fade effect */}
                             <div className="relative z-10 mb-6 overflow-hidden">
                                 <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2 transition-all duration-300 group-hover:text-gray-800 dark:group-hover:text-gray-200">
-                                    {event.description}
+                                    {event.cardDescription}
                                 </p>
                                 <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent dark:opacity-0 group-hover:opacity-0 transition-opacity" />
                             </div>
 
                             {/* Registration button */}
-                            {event.registration_link && event.registration_deadline > new Date().toISOString() ? (
+                            {event.registration_link && event.registration_deadline && event.registration_deadline > new Date().toISOString() ? (
                                 <a
                                     href={event.registration_link}
                                     target="_blank"

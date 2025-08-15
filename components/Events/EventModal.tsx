@@ -6,35 +6,17 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import Image from 'next/image';
 import Link from 'next/link';
 import { format, parseISO } from 'date-fns';
+import { Event } from '@/types';
 
 type EventModalProps = {
   isOpen: boolean;
   onClose: () => void;
-  event: {
-    id: number;
-    title: string;
-    date: string;
-    time: string;
-    type: string;
-    cardDescription: string;
-    description: string;
-    speaker: string;
-    location: string;
-    status?: string;
-    capacity?: string;
-    registration_link?: string;
-    registration_deadline?: string;
-    photos?: string[];
-    bannerImage?: string;
-    attendees?: number;
-  } | null;
+  event: Event | null;
 };
 
 
 export function EventModal({ isOpen, onClose, event }: EventModalProps) {
   if (!event) return null;
-
-  console.log(event.registration_deadline)
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>

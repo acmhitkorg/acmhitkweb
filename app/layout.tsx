@@ -8,6 +8,7 @@ import { upcomingEvents } from "@/data";
 import { ThemeProvider } from '@/components/theme-provider';
 import { Analytics } from '@vercel/analytics/next';
 import { BannerProvider } from "@/context/BannerContext"; // Added import statement for BannerProvider
+import { useBanner } from "@/context/BannerContext";
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -22,10 +23,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Get the first upcoming event that hasn't happened yet
   const currentDate = new Date();
   const upcomingEvent = upcomingEvents.find(event => {
-    const eventDate = new Date(event.registration_deadline || event.date);
+    const eventDate = new Date(event.registration_deadline as string);
+    if (!eventDate) return false;
     return eventDate >= currentDate;
   });
 

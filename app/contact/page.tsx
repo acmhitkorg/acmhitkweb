@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Send, ExternalLink, Linkedin } from "lucide-react"
 import { socialMedia, teamContacts } from "@/data/index";
 import { Navigation } from "@/components/navigation"
@@ -145,13 +146,17 @@ export default function ContactPage() {
 
                     <div className="relative z-10 flex flex-col items-center h-full">
                       {/* Avatar with Hover Effect */}
-                      <div className="relative mb-6 group-hover:scale-105 transition-transform duration-500">
+                      <div className="relative mb-7 group-hover:scale-105 transition-transform duration-500">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full blur-md opacity-0 group-hover:opacity-70 transition-opacity duration-500" />
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="relative w-24 h-24 object-cover rounded-full border-2 border-white/20 shadow-lg group-hover:border-blue-500/30 transition-all duration-500"
-                        />
+                        <div className="relative w-44 h-44 rounded-full overflow-hidden border-2 border-white/20 shadow-lg group-hover:border-blue-500/30 transition-all duration-500">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          />
+                        </div>
                       </div>
 
                       {/* Member Info */}
