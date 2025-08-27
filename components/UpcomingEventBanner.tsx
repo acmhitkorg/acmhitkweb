@@ -43,11 +43,11 @@ export function UpcomingEventBanner({ event }: { event: Event }) {
                 <div className="w-full relative flex flex-col md:flex-row items-center justify-center md:justify-between gap-3 py-2.5">
                     {/* Event Info */}
                     <div className="w-full flex justify-between text-center md:text-left">
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
                             <div className="inline-flex items-center px-2.5 py-1 rounded-full bg-white/10 text-[0.6rem] md:text-xs font-medium text-white/90">
                                 🚀 Upcoming Event
                             </div>
-                            <h3 className="text-base font-semibold line-clamp-1">
+                            <h3 className="text-left text-base font-semibold text-ellipsis overflow-hidden whitespace-nowrap max-sm:max-w-[200px]">
                                 {event.title}
                             </h3>
                         </div>
