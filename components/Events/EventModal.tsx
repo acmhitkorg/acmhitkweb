@@ -52,9 +52,9 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                 <span className="whitespace-nowrap">{event.location}</span>
               </>
             )}
-            {event.attendees && (
+            {event.attendees && event.attendees > 0 && (
               <>
-                <span>•</span>
+                <span className="hidden sm:inline">•</span>
                 <span className="whitespace-nowrap">{event.attendees} attendees</span>
               </>
             )}

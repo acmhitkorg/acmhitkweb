@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { Calendar, Clock, MapPin, Users, ExternalLink, ArrowRight } from 'lucide-react';
 import { upcomingEvents, pastEvents } from '@/data/index';
@@ -24,49 +24,34 @@ const getUniqueYears = (events: Event[]) => {
 export default function EventsPage() {
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
+  const [formattedPastEvents, setFormattedPastEvents] = useState<Event[]>(pastEvents);
 
-  // Format and enhance past events with year for filtering
-  const enhancedPastEvents = useMemo(() =>
-    (pastEvents as unknown as Event[]).map(event => ({
+  // Get unique years from past events
+  const availableYears = getUniqueYears(pastEvents);
+
+  // Filter past events based on selected year
+  const filteredPastEvents = useMemo(() => {
+    return formattedPastEvents.filter(event => {
+      if (selectedYear === 'all') return true;
+      const eventYear = new Date(event.date).getFullYear();
+      return eventYear === Number(selectedYear);
+    });
+  }, [formattedPastEvents, selectedYear]);
+
+  const handleEventClick = (event: Event) => {
+    setSelectedEvent(event);
+  };
+
+  useEffect(() => {
+    setFormattedPastEvents(pastEvents.map(event => ({
       ...event,
       year: new Date(event.date).getFullYear(),
       time: event.time || '',
       speaker: event.speaker || '',
       attendees: event.attendees || 0,
       photos: event.photos || []
-    })),
-    []
-  );
-
-  // Format upcoming events
-  const formattedUpcomingEvents = useMemo(() =>
-    (upcomingEvents as unknown as Event[]).map(event => ({
-      ...event,
-      time: event.time || 'TBA',
-      speaker: event.speaker || 'Speaker TBA',
-      attendees: 0,
-      photos: []
-    })),
-    []
-  );
-
-  // Get unique years from past events
-  const availableYears = useMemo(
-    () => getUniqueYears(enhancedPastEvents),
-    [enhancedPastEvents]
-  );
-
-  // Filter events based on selected year
-  const filteredPastEvents = useMemo(
-    () => selectedYear === 'all'
-      ? enhancedPastEvents
-      : enhancedPastEvents.filter(event => event.year === selectedYear),
-    [enhancedPastEvents, selectedYear]
-  );
-
-  const handleEventClick = (event: Event) => {
-    setSelectedEvent(event);
-  };
+    })));
+  }, []);
 
   return (
     <>
@@ -99,9 +84,9 @@ export default function EventsPage() {
               </p>
             </div>
 
-            {formattedUpcomingEvents.length > 0 ? (
+            {upcomingEvents.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {formattedUpcomingEvents.map((event, index) => (
+                {upcomingEvents.map((event, index) => (
                   <GlassCard
                     key={index}
                     className="group relative overflow-hidden p-6 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white/95 to-blue-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-200/80 dark:border-gray-700/50 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
