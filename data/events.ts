@@ -65,7 +65,7 @@ export const upcomingEvents: Event[] = [
 `,
     speaker: "Prof. (Dr.) Nabendu Chaki & Mr. Snehasis Banerjee",
     capacity: "Limited seats available",
-    status: "Registration Open",
+    status: "closed",
     registration_link: "https://forms.gle/2rqNc18uXhCfox2x9",
     registration_deadline: "2025-08-31T23:59:00",
     bannerImage: "/Events/Put-On-Your-Computing-Cap.jpeg",
