@@ -10,7 +10,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/
 
 # production
 /build
@@ -34,7 +34,7 @@ yarn-error.log*
 
 # next.js
 /.next/
-/out/
+# /out/
 
 # production
 /build
@@ -71,7 +71,7 @@ next-env.d.ts
 
 # Build output
 .next/
-out/
+# out/
 
 # Logs
 logs
