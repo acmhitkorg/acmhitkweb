@@ -96,9 +96,9 @@ export const currentTeam: TeamMember[] = [
     roleAtACMHITK: "Vice Chairperson",
     roleAtHITK: "3rd year, CSE'27",
     image: "/Aryan-Ghosh.png",
-    bio: "As the Vice Chairperson of the ACM Student Chapter at HITK, I strive to cultivate a culture of curiosity, collaboration, and cutting-edge innovation. From adrenaline-filled code battles to insightful alumni panels, I strive to bridge the gap between classroom learning and real-world tech. With a passion for building scalable systems, cracking algorithms, and exploring AI frontiers, I channel my technical skills into curating events that inspire, challenge, and elevate our student community.",
+    bio: "Aryan Ghosh is a CSE Junior at Heritage Institute of Technology and the Vice Chairperson of the ACM HITK Student Chapter. A recipient of the prestigious INSPIRE Scholarship for Higher Education (SHE) under DST, Government of India, he is deeply passionate about advancing innovation at the intersection of Artificial Intelligence, Full-Stack Development, and Computational Research. He has spearheaded and contributed to several AI- and ML-driven projects spanning domains such as intelligent systems, digital sustainability, and autonomous computation. Aryan has actively represented HITK in multiple national-level hackathons, with projects like DripTect and AwareOn earning recognition for their societal and technological impact. Driven by a blend of research curiosity and practical design thinking, he continues to explore the confluence of machine learning, system intelligence, and human-computer interaction, mentoring peers and leading initiatives that amplify the chapter’s vision of nurturing future innovators in computing.",
     achievements:
-      "Presently working on Spiking neural networks and Mathematical Modeling; Recieved Scholarship for Higher Education (SHE) under the INSPIRE Scheme of DST",
+      "Aryan has co-organized flagship ACM HITK events such as Program Paradox and Put On Your Computing Cap, driving interdisciplinary engagement and computational learning. He led projects like DripTect, an IoT-ML flood prediction system that won the Hardware Track at StatusCode 2.0 (IIIT Kalyani), and AwareOn, a civic-tech platform for AI-driven citizen engagement and many more. A recipient of the INSPIRE Scholarship (DST, Govt. of India) for outstanding academic merit, Aryan has also triumphed in multiple inter-college coding competitions and currently contributes to the Web Team of the International Conference on Applied Algorithms (ICAA 2026), enhancing global academic accessibility through innovative web engineering. He currently serves the chapter as the Vice-Chair.",
     socials: [
       {
         name: "Email",
@@ -515,10 +515,15 @@ export const currentTeam: TeamMember[] = [
         icon: <Mail className="h-5 w-5" />,
       },
       {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/srijit-roy-2351214h/",
+        icon: <Linkedin className="h-5 w-5" />,
+      },
+      {
         name: "GitHub",
         url: "https://github.com/Srijit27",
         icon: <Github className="h-5 w-5" />
-      }
+      },
     ],
   },
   {
