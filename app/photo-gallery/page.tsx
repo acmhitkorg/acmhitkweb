@@ -5,6 +5,58 @@ import Image from "next/image"
 // Organize images by year/event
 const gallerySections = [
     {
+        year: "2025-26",
+        events: [
+            {
+                name: "August 2025 - Program Paradox",
+                path: "/ACM-Pics-2025_26/Program-Paradox",
+                images: [
+                    "Program-Paradox-0.jpg",
+                    "Program-Paradox-1.jpg",
+                    "Program-Paradox-2.jpg",
+                    "Program-Paradox-3.jpg",
+                    "Program-Paradox-4.jpg",
+                    "Program-Paradox-5.jpg",
+                    "Program-Paradox-6.jpg",
+                    "Program-Paradox-7.jpg",
+                    "Program-Paradox-8.jpg",
+                    "Program-Paradox-9.jpg",
+                    "Program-Paradox-10.jpg",
+                    "Program-Paradox-11.jpg",
+                    "Program-Paradox-12.jpg",
+                    "Program-Paradox-13.jpg",
+                ]
+            },
+            {
+                name: "September 2025 - Put On Your Computing Cap",
+                path: "/ACM-Pics-2025_26/Put-On-Your-Computing-Cap",
+                images: [
+                    "Put-On-Your-Computing-Cap-20.jpg",
+                    "Put-On-Your-Computing-Cap-0.jpg",
+                    "Put-On-Your-Computing-Cap-1.jpg",
+                    "Put-On-Your-Computing-Cap-2.jpg",
+                    "Put-On-Your-Computing-Cap-13.jpg",
+                    "Put-On-Your-Computing-Cap-3.jpg",
+                    "Put-On-Your-Computing-Cap-4.jpg",
+                    "Put-On-Your-Computing-Cap-11.jpg",
+                    "Put-On-Your-Computing-Cap-12.jpg",
+                    "Put-On-Your-Computing-Cap-14.jpg",
+                    "Put-On-Your-Computing-Cap-15.jpg",
+                    "Put-On-Your-Computing-Cap-16.jpg",
+                    "Put-On-Your-Computing-Cap-17.jpg",
+                    "Put-On-Your-Computing-Cap-18.jpg",
+                    "Put-On-Your-Computing-Cap-19.jpg",
+                    "Put-On-Your-Computing-Cap-5.jpg",
+                    "Put-On-Your-Computing-Cap-6.jpg",
+                    "Put-On-Your-Computing-Cap-7.jpg",
+                    "Put-On-Your-Computing-Cap-8.jpg",
+                    "Put-On-Your-Computing-Cap-9.jpg",
+                    "Put-On-Your-Computing-Cap-10.jpg",
+                ]
+            }
+        ]
+    },
+    {
         year: "2024-25",
         events: [
             {

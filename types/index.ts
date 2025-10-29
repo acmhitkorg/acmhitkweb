@@ -23,6 +23,7 @@ export interface TeamMember {
 export interface Event {
     title: string;
     date: string;
+    displayDate?: string;
     time?: string;
     location: string;
     type: string;

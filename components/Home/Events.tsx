@@ -47,7 +47,7 @@ const Events = () => {
                             {/* Event date */}
                             <div className="relative z-10 flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 mt-3 mb-4 group-has-[.event-date]:hover:text-gray-700 dark:group-has-[.event-date]:hover:text-gray-300 transition-colors">
                                 <Calendar className="h-4 w-4 mr-2 text-gray-400/80 dark:text-gray-500/80" />
-                                <span className="event-date">{event.date}</span>
+                                <span className="event-date">{event.displayDate}</span>
                             </div>
 
                             {/* Event title with gradient */}

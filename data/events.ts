@@ -2,6 +2,36 @@ import { Event } from "@/types"
 
 export const upcomingEvents: Event[] = [
   {
+    title: "Welcome.yml",
+    date: "5 November 2025",
+    displayDate: "5th November 2025",
+    time: "To be announced",
+    location: "To be announced",
+    type: "Tech Talk & Extempore",
+    cardDescription:
+      "Dive into an afternoon of innovation and inspiration with the ACM HITK Student Chapter! Experience a power-packed Tech Talk by AWS professionals, get introduced to the world of ACM through an interactive orientation session, and witness ideas come alive in a thrilling Extempore showdown on cutting-edge tech themes — all leading up to an exciting valedictory celebration honoring the finest minds on campus",
+    speaker: "To be announced",
+    capacity: "To be announced",
+    status: "",
+  },
+  {
+    title: "Innovista'25",
+    date: "January 2026",
+    displayDate: "January 2026",
+    time: "To be announced",
+    location: "To be announced",
+    type: "Technical Fest",
+    cardDescription:
+      "A flagship inter-college fest by ACM HITK, celebrating creativity, computation, and collaboration. Featuring an inspiring ACM India Eminent Speaker Session and SparkTank, a thrilling idea-pitching challenge that transforms bold visions into real-world innovation.",
+    speaker: "To be announced",
+    capacity: "To be announced",
+    status: "",
+  },
+];
+
+export const pastEvents: Event[] = [
+  // 2025 Events
+  {
     title: "Put On Your Computing Cap!",
     date: "2025-09-01",
     time: "1:00 PM to 3:30 PM",
@@ -71,70 +101,6 @@ export const upcomingEvents: Event[] = [
     bannerImage: "/Events/Put-On-Your-Computing-Cap.jpeg",
     photos: []
   },
-  {
-    title: "Bug Bash",
-    date: "October 2025",
-    time: "To be announced",
-    location: "To be announced",
-    type: "Competition",
-    cardDescription:
-      "A solo debugging and code refactoring challenge that tests your problem-solving skills under pressure. The event will conclude with a live Glitch Boss round where participants will need to fix bugs in real-time.",
-    speaker: "To be announced",
-    capacity: "30 participants",
-    status: "",
-  },
-  {
-    title: "CodeSprint 1.0",
-    date: "October 2025",
-    time: "To be announced",
-    location: "To be announced",
-    type: "Competition",
-    cardDescription:
-      "A fast-paced solo DSA showdown where coders race against time to crack algorithmic challenges. Test your problem-solving speed and accuracy in this exciting competition.",
-    speaker: "To be announced",
-    capacity: "100 participants",
-    status: "",
-  },
-  {
-    title: "Idea Storm",
-    date: "February 2026",
-    time: "To be announced",
-    location: "To be announced",
-    type: "Ideathon",
-    cardDescription:
-      "A high-energy ideathon where participants pitch innovative ideas and battle for the spotlight. Bring your creativity and problem-solving skills to the table!",
-    speaker: "To be announced",
-    capacity: "20 teams",
-    status: "",
-  },
-  {
-    title: "Code & Clue: ACM Tech Treasure Hunt",
-    date: "February 2026",
-    time: "To be announced",
-    location: "To be announced",
-    type: "Competition",
-    cardDescription:
-      "A coding and puzzle-based treasure hunt combining logic, encryption, and problem-solving. Teams of 3-5 will compete across various checkpoints leading to an exciting finale. An offline workshop may be included to prepare participants.",
-    speaker: "To be announced",
-    capacity: "15 teams",
-    status: "",
-  },
-  {
-    title: "Distinguished Speaker Tech Talk",
-    date: "March 2026",
-    time: "To be announced",
-    location: "To be announced",
-    type: "Seminar",
-    cardDescription:
-      "An engaging session featuring an industry expert sharing insights on emerging technologies and current industry trends. This talk aims to inspire students and provide valuable career guidance.",
-    speaker: "To be announced",
-    capacity: "200 participants",
-    status: "",
-  },
-];
-
-export const pastEvents: Event[] = [
-  // 2025 Events
   {
     title:
       "Program Paradox",

@@ -99,7 +99,7 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                   <div>
                     <h4 className="font-medium text-foreground text-sm">Date</h4>
                     <p className="text-muted-foreground text-sm">
-                      {format(new Date(event.date), 'MMMM d, yyyy')}
+                      {event.displayDate}
                       {event.time && ` • ${event.time}`}
                     </p>
                   </div>
