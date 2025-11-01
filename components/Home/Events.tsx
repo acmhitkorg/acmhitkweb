@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 const Events = () => {
     const upcomingEventsForHomePage = upcomingEvents.slice(0, 3);
-    console.log("Status Logs: ", upcomingEventsForHomePage[0].status, !upcomingEventsForHomePage[0].status);
+    // console.log("Status Logs: ", upcomingEventsForHomePage, new Date(upcomingEventsForHomePage?.[0].registration_deadline) > new Date());
     return (
         <section className="py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -76,7 +76,7 @@ const Events = () => {
                             </div>
 
                             {/* Registration button */}
-                            {event.registration_link && event.registration_deadline && event.registration_deadline > new Date().toISOString() ? (
+                            {event.registration_link && event.registration_deadline && new Date(event.registration_deadline) > new Date() ? (
                                 <a
                                     href={event.registration_link}
                                     target="_blank"

@@ -147,7 +147,7 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                       <Button
                         asChild
                         className="w-full"
-                        disabled={event.status !== 'Registration Open'}
+                        disabled={event.status !== 'open'}
                       >
                         <Link
                           href={event.registration_link}
@@ -155,7 +155,7 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                           rel="noopener noreferrer"
                           className="flex items-center justify-center gap-2"
                         >
-                          {event.status === 'Registration Open' ? 'Register Now' : event.status || 'Registration Closed'}
+                          {event.status === 'open' ? 'Register Now' : 'Registration Closed'}
                           <ExternalLink className="h-4 w-4" />
                         </Link>
                       </Button>

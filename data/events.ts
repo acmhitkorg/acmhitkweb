@@ -5,14 +5,85 @@ export const upcomingEvents: Event[] = [
     title: "Welcome.yml",
     date: "5 November 2025",
     displayDate: "5th November 2025",
-    time: "To be announced",
-    location: "To be announced",
+    time: "2:45 PM to 5:00 PM",
+    location: "SV Auditorium, Central Building, Heritage Institute of Technology",
     type: "Tech Talk & Extempore",
     cardDescription:
       "Dive into an afternoon of innovation and inspiration with the ACM HITK Student Chapter! Experience a power-packed Tech Talk by AWS professionals, get introduced to the world of ACM through an interactive orientation session, and witness ideas come alive in a thrilling Extempore showdown on cutting-edge tech themes — all leading up to an exciting valedictory celebration honoring the finest minds on campus",
-    speaker: "To be announced",
-    capacity: "To be announced",
-    status: "",
+    description: `<p>🚀 The cloud is calling — are you ready to answer? 🚀</p>
+
+<div class="space-y-4">
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Event Details</h3>
+    <ul class="space-y-1">
+      <li><strong>Date:</strong> November 5, 2025 (Wednesday)</li>
+      <li><strong>Time:</strong> 2:45 PM to 5:00 PM (Be seated by 2:45 PM sharp!)</li>
+      <li><strong>Venue:</strong> SV Auditorium, Central Building, Heritage Institute of Technology</li>
+      <li><strong>Speakers:</strong></li>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Mr. Bubai Bal – Solutions Architect, AWS India</li>
+        <li>Mr. Ritwik Ray – Partner Success Manager, AWS India & SAARC</li>
+      </ul>
+      <li><strong>Eligibility:</strong> Open to all students of Heritage Institute of Technology</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Schedule</h3>
+    <div class="space-y-2">
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">2:45 PM – 2:55 PM: Inaugural Address & Welcome Note</h4>
+        <p class="text-sm text-muted-foreground">Opening remarks by the Faculty Sponsor and the ACM HITK Core Team</p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">2:55 PM – 4:00 PM: Technical Session – “From Cloud to AI: How Technology Shapes the Future”</h4>
+        <p class="text-sm text-muted-foreground">An engaging tech talk by AWS professionals – Mr. Bubai Bal and Mr. Ritwik Ray. Discover how cloud computing and AI are revolutionizing industries and shaping tomorrow’s digital innovators.</p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">4:00 PM – 4:15 PM: Orientation Session – Kickstart Your Journey with ACM HITK</h4>
+        <p class="text-sm text-muted-foreground">A short orientation for first-year students introducing the ACM HITK Student Chapter and its initiatives in fostering computing excellence.</p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">4:15 PM – 4:45 PM: Unscripted Tech – Extempore Round</h4>
+        <p class="text-sm text-muted-foreground">
+          A thrilling extempore event where innovation meets improvisation! The top 6 finalists, selected from the preliminary round, will speak spontaneously on surprise tech topics — showcasing creativity, confidence, and clarity.
+        </p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">4:45 PM – 5:00 PM: Valedictory & Prize Distribution</h4>
+        <p class="text-sm text-muted-foreground">Celebrating the brightest minds and rewarding the most inspiring voices of creativity and tech brilliance.</p>
+      </div>
+    </div>
+
+    <h3 class="text-lg font-semibold mb-2">Prizes & Goodies</h3>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>Exciting prizes for top performers of “Unscripted Tech”</li>
+      <li>E-Certificates and MAR Points for participants</li>
+      <li>An opportunity to network with AWS professionals and ACM HITK members</li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+    <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Important Note</h3>
+    <p class="text-sm text-blue-600 dark:text-blue-200">
+      Seats are limited and allocated on a first-come, first-served basis. Please arrive early to secure your seat. 
+      <br>
+      The event is open to all students of Heritage Institute of Technology.
+    </p>
+  </div>
+</div>
+`,
+    registration_link: "https://forms.gle/u3naFpvhTnQ91j1X7",
+    registration_deadline: "2025-11-04T23:59:00",
+    speaker: "Mr. Bubai Bal & Mr. Ritwik Ray",
+    capacity: "Limited seats available",
+    status: "open",
+    bannerImage: "/Events/Welcome-yml.png",
+    photos: []
   },
   {
     title: "Innovista'25",
