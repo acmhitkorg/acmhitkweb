@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/hitkhosting/public_html/
-    - /usr/bin/rsync -a --delete out/ $DEPLOYPATH
+    - /bin/rsync -a --delete out/ $DEPLOYPATH/
