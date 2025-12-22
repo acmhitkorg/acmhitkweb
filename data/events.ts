@@ -56,7 +56,7 @@ export const upcomingEvents: Event[] = [
 		speaker: "Dr. Anustuv Pal",
 		capacity: "Limited seating",
 		status: "open",
-		bannerImage: "/Events/turning-keyboard-into-musical-instrument.png",
+		bannerImage: "/Events/webp/turning-keyboard-into-musical-instrument.webp",
 		photos: []
 	},
 	{
@@ -157,7 +157,7 @@ export const pastEvents: Event[] = [
 		speaker: "Mr. Bubai Bal & Mr. Ritwik Ray",
 		capacity: "Limited seats available",
 		status: "open",
-		bannerImage: "/Events/Welcome-yml.png",
+		bannerImage: "/Events/webp/Welcome-yml.webp",
 		photos: []
 	},
 	{
@@ -227,7 +227,7 @@ export const pastEvents: Event[] = [
 		status: "closed",
 		registration_link: "https://forms.gle/2rqNc18uXhCfox2x9",
 		registration_deadline: "2025-08-31T23:59:00",
-		bannerImage: "/Events/Put-On-Your-Computing-Cap.jpeg",
+		bannerImage: "/Events/webp/Put-On-Your-Computing-Cap.webp",
 		photos: []
 	},
 	{
@@ -299,7 +299,7 @@ export const pastEvents: Event[] = [
 		status: "",
 		registration_link: "https://forms.gle/bdc6NkxPgExRPEsw5",
 		registration_deadline: "2025-08-06T23:59:00",
-		bannerImage: "/Events/Program-Paradox-0.png",
+		bannerImage: "/Events/webp/Program-Paradox-0.webp",
 		photos: []
 	},
 	{
