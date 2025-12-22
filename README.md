@@ -13,3 +13,33 @@ The **Association for Computing Machinery (ACM)** is the world's largest educati
 ## About HITK ACM Student Chapter
 
 The **Heritage Institute of Technology (HITK) ACM Student Chapter** is a vibrant and active student-run organization dedicated to fostering a strong computing community within the college. Aligned with ACM's mission, our chapter aims to promote computer science education, facilitate professional development, and encourage innovation among students. We regularly organize workshops, coding competitions, technical talks, and various events to enhance students' skills, connect them with industry professionals, and prepare them for successful careers in technology.
+
+### Change image format to Webp
+
+- Install sharp-cli globally, sharp-cli is the CLI for sharp, a high performance Node.js image processing module.
+
+```sh
+pnpm add -g sharp-cli # or npm i -g sharp-cli
+```
+
+- Convert assets from png, jpg, jpeg to webp format with 70% quality
+```sh
+sharp --input "png,jpg,jpeg files" \
+  --format webp \
+  --quality 70 \
+  --output "output-path" # for current folder remove output flag
+```
+Example:
+```sh
+sharp --input "public/Events/*.{png,jpeg}" \
+  --format webp \
+  --quality 70 \
+  --output public/Events/webp
+```
+
+- After this use the smaller sized webp images in appropriate places.
+
+#### Notes
+- Always use --input when converting multiple files
+- Quote glob patterns to avoid shell (zsh) expansion issues
+
