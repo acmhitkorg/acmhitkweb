@@ -1,97 +1,73 @@
 1:"$Sreact.fragment"
-2:I[2083,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-aabf779d8eec937e.js"],"BannerProvider"]
-3:I[8429,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-aabf779d8eec937e.js"],"UpcomingEventBanner"]
-9:I[4648,[],""]
+2:I[2083,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-8dfe5e6c04e713b7.js"],"BannerProvider"]
+3:I[8429,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-8dfe5e6c04e713b7.js"],"UpcomingEventBanner"]
+5:I[1656,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-8dfe5e6c04e713b7.js"],"ThemeProvider"]
+c:I[4648,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/1586c1d87bef7267.css","style"]
 :HL["/_next/static/css/827658ac991ae42e.css","style"]
-4:Tde4,<p>🚀 The cloud is calling — are you ready to answer? 🚀</p>
+4:T7c3,<p>🎶 <strong>Turning the Keyboard into a Musical Instrument</strong></p>
+
+<p>Ever wondered how a regular computer keyboard can be transformed into a musical instrument? This technical session explores how Python can be used to build a real-time, cross-platform creative application—challenging the belief that high-performance creative software must rely solely on low-level languages.</p>
 
 <div class="space-y-4">
   <div>
     <h3 class="text-lg font-semibold mb-2">Event Details</h3>
     <ul class="space-y-1">
-      <li><strong>Date:</strong> November 5, 2025 (Wednesday)</li>
-      <li><strong>Time:</strong> 2:45 PM to 5:00 PM (Be seated by 2:45 PM sharp!)</li>
-      <li><strong>Venue:</strong> SV Auditorium, Central Building, Heritage Institute of Technology</li>
-      <li><strong>Speakers:</strong></li>
+      <li><strong>Date:</strong> December 23, 2025 (Tuesday)</li>
+      <li><strong>Time:</strong> 11:30 AM onwards (Duration: ~45 minutes)</li>
+      <li><strong>Venue:</strong> ICT 312, Heritage Institute of Technology</li>
+      <li><strong>Speaker:</strong> Dr. Anustuv Pal</li>
       <ul class="list-disc pl-6 space-y-1">
-        <li>Mr. Bubai Bal – Solutions Architect, AWS India</li>
-        <li>Mr. Ritwik Ray – Partner Success Manager, AWS India & SAARC</li>
+        <li>Founder, QwertyZen Pvt. Ltd.</li>
+        <li>PhD, IISc Bangalore</li>
+        <li>Former Research Scientist, University of Tennessee</li>
       </ul>
-      <li><strong>Eligibility:</strong> Open to all students of Heritage Institute of Technology</li>
+      <li><strong>Eligibility:</strong> Open to all students</li>
     </ul>
   </div>
 
   <div>
-    <h3 class="text-lg font-semibold mb-2">Schedule</h3>
-    <div class="space-y-2">
-      <div class="bg-muted/50 p-3 rounded-lg">
-        <h4 class="font-medium">2:45 PM – 2:55 PM: Inaugural Address & Welcome Note</h4>
-        <p class="text-sm text-muted-foreground">Opening remarks by the Faculty Sponsor and the ACM HITK Core Team</p>
-      </div>
-
-      <div class="bg-muted/50 p-3 rounded-lg">
-        <h4 class="font-medium">2:55 PM – 4:00 PM: Technical Session – “From Cloud to AI: How Technology Shapes the Future”</h4>
-        <p class="text-sm text-muted-foreground">An engaging tech talk by AWS professionals – Mr. Bubai Bal and Mr. Ritwik Ray. Discover how cloud computing and AI are revolutionizing industries and shaping tomorrow’s digital innovators.</p>
-      </div>
-
-      <div class="bg-muted/50 p-3 rounded-lg">
-        <h4 class="font-medium">4:00 PM – 4:15 PM: Orientation Session – Kickstart Your Journey with ACM HITK</h4>
-        <p class="text-sm text-muted-foreground">A short orientation for first-year students introducing the ACM HITK Student Chapter and its initiatives in fostering computing excellence.</p>
-      </div>
-
-      <div class="bg-muted/50 p-3 rounded-lg">
-        <h4 class="font-medium">4:15 PM – 4:45 PM: Unscripted Tech – Extempore Round</h4>
-        <p class="text-sm text-muted-foreground">
-          A thrilling extempore event where innovation meets improvisation! The top 6 finalists, selected from the preliminary round, will speak spontaneously on surprise tech topics — showcasing creativity, confidence, and clarity.
-        </p>
-      </div>
-
-      <div class="bg-muted/50 p-3 rounded-lg">
-        <h4 class="font-medium">4:45 PM – 5:00 PM: Valedictory & Prize Distribution</h4>
-        <p class="text-sm text-muted-foreground">Celebrating the brightest minds and rewarding the most inspiring voices of creativity and tech brilliance.</p>
-      </div>
-    </div>
-
-    <h3 class="text-lg font-semibold mb-2">Prizes & Goodies</h3>
+    <h3 class="text-lg font-semibold mb-2">Why You Should Attend</h3>
     <ul class="list-disc pl-5 space-y-1">
-      <li>Exciting prizes for top performers of “Unscripted Tech”</li>
-      <li>E-Certificates and MAR Points for participants</li>
-      <li>An opportunity to network with AWS professionals and ACM HITK members</li>
+      <li>Learn how Python can power real-time creative applications</li>
+      <li>Understand system design for low-latency input and audio processing</li>
+      <li>Get inspired by a journey blending physics, HPC, and music technology</li>
+      <li>Ideal for students interested in Python, creative coding, audio tech, and software design</li>
     </ul>
   </div>
 
   <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
     <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Important Note</h3>
     <p class="text-sm text-blue-600 dark:text-blue-200">
-      Seats are limited and allocated on a first-come, first-served basis. Please arrive early to secure your seat. 
-      <br>
-      The event is open to all students of Heritage Institute of Technology.
+      Registration is mandatory to attend the event.  
+      <br />
+      Online participation certificates will be provided to students attending the full technical session.
     </p>
   </div>
 </div>
-0:{"P":null,"b":"mmIJSPgjRtRi_l0In4qOX","p":"","c":["","photo-gallery",""],"i":false,"f":[[["",{"children":["photo-gallery",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1586c1d87bef7267.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/827658ac991ae42e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"min-h-screen bg-background font-sans antialiased __variable_f367f3","children":["$","$L2",null,{"children":[["$","$L3",null,{"event":{"title":"Welcome.yml","date":"5 November 2025","displayDate":"5th November 2025","time":"2:45 PM to 5:00 PM","location":"SV Auditorium, Central Building, Heritage Institute of Technology","type":"Tech Talk & Extempore","cardDescription":"Dive into an afternoon of innovation and inspiration with the ACM HITK Student Chapter! Experience a power-packed Tech Talk by AWS professionals, get introduced to the world of ACM through an interactive orientation session, and witness ideas come alive in a thrilling Extempore showdown on cutting-edge tech themes — all leading up to an exciting valedictory celebration honoring the finest minds on campus","description":"$4","registration_link":"https://forms.gle/u3naFpvhTnQ91j1X7","registration_deadline":"2025-11-04T23:59:00","speaker":"Mr. Bubai Bal & Mr. Ritwik Ray","capacity":"Limited seats available","status":"open","bannerImage":"/Events/Welcome-yml.png","photos":[]}}],"$L5"]}]}]}]]}],{"children":["photo-gallery","$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
-a:I[1656,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-aabf779d8eec937e.js"],"ThemeProvider"]
-b:I[9900,[],""]
-c:I[1290,[],""]
-d:I[6250,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-aabf779d8eec937e.js"],"Toaster"]
-e:I[510,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-aabf779d8eec937e.js"],"Analytics"]
-f:I[2857,[],"ClientPageRoot"]
-10:I[8372,["87","static/chunks/87-80067b09769fbca9.js","438","static/chunks/438-05473422c14320b9.js","638","static/chunks/638-481b6d016100a406.js","890","static/chunks/app/photo-gallery/page-10f5686436a754fb.js"],"default"]
-13:I[5628,[],"OutletBoundary"]
-15:I[6532,[],"AsyncMetadataOutlet"]
-17:I[5628,[],"ViewportBoundary"]
-19:I[5628,[],"MetadataBoundary"]
-1a:"$Sreact.suspense"
-5:["$","$La",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$Ld",null,{}],["$","$Le",null,{}]]}]
-6:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-7:["$","$1","c",{"children":[["$","$Lf",null,{"Component":"$10","searchParams":{},"params":{},"promises":["$@11","$@12"]}],null,["$","$L13",null,{"children":["$L14",["$","$L15",null,{"promise":"$@16"}]]}]]}]
-8:["$","$1","h",{"children":[null,[["$","$L17",null,{"children":"$L18"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L19",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1a",null,{"fallback":null,"children":"$L1b"}]}]}]]}]
-11:{}
-12:"$7:props:children:0:props:params"
-18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-14:null
-1c:I[8284,[],"IconMark"]
-16:{"metadata":[["$","title","0",{"children":"ACM HITK - Heritage Institute of Technology ACM Student Chapter"}],["$","meta","1",{"name":"description","content":"The official ACM Student Chapter of Heritage Institute of Technology, fostering a vibrant community of computing enthusiasts."}],["$","link","2",{"rel":"icon","href":"/acmhitk.ico"}],["$","$L1c","3",{}]],"error":null,"digest":"$undefined"}
-1b:"$16:metadata"
+0:{"P":null,"b":"wMvv3H6uVbaeasrS_sGRw","p":"","c":["","photo-gallery",""],"i":false,"f":[[["",{"children":["photo-gallery",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/1586c1d87bef7267.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/827658ac991ae42e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"min-h-screen bg-background font-sans antialiased __variable_f367f3","children":["$","$L2",null,{"children":[["$","$L3",null,{"event":{"title":"Turning the Keyboard into a Musical Instrument","date":"23 December 2025","displayDate":"23rd December 2025","time":"11:30 AM onwards (45 minutes)","location":"ICT 312, Heritage Institute of Technology","type":"Technical Talk","cardDescription":"An inspiring technical talk hosted by the ACM HITK Student Chapter exploring how Python can be used to build real-time, cross-platform creative applications by transforming a computer keyboard into a musical instrument — blending technology, creativity, and music.","description":"$4","registration_link":"https://forms.gle/QKbEiPT7Cz8nKbpp7","registration_deadline":"2025-12-22T23:59:00","speaker":"Dr. Anustuv Pal","capacity":"Limited seating","status":"open","bannerImage":"/Events/turning-keyboard-into-musical-instrument.png","photos":[]}}],["$","$L5",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$L6","$L7","$L8"]}]]}]}]}]]}],{"children":["photo-gallery","$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+d:I[9900,[],""]
+e:I[1290,[],""]
+f:I[6250,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-8dfe5e6c04e713b7.js"],"Toaster"]
+10:I[510,["87","static/chunks/87-80067b09769fbca9.js","666","static/chunks/666-d272ab17fbaa49a0.js","177","static/chunks/app/layout-8dfe5e6c04e713b7.js"],"Analytics"]
+11:I[2857,[],"ClientPageRoot"]
+12:I[8372,["87","static/chunks/87-80067b09769fbca9.js","438","static/chunks/438-05473422c14320b9.js","638","static/chunks/638-481b6d016100a406.js","890","static/chunks/app/photo-gallery/page-8fd6b4f29305967a.js"],"default"]
+15:I[5628,[],"OutletBoundary"]
+17:I[6532,[],"AsyncMetadataOutlet"]
+19:I[5628,[],"ViewportBoundary"]
+1b:I[5628,[],"MetadataBoundary"]
+1c:"$Sreact.suspense"
+6:["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]
+7:["$","$Lf",null,{}]
+8:["$","$L10",null,{}]
+9:["$","$1","c",{"children":[null,["$","$Ld",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Le",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":[["$","$L11",null,{"Component":"$12","searchParams":{},"params":{},"promises":["$@13","$@14"]}],null,["$","$L15",null,{"children":["$L16",["$","$L17",null,{"promise":"$@18"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L19",null,{"children":"$L1a"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L1b",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1c",null,{"fallback":null,"children":"$L1d"}]}]}]]}]
+13:{}
+14:"$a:props:children:0:props:params"
+1a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+16:null
+1e:I[8284,[],"IconMark"]
+18:{"metadata":[["$","title","0",{"children":"ACM HITK - Heritage Institute of Technology ACM Student Chapter"}],["$","meta","1",{"name":"description","content":"The official ACM Student Chapter of Heritage Institute of Technology, fostering a vibrant community of computing enthusiasts."}],["$","link","2",{"rel":"icon","href":"/acmhitk.ico"}],["$","$L1e","3",{}]],"error":null,"digest":"$undefined"}
+1d:"$18:metadata"
