@@ -1,19 +1,23 @@
-'use client';
+"use client";
 
-import { X, ExternalLink, Calendar, Clock, MapPin, Users } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import Image from 'next/image';
-import Link from 'next/link';
-import { format, parseISO } from 'date-fns';
-import { Event } from '@/types';
+import { X, ExternalLink, Calendar, Clock, MapPin, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import Image from "next/image";
+import Link from "next/link";
+import { format, parseISO } from "date-fns";
+import { Event } from "@/types";
 
 type EventModalProps = {
   isOpen: boolean;
   onClose: () => void;
   event: Event | null;
 };
-
 
 export function EventModal({ isOpen, onClose, event }: EventModalProps) {
   if (!event) return null;
@@ -41,7 +45,9 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-muted-foreground mt-2">
-            <span className={`px-2 py-0.5 bg-primary/10 text-primary rounded-full whitespace-nowrap`}>
+            <span
+              className={`px-2 py-0.5 bg-primary/10 text-primary rounded-full whitespace-nowrap`}
+            >
               {event.type}
             </span>
             <span className="hidden sm:inline">•</span>
@@ -55,7 +61,9 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
             {event.attendees && event.attendees > 0 && (
               <>
                 <span className="hidden sm:inline">•</span>
-                <span className="whitespace-nowrap">{event.attendees} attendees</span>
+                <span className="whitespace-nowrap">
+                  {event.attendees} attendees
+                </span>
               </>
             )}
           </div>
@@ -71,12 +79,12 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: 'auto', height: 'auto', maxHeight: '80vh' }}
+                style={{ width: "auto", height: "auto", maxHeight: "80vh" }}
                 className="rounded-lg"
                 priority
                 onError={(e) => {
                   const container = (e.target as HTMLElement).parentElement;
-                  if (container) container.style.display = 'none';
+                  if (container) container.style.display = "none";
                 }}
               />
             </div>
@@ -88,8 +96,12 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                 <div className="flex items-start space-x-2">
                   <Users className="h-5 w-5 mt-0.5 text-blue-500 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium text-foreground text-sm">Speakers</h4>
-                    <p className="text-muted-foreground text-sm">{event.speaker}</p>
+                    <h4 className="font-medium text-foreground text-sm">
+                      Speakers
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      {event.speaker}
+                    </p>
                   </div>
                 </div>
               )}
@@ -97,7 +109,9 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                 <div className="flex items-start space-x-2">
                   <Calendar className="h-5 w-5 mt-0.5 text-blue-500 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium text-foreground text-sm">Date</h4>
+                    <h4 className="font-medium text-foreground text-sm">
+                      Date
+                    </h4>
                     <p className="text-muted-foreground text-sm">
                       {event.displayDate}
                       {event.time && ` • ${event.time}`}
@@ -109,8 +123,12 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                 <div className="flex items-start space-x-2">
                   <MapPin className="h-5 w-5 mt-0.5 text-blue-500 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium text-foreground text-sm">Location</h4>
-                    <p className="text-muted-foreground text-sm">{event.location}</p>
+                    <h4 className="font-medium text-foreground text-sm">
+                      Location
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      {event.location}
+                    </p>
                   </div>
                 </div>
               )}
@@ -118,8 +136,12 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                 <div className="flex items-start space-x-2">
                   <Users className="h-5 w-5 mt-0.5 text-blue-500 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium text-foreground text-sm">Capacity</h4>
-                    <p className="text-muted-foreground text-sm">{event.capacity}</p>
+                    <h4 className="font-medium text-foreground text-sm">
+                      Capacity
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      {event.capacity}
+                    </p>
                   </div>
                 </div>
               )}
@@ -127,17 +149,23 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-medium text-foreground text-sm sm:text-base mb-2">About the Event</h4>
-                {event.description ? <div className="prose prose-sm dark:prose-invert prose-p:text-muted-foreground prose-ul:list-disc prose-ul:pl-5 prose-li:my-1 max-w-none">
-                  <div
-                    className="space-y-4"
-                    dangerouslySetInnerHTML={{
-                      __html: event.description
-                        .replace(/\n\s*\n/g, '</p><p>')
-                        .replace(/\n/g, ' ')
-                    }}
-                  />
-                </div> : <div>{event.cardDescription}</div>}
+                <h4 className="font-medium text-foreground text-sm sm:text-base mb-2">
+                  About the Event
+                </h4>
+                {event.description ? (
+                  <div className="prose prose-sm dark:prose-invert prose-p:text-muted-foreground prose-ul:list-disc prose-ul:pl-5 prose-li:my-1 max-w-none">
+                    <div
+                      className="space-y-4"
+                      dangerouslySetInnerHTML={{
+                        __html: event.description
+                          .replace(/\n\s*\n/g, "</p><p>")
+                          .replace(/\n/g, " "),
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <div>{event.cardDescription}</div>
+                )}
               </div>
 
               <div className="mt-6">
@@ -147,7 +175,7 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                       <Button
                         asChild
                         className="w-full"
-                        disabled={event.status !== 'open'}
+                        disabled={event.status !== "open"}
                       >
                         <Link
                           href={event.registration_link}
@@ -155,7 +183,9 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                           rel="noopener noreferrer"
                           className="flex items-center justify-center gap-2"
                         >
-                          {event.status === 'open' ? 'Register Now' : 'Registration Closed'}
+                          {event.status === "open"
+                            ? "Register Now"
+                            : "Registration Closed"}
                           <ExternalLink className="h-4 w-4" />
                         </Link>
                       </Button>
@@ -165,15 +195,15 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                       </Button>
                     )}
                     <p
-                      className={`mt-2 text-sm ${new Date() > new Date(event.registration_deadline)
-                        ? 'text-red-500 dark:text-red-400'
-                        : 'text-muted-foreground'
-                        }`}
+                      className={`mt-2 text-sm ${
+                        new Date() > new Date(event.registration_deadline)
+                          ? "text-red-500 dark:text-red-400"
+                          : "text-muted-foreground"
+                      }`}
                     >
                       {new Date() > new Date(event.registration_deadline)
-                        ? 'Registration is now closed'
-                        : `Closes: ${format(parseISO(event.registration_deadline), 'MMMM d, yyyy, hh:mm a')} IST`
-                      }
+                        ? "Registration is now closed"
+                        : `Closes: ${format(parseISO(event.registration_deadline), "MMMM d, yyyy, hh:mm a")} IST`}
                     </p>
                   </div>
                 )}
