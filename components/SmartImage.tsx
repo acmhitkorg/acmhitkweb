@@ -30,7 +30,7 @@ function SmartImage({
     >
       {/* Skeleton */}
       {!loaded && (
-        <div className="absolute inset-0 bg-gradient-to-r from-muted via-muted/50 to-muted animate-shimmer" />
+        <div className="absolute inset-0 bg-gradient-to-r from-muted via-muted/50 to-muted animate-skeleton-pulse" />
       )}
       <Image
         {...props}
