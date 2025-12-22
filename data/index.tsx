@@ -192,35 +192,35 @@ export const socialMedia = [
 export const testimonials = [
   {
     name: "Reshma Roychoudhuri",
-    image: "/Reshma-Roychoudhuri.jpeg",
+    image: "/past-members/webp/Reshma-Roychoudhuri.webp",
     role: "Assistant Professor, Department of Computer Science and Engineering, HITK",
     testimonial:
       "ACM will always have a special place in my heart. The passion and hardwork of the past and current teams, and the quality of the talks sets it apart. I am hoping that the chapter increases it's reach and promotes inclusivity even more in the coming years.",
   },
   {
     name: "Swarnadeep Saha",
-    image: "/Swarnadeep-Saha.jpg",
+    image: "/past-members/webp/Swarnadeep-Saha.webp",
     role: "Mtech(CSE) Student at IIIT Hyderabad",
     testimonial:
       "Learned how to manage different aspects of event organization. Learned how to work closely with professors and other fellow students.",
   },
   {
     name: "Rajarshi Saha",
-    image: "/Rajarshi-Saha.jpeg",
+    image: "/past-members/webp/Rajarshi-Saha.webp",
     role: "Associate Software Engineer, EY GDS",
     testimonial:
       "I had a great time being a part of the HITK ACM Student Chapter, and I hope the current members enjoy their journey and gain valuable experiences during their tenure. Take the chapter to greater heights, and organize as many events as possible. Wishing you guys all the best!",
   },
   {
     name: "Upasana Roy",
-    image: "/Upasana-Roy.jpg",
+    image: "/past-members/webp/Upasana-Roy.webp",
     role: "SDE 1, Cozeva - Applied Research Works India Private Limited",
     testimonial:
       "Being part of the HITK ACM Student Chapter was an incredible journey! Tech talks gave me the chance to interact with professors and researchers, to know the recent trends and developments in the industry and I even got to present my own ideas. From attending events to organizing events myself, the chapter helped me grow both technically and personally. If you’re a member, don’t hold back. Collaborate, lead, speak up, and make the most of every opportunity.",
   },
   {
     name: "Devjit Sarkar",
-    image: "/Devjit-Sarkar.jpg",
+    image: "/past-members/webp/Devjit-Sarkar.webp",
     role: "Summer Intern, Hyland",
     testimonial:
       "Being part of the HITK ACM Student Chapter was an overall positive and enriching experience. I had the opportunity to witness several inspiring talks and work alongside passionate peers. A fond memory that stands out is Brainstorm 2025, from collaboratively crafting challenging quiz questions to troubleshooting technical issues on the event day, the teamwork and energy were unforgettable. My advice to current members: stay curious, get involved, and make the most of every opportunity the chapter offers.",

@@ -46,7 +46,8 @@ export default function ContactPage() {
               <GlassCard className="p-8 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-teal-500/5 to-transparent" />
 
-                <form className="relative space-y-6">
+                <form action="https://formsubmit.co/acmhitk.studentchapter@gmail.com" method="POST" className="relative space-y-6">
+                  <input type="hidden" name="_cc" value="aryan.ghosh.cse27@heritageit.edu.in, mohak.sarkar.cse27@heritageit.edu.in, rohit.kumardey.cse26@heritageit.edu.in, sagnik.pramanik.cse26@heritageit.edu.in" />
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">Full Name</label>
@@ -54,6 +55,8 @@ export default function ContactPage() {
                         type="text"
                         className="w-full px-4 py-3 rounded-lg bg-background/50 border border-border/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200"
                         placeholder="Enter your full name"
+                        name="name"
+                        required
                       />
                     </div>
                     <div>
@@ -62,6 +65,8 @@ export default function ContactPage() {
                         type="email"
                         className="w-full px-4 py-3 rounded-lg bg-background/50 border border-border/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200"
                         placeholder="Enter your email"
+                        name="email"
+                        required
                       />
                     </div>
                   </div>
@@ -73,11 +78,15 @@ export default function ContactPage() {
                         type="tel"
                         className="w-full px-4 py-3 rounded-lg bg-background/50 border border-border/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200"
                         placeholder="Enter your phone number"
+                        name="phone"
+                        required
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">Subject</label>
-                      <select className="w-full px-4 py-3 rounded-lg bg-background/50 border border-border/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200">
+                      <select className="w-full px-4 py-3 rounded-lg bg-background/50 border border-border/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200"
+                        name="subject"
+                        required>
                         <option>General Inquiry</option>
                         <option>Membership Question</option>
                         <option>Event Information</option>
@@ -94,10 +103,12 @@ export default function ContactPage() {
                       rows={6}
                       className="w-full px-4 py-3 rounded-lg bg-background/50 border border-border/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all duration-200 resize-none"
                       placeholder="Tell us how we can help you..."
+                      name="message"
+                      required
                     ></textarea>
                   </div>
 
-                  <div className="flex items-center space-x-3">
+                  {/* <div className="flex items-center space-x-3">
                     <input
                       type="checkbox"
                       id="newsletter"
@@ -106,9 +117,9 @@ export default function ContactPage() {
                     <label htmlFor="newsletter" className="text-sm text-muted-foreground">
                       Subscribe to our newsletter for updates and events
                     </label>
-                  </div>
+                  </div> */}
 
-                  <Button size="lg" className="w-full bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700">
+                  <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700">
                     Send Message
                     <Send className="ml-2 h-4 w-4" />
                   </Button>
