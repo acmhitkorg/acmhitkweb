@@ -3,6 +3,24 @@ export const gallerySections = [
     year: "2025-26",
     events: [
       {
+        date: "December 2025",
+        name: "Turning the Keyboard into a Musical Instrument",
+        path: "/ACM-Pics-2025_26/turning-keyboard-into-musical-instrument/webp",
+        images: [
+          "turning-keyboard-into-musical-instrument-0.webp",
+          "turning-keyboard-into-musical-instrument-1.webp",
+          "turning-keyboard-into-musical-instrument-2.webp",
+          "turning-keyboard-into-musical-instrument-3.webp",
+          "turning-keyboard-into-musical-instrument-4.webp",
+          "turning-keyboard-into-musical-instrument-5.webp",
+          "turning-keyboard-into-musical-instrument-6.webp",
+          "turning-keyboard-into-musical-instrument-7.webp",
+          "turning-keyboard-into-musical-instrument-8.webp",
+          "turning-keyboard-into-musical-instrument-9.webp",
+          "turning-keyboard-into-musical-instrument-10.webp",
+        ],
+      },
+      {
         date: "November 2025",
         name: "Welcome.yml",
         path: "/ACM-Pics-2025_26/welcome-yml/webp",
