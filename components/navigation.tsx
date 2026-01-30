@@ -9,6 +9,7 @@ import {
   X,
   Users,
   Calendar,
+  Home,
   UserPlus,
   Mail,
   Info,
@@ -21,7 +22,7 @@ import { cn } from "@/lib/utils";
 import { useBanner } from "@/context/BannerContext";
 
 const navigation = [
-  { name: "Home", href: "/", icon: null },
+  { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: Info },
   { name: "Events", href: "/events", icon: Calendar },
   { name: "Team", href: "/team", icon: Users },
@@ -57,28 +58,33 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={cn(
-                  "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 relative group",
-                  pathname === item.href
-                    ? "text-primary bg-primary/10"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent/50",
-                )}
-              >
-                {item.name}
-                <span
+            {navigation.map((item) => {
+              const currentPath = (pathname || "/").replace(/\/+$/, "") || "/";
+              const hrefPath = (item.href || "/").replace(/\/+$/, "") || "/";
+              const isActive =
+                currentPath === hrefPath || (hrefPath !== "/" && currentPath.startsWith(hrefPath));
+
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
                   className={cn(
-                    "absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-teal-500 transform transition-all duration-300",
-                    pathname === item.href
-                      ? "scale-x-100"
-                      : "scale-x-0 group-hover:scale-x-100",
+                    "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 relative group",
+                    isActive
+                      ? "text-primary bg-primary/10"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50",
                   )}
-                />
-              </Link>
-            ))}
+                >
+                  {item.name}
+                  <span
+                    className={cn(
+                      "absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500 to-teal-500 transform transition-all duration-300",
+                      isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100",
+                    )}
+                  />
+                </Link>
+              );
+            })}
           </div>
 
           {/* Theme Switcher & Mobile Menu */}
@@ -103,22 +109,29 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border">
             <div className="px-4 py-6 space-y-2">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className={cn(
-                    "flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300",
-                    pathname === item.href
-                      ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50",
-                  )}
-                >
-                  {item.icon && <item.icon className="h-4 w-4" />}
-                  <span>{item.name}</span>
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                const currentPath = (pathname || "/").replace(/\/+$/, "") || "/";
+                const hrefPath = (item.href || "/").replace(/\/+$/, "") || "/";
+                const isActive =
+                  currentPath === hrefPath || (hrefPath !== "/" && currentPath.startsWith(hrefPath));
+
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className={cn(
+                      "flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300",
+                      isActive
+                        ? "text-primary bg-primary/10"
+                        : "text-muted-foreground hover:text-foreground hover:bg-accent/50",
+                    )}
+                  >
+                    {item.icon && <item.icon className="h-4 w-4" />}
+                    <span>{item.name}</span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}
