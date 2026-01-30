@@ -180,7 +180,7 @@ export default function EventsPage() {
             </div>
 
             <div className="flex flex-wrap gap-2 justify-center sm:justify-end mb-8">
-              <p className='flex justify-center items-center'>Sort by Academic Session:</p>
+              <p className='flex justify-center items-center'>Filter by Academic Session:</p>
               <Button
                 variant={selectedSession === 'all' ? 'default' : 'outline'}
                 size="sm"
