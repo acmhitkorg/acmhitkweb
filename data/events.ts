@@ -318,6 +318,7 @@ export const pastEvents: Event[] = [
     attendees: 12,
     speaker: "Dr. Partha Bhowmick",
     location: "ICT 301",
+    bannerImage: '/Events/webp/curvature-in-the-digital-world-theory-computation-and-applications.webp',
     photos: [],
   },
   {
@@ -347,6 +348,7 @@ export const pastEvents: Event[] = [
     attendees: 39,
     speaker: "Dr. Partha Lahiri",
     location: "ICT 301",
+    bannerImage:'/Events/webp/integrating-survey-data-with-alternative-databases-for-small-area-estimation.webp',
     photos: [],
   },
   {
@@ -361,6 +363,7 @@ export const pastEvents: Event[] = [
     attendees: 39,
     speaker: "Prithwish Jana",
     location: "ICT 301",
+    bannerImage:'/Events/webp/neuro-symbolic-approaches-for-fine-tuning-code-language-models.webp',
     photos: [],
   },
   {

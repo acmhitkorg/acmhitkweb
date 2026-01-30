@@ -1,3 +1,5 @@
+import path from "node:path";
+
 export const gallerySections = [
   {
     year: "2025-26",
@@ -105,6 +107,53 @@ export const gallerySections = [
   {
     year: "2024-25",
     events: [
+            {
+        date: 'August 2024',
+        name: 'The celebrated birthday problem & God Forever Geometrizes',
+        path: '/ACM-Pics-2024_25/Geo-Tagged-Pic/8th August BBB/webp',
+        images:['1.webp','2.webp','3.webp','4.webp','5.webp', '6.webp']
+      },
+      {
+        date:'September 2024',
+        name: 'Coding Piece by Piece',
+        path:'/ACM-Pics-2024_25/Geo-Tagged-Pic/26th Sept. SIG AI-ML/webp',
+        images:[
+          'SIG-AI-ML_26-09-2024_1.webp',
+          'SIG-AI-ML_26-09-2024_2.webp',
+        ]
+      },
+      {
+        date: "November 2024",
+        name: "ACM Annual Regional Meet",
+        path: "/ACM-Pics-2024_25/ACM ARM/webp",
+        images: [
+          "arm-img3.webp",
+          "arm-img2.webp",
+          "arm-img1.webp",
+          "arm-img0.webp",
+        ],
+      },
+      {
+        date: "January 2025",
+        name: "Integrating Survey Data with Alternative Databases for Small Area Estimation",
+        path: "/ACM-Pics-2024_25/Geo-Tagged-Pic/15 Jan Partha Sir & Prithiwish/webp",
+        images: [
+          "Partha Sir.webp",
+          "Partha Sir_1.webp",
+          "Partha Sir_2.webp",
+        ],
+      },
+      {
+        date: "January 2025",
+        name: "Neuro-symbolic Approaches for Fine-Tuning Code Language Models",
+        path: "/ACM-Pics-2024_25/Geo-Tagged-Pic/15 Jan Partha Sir & Prithiwish/webp",
+        images: [
+          "Prithwish.webp",
+          "Prithwish_1.webp",
+          "Prithwish_2.webp",
+          "Prithwish_3.webp",
+        ],
+      },
       {
         date: "March 2025",
         name: "Brainstorm Session",
@@ -127,15 +176,13 @@ export const gallerySections = [
         ],
       },
       {
-        date: "November 2024",
-        name: "ACM Annual Regional Meet",
-        path: "/ACM-Pics-2024_25/ACM ARM/webp",
-        images: [
-          "arm-img3.webp",
-          "arm-img2.webp",
-          "arm-img1.webp",
-          "arm-img0.webp",
-        ],
+        date:'April 2025',
+        name:'Curvature in the Digital World: Theory, Computation and Applications',
+        path:'/ACM-Pics-2024_25/Geo-Tagged-Pic/28 April 2025 Partha Sir_s Talk/webp',
+        images:[
+          '28_1.webp',
+          '28_2.webp',
+        ]
       },
     ],
   },
