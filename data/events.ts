@@ -2,9 +2,9 @@ import { Event } from "@/types";
 
 export const upcomingEvents: Event[] = [
   {
-    title: "Innovista'25",
-    date: "January 2026",
-    displayDate: "January 2026",
+    title: "Innovista'26",
+    date: "March 2026",
+    displayDate: "March 2026",
     time: "To be announced",
     location: "To be announced",
     type: "Technical Fest",
