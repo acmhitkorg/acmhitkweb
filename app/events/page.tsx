@@ -11,32 +11,36 @@ import { AnimatedBackground } from '@/components/animated-background';
 import { EventModal } from '@/components/Events/EventModal';
 import { Event } from '@/types';
 
-// Helper function to extract unique years from events
-const getUniqueYears = (events: Event[]) => {
-  const years = new Set<number>();
+// Helper function to extract unique academic sessions from events
+const getUniqueSessions= (events: Event[]) => {
+  const sessions = new Set<string>();
   events.forEach(event => {
-    const year = new Date(event.date).getFullYear();
-    years.add(year);
+    const session = event.session;
+    if(session) sessions.add(session);
   });
-  return Array.from(years).sort((a, b) => b - a); // Sort in descending order
+    return Array.from(sessions).sort((a, b) => {
+    const startA = parseInt(a.split("-")[0], 10);
+    const startB = parseInt(b.split("-")[0], 10);
+    return startB - startA; // descending by academic year
+  });
 };
 
 export default function EventsPage() {
-  const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
+  const [selectedSession, setSelectedSession] = useState<string | 'all'>('all');
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
   const [formattedPastEvents, setFormattedPastEvents] = useState<Event[]>(pastEvents);
 
-  // Get unique years from past events
-  const availableYears = getUniqueYears(pastEvents);
+  // Get unique academic sessions from past events
+  const availableAcademicSessions = getUniqueSessions(pastEvents);
 
-  // Filter past events based on selected year
+  // Filter past events based on selected academic session
   const filteredPastEvents = useMemo(() => {
     return formattedPastEvents.filter(event => {
-      if (selectedYear === 'all') return true;
-      const eventYear = new Date(event.date).getFullYear();
-      return eventYear === Number(selectedYear);
+      if (selectedSession === 'all') return true;
+      const eventAcademicSession = event.session;;
+      return eventAcademicSession === selectedSession;
     });
-  }, [formattedPastEvents, selectedYear]);
+  }, [formattedPastEvents, selectedSession]);
 
   const handleEventClick = (event: Event) => {
     setSelectedEvent(event);
@@ -176,20 +180,21 @@ export default function EventsPage() {
             </div>
 
             <div className="flex flex-wrap gap-2 justify-center sm:justify-end mb-8">
+              <p className='flex justify-center items-center'>Sort by Academic Session:</p>
               <Button
-                variant={selectedYear === 'all' ? 'default' : 'outline'}
+                variant={selectedSession === 'all' ? 'default' : 'outline'}
                 size="sm"
-                onClick={() => setSelectedYear('all')}
+                onClick={() => setSelectedSession('all')}
                 className="text-sm"
               >
-                All Years
+                All Sessions
               </Button>
-              {availableYears.map((year) => (
+              {availableAcademicSessions.map((year) => (
                 <Button
                   key={year}
-                  variant={selectedYear === year ? 'default' : 'outline'}
+                  variant={selectedSession === year ? 'default' : 'outline'}
                   size="sm"
-                  onClick={() => setSelectedYear(year)}
+                  onClick={() => setSelectedSession(year)}
                   className="text-sm"
                 >
                   {year}

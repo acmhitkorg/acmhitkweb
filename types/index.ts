@@ -39,4 +39,5 @@ export interface Event {
     photos?: string[];
     image?: string;
     pictures?: string[];
+    session?: string;
 }
