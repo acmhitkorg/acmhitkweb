@@ -164,6 +164,7 @@ export const pastEvents: Event[] = [
   {
     title: "Put On Your Computing Cap!",
     date: "2025-09-01",
+    displayDate: "1st September 2025",
     time: "1:00 PM to 3:30 PM",
     location: "CME 108, Heritage Institute of Technology",
     type: "Tech Talk & Quiz",
@@ -234,7 +235,8 @@ export const pastEvents: Event[] = [
   },
   {
     title: "Program Paradox",
-    date: "2025-08-08",
+    date: "8 August 2025",
+    displayDate: "8th August 2025",
     time: "2:30 PM to 5:00 PM",
     location: "The Heritage Academy Auditorium",
     type: "Workshop",
@@ -305,8 +307,82 @@ export const pastEvents: Event[] = [
     photos: [],
   },
   {
+    title: "Curvature in the Digital World: Theory, Computation, and Applications",
+    date: "April 28, 2025",
+    displayDate: "28th April 2025",
+    type: "Tech Talk",
+    cardDescription:
+      "A talk on digital curvature estimation using turns, twists, and grammar-tree-based classification.",
+    description:
+      "Discussion on a novel method for estimating curvature in digital curves using turns and twists over pixel-runs. A grammar-tree-based classification aligns digital geometry with regular languages, enabling applications in computer graphics, image processing, and digital art.",
+    attendees: 12,
+    speaker: "Dr. Partha Bhowmick",
+    location: "ICT 301",
+    photos: [],
+  },
+  {
+    title: "BrainStorm'25",
+    date: "March 10, 2025",
+    displayDate: "10th March 2025",
+    type: "Tech Quiz",
+    cardDescription:
+      "The annual tech quiz event encouraging participants to explore real-world technical concepts.",
+    description:
+      "A technical quiz named 'Brainstorm' where participants delved into real-world technical wonders, encouraging active enthusiasm, networking, and learning opportunities.",
+    attendees: 19,
+    speaker: "NA",
+    location: "ICT B07",
+    bannerImage:'/Events/webp/Brainstorm-2025.webp',
+    photos: [],
+  },
+  {
+    title: "Integrating Survey Data with Alternative Databases for Small Area Estimation",
+    date: "January 15, 2025",
+    displayDate: "15th January 2025",
+    type: "Lecture",
+    cardDescription:
+      "A lecture on integrating survey data with alternative databases for small area estimation.",
+    description:
+      "The session covered methods of integrating survey data with alternative databases for small area estimation and highlighted the role of the Joint Program in Survey Methodology (JPSM) in training graduate students in survey and data science.",
+    attendees: 39,
+    speaker: "Dr. Partha Lahiri",
+    location: "ICT 301",
+    photos: [],
+  },
+  {
+    title: "Neuro-symbolic Approaches for Fine-Tuning Code Language Models",
+    date: "January 15, 2025",
+    displayDate: "15th January 2025",
+    type: "Lecture",
+    cardDescription:
+      "Exploring neuro-symbolic methods to enhance code language models beyond natural language.",
+    description:
+      "The talk explored neuro-symbolic approaches to unlock the potential of large language models in software engineering and mathematical reasoning, improving tasks such as code generation and proof synthesis.",
+    attendees: 39,
+    speaker: "Prithwish Jana",
+    location: "ICT 301",
+    photos: [],
+  },
+  {
+    title: " Technical Debt in Machine Learning Systems",
+    date: "September 4, 2024",
+    displayDate: "4th September 2024",
+    type: "Seminar",
+    cardDescription:
+      "In the context of software development, technical debt relates to the cost of refactoring or rework in the future that arises out of the prioritization of immediate expedience over long-term design.",
+    description: `In the context of software development, technical debt relates to the
+  cost of refactoring or rework in the future that arises out of the prioritization of
+  immediate expedience over long-term design. This talk discusses the accrual
+  and management of technical debt in machine learning systems.`,
+    attendees: 36,
+    speaker: "Uday Shaw",
+    location: "ICT Building",
+    photos: [],
+  },
+  {
     title: "The celebrated birthday problem",
     date: "August 8, 2024",
+    displayDate: "8th August 2024",
     type: "Seminar",
     cardDescription:
       "What is the chance that among a group of friends, at least 2 of them have the same birthday? This is the celebrated birthday problem, which connects many seemingly disparate problems both within and beyond mathematics.",
@@ -331,6 +407,7 @@ export const pastEvents: Event[] = [
   {
     title: "God Forever Geometrizes",
     date: "August 8, 2024",
+    displayDate: "8th August 2024",
     type: "Seminar",
     cardDescription:
       "As Plato observed, nature is governed by the eternal laws of geometry.",
@@ -346,41 +423,9 @@ export const pastEvents: Event[] = [
     photos: [],
   },
   {
-    title: " Technical Debt in Machine Learning Systems",
-    date: "September 4, 2024",
-    type: "Seminar",
-    cardDescription:
-      "In the context of software development, technical debt relates to the cost of refactoring or rework in the future that arises out of the prioritization of immediate expedience over long-term design.",
-    description: `In the context of software development, technical debt relates to the
-  cost of refactoring or rework in the future that arises out of the prioritization of
-  immediate expedience over long-term design. This talk discusses the accrual
-  and management of technical debt in machine learning systems.`,
-    attendees: 36,
-    speaker: "Uday Shaw",
-    location: "ICT Building",
-    photos: [],
-  },
-  {
-    title: `Evaluation of Large Language Models: The Good, The Bad, and The
-  Opportunities`,
-    date: "Auguest 4, 2023",
-    type: "Seminar",
-    cardDescription:
-      "The recent sensation ChatGPT, powered by large language models (LLM) can be used to mimic a human conversationalist, ChatGPT is versatile.",
-    description: ` The recent sensation ChatGPT, powered by large language models
-  (LLM) can be used to mimic a human conversationalist, ChatGPT is versatile.
-  Among countless examples, it can write and debug computer programs,
-  compose music, teleplays, fairy tales, and student essays, answer test questions,
-  etc. It is an open issue: How can deep learning be incorporated to make it more
-  efficient and reduce its drawbacks?`,
-    attendees: 100,
-    speaker: "Dr Tanmoy Chakraborty",
-    location: "SV Auditorium, CB Block, HITK",
-    photos: [],
-  },
-  {
     title: "Semiconductors to AI: Shaping Our Digital Future",
     date: "August 8, 2023",
+    displayDate: "8th August 2023",
     type: "Seminar",
     cardDescription:
       "The talk begins with the evolution of computers and the synergistic roles played by the twin disciplines of electronics engineering and computer science and how that synergy brought computers to its all-pervasive present state.",
@@ -400,9 +445,29 @@ export const pastEvents: Event[] = [
     location: "",
     photos: [],
   },
+    {
+    title: `Evaluation of Large Language Models: The Good, The Bad, and The
+  Opportunities`,
+    date: "Auguest 4, 2023",
+    displayDate: "4th August 2023",
+    type: "Seminar",
+    cardDescription:
+      "The recent sensation ChatGPT, powered by large language models (LLM) can be used to mimic a human conversationalist, ChatGPT is versatile.",
+    description: ` The recent sensation ChatGPT, powered by large language models
+  (LLM) can be used to mimic a human conversationalist, ChatGPT is versatile.
+  Among countless examples, it can write and debug computer programs,
+  compose music, teleplays, fairy tales, and student essays, answer test questions,
+  etc. It is an open issue: How can deep learning be incorporated to make it more
+  efficient and reduce its drawbacks?`,
+    attendees: 100,
+    speaker: "Dr Tanmoy Chakraborty",
+    location: "SV Auditorium, CB Block, HITK",
+    photos: [],
+  },
   {
     title: "Recommender Systems: Your Fairy Godmother of Choices",
     date: "September 27, 2023",
+    displayDate: "27th September 2023",
     type: "Seminar",
     cardDescription:
       "Have you ever wondered how online platforms magically suggest products, movies, or music that seem tailor-made for you? It's not magic; it's the power of Recommender Systems (RS). Join us in this informative and hands-on session as we demystify the world of RS and learn how these digital fairy godmothers work their magic to enhance user experiences. In the first part of our talk, we'll dive deep into the world of Recommender Systems, shedding light on their applications, workings, and various types. You'll gain a comprehensive understanding of the foundations of RS, setting the stage for your journey into the world of personalized recommendations. In the second part, get ready to put your knowledge to the test as we guide you through the process of building a simple RS model. We'll use a user-friendly framework, making it accessible to everyone. We'll share practical tips and best practices to help you fine-tune your RS and ensure it provides meaningful recommendations. Join us for this exciting journey into the world of Recommender Systems, and discover how they can be your own fairy godmother of choices, making every digital interaction feel like it was designed just for you.",
@@ -430,6 +495,7 @@ export const pastEvents: Event[] = [
   {
     title: "Computability and Complexity Theory - A Brief Introduction",
     date: "December 14, 2023",
+    displayDate: "14th December 2023",
     type: "Workshop",
     cardDescription:
       "What does it mean for something to be computable? What are some of the mathematical properties of general-purpose computers? What are their limitations? These are typical questions that are of interest to computability theorists.",
@@ -447,6 +513,7 @@ export const pastEvents: Event[] = [
   {
     title: "Brain Research - Implications in Science, Engineering and Society",
     date: "February 9, 2024",
+    displayDate: "9th February 2024",
     type: "Seminar",
     cardDescription:
       "The brain is one of the most connected organs of an organism. It directly connects to all the organs through a network of neurons. The brain interacts with the body through a combination of electrochemical and chemical processes. The brain also controls the body indirectly through hormones and neuropeptides. Similarly, the body also controls the brain by modulating its function through indirect and direct means.",
@@ -472,6 +539,7 @@ export const pastEvents: Event[] = [
     title:
       "Solving the Classic Distinct Element Problem with a Strikingly Simple Algorithm that Captivated Donald Knuth",
     date: "April 15, 2024",
+    displayDate: "15th April 2024",
     type: "Workshop",
     cardDescription:
       "We will present a very simple streaming algorithm on F_0 estimation that also caught the eye of Donald E. Knuth.",
@@ -501,6 +569,7 @@ export const pastEvents: Event[] = [
   {
     title: "Generative A.I. workshop",
     date: "April 16, 2024",
+    displayDate: "16th April 2024",
     type: "Workshop",
     cardDescription:
       "Understanding the broad view of Generative AI, Addressing the Fear, Types of Generative AI architectures, LLM and LIM, Building an AI tool (Using Hugging Face), QnA",
