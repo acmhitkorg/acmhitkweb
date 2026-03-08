@@ -40,4 +40,5 @@ export interface Event {
     image?: string;
     pictures?: string[];
     session?: string;
+    prizepool?: number;
 }

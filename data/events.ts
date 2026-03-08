@@ -1,10 +1,48 @@
 import { Event } from "@/types";
 
 export const upcomingEvents: Event[] = [
+    {
+  title: "Brainstorm'26",
+  date: "13 March 2026",
+  displayDate: "13th March 2026",
+  registration_deadline: "2026-03-12T23:59:00",
+  registration_link: "https://www.dakshh-hitk.com/events/69973c71fe82b8a0b28321ee",
+  time: "11:30 AM - 01:30 PM",
+  location: "ICT Basement Labs",
+  type: "TechQuiz",
+  cardDescription:
+    "Where Logic Strikes Faster Than Light: A flagship high-energy CS showdown that pushes participants beyond conventional formats. Across dynamic, multi-stage rounds, it tests speed, conceptual depth, and creative problem-solving, rewarding those who can think critically, adapt instantly, and outpace the competition.",
+  description:
+    "Where Logic Strikes Faster Than Light: A flagship high-energy CS showdown that pushes participants beyond conventional formats. Across dynamic, multi-stage rounds, it tests speed, conceptual depth, and creative problem-solving, rewarding those who can think critically, adapt instantly, and outpace the competition.",
+  status: "open",
+  speaker: "NA",
+  attendees: 0,
+  prizepool: 10000,
+  bannerImage: "/Events/webp/Brainstorm-2026.webp"
+},
+  {
+  title: "TechTussle",
+  date: "14 March 2026",
+  displayDate: "14th March 2026",
+  registration_deadline: "2026-03-13T23:59:00",
+  registration_link: "https://www.dakshh-hitk.com/events/69973c71fe82b8a0b28321ef",
+  time: "09:30 AM - 12:30 PM",
+  location: "CME 108",
+  type: "Technical Debate",
+  cardDescription:
+    "Ideas Collide. Arguments Ignite. Minds Dominate: A high-intensity technical debate arena challenging participants to defend, critique, and rethink the future of technology.",
+  description:
+    "Ideas Collide. Arguments Ignite. Minds Dominate: A high-intensity technical debate arena challenging participants to defend, critique, and rethink the future of technology.",
+  status: "open",
+  speaker: "NA",
+  attendees: 0,
+  prizepool: 8000,
+  bannerImage: "/Events/webp/Tech-Tussle.webp"
+},
   {
     title: "Innovista'26",
-    date: "March 2026",
-    displayDate: "March 2026",
+    date: "24 March 2026",
+    displayDate: "24th March 2026",
     time: "To be announced",
     location: "To be announced",
     type: "Technical Fest",
@@ -72,7 +110,7 @@ export const pastEvents: Event[] = [
     registration_deadline: "2025-12-22T23:59:00",
     speaker: "Dr. Anustuv Pal",
     capacity: "Limited seating",
-    status: "open",
+    status: "closed",
     bannerImage: "/Events/webp/turning-keyboard-into-musical-instrument.webp",
     session:'2025-26',
     photos: [],
