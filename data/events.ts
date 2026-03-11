@@ -15,9 +15,9 @@ export const upcomingEvents: Event[] = [
   description:
     "Where Logic Strikes Faster Than Light: A flagship high-energy CS showdown that pushes participants beyond conventional formats. Across dynamic, multi-stage rounds, it tests speed, conceptual depth, and creative problem-solving, rewarding those who can think critically, adapt instantly, and outpace the competition.",
   status: "open",
-  speaker: "NA",
   attendees: 0,
   prizepool: 10000,
+  price_currency: "INR",
   bannerImage: "/Events/webp/Brainstorm-2026.webp"
 },
   {
@@ -34,9 +34,9 @@ export const upcomingEvents: Event[] = [
   description:
     "Ideas Collide. Arguments Ignite. Minds Dominate: A high-intensity technical debate arena challenging participants to defend, critique, and rethink the future of technology.",
   status: "open",
-  speaker: "NA",
   attendees: 0,
   prizepool: 8000,
+  price_currency: "INR",
   bannerImage: "/Events/webp/Tech-Tussle.webp"
 },
   {
@@ -48,8 +48,6 @@ export const upcomingEvents: Event[] = [
     type: "Technical Fest",
     cardDescription:
       "A flagship inter-college fest by ACM HITK, celebrating creativity, computation, and collaboration. Featuring an inspiring ACM India Eminent Speaker Session and SparkTank, a thrilling idea-pitching challenge that transforms bold visions into real-world innovation.",
-    speaker: "To be announced",
-    capacity: "To be announced",
     status: "",
   },
 ];

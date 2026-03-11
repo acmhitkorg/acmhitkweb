@@ -1,6 +1,6 @@
 "use client";
 
-import { X, ExternalLink, Calendar, Clock, MapPin, Users } from "lucide-react";
+import { X, ExternalLink, Calendar, Clock, MapPin, Users, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -12,6 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { format, parseISO } from "date-fns";
 import { Event } from "@/types";
+import { formatCurrency } from "@/lib/utils";
 
 type EventModalProps = {
   isOpen: boolean;
@@ -141,6 +142,19 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
                     </h4>
                     <p className="text-muted-foreground text-sm">
                       {event.capacity}
+                    </p>
+                  </div>
+                </div>
+              )}
+              {event.prizepool && event.price_currency && (
+                <div className="flex items-start space-x-2">
+                  <Trophy className="h-5 w-5 mt-0.5 text-amber-500 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-medium text-foreground text-sm">
+                      Prize Pool
+                    </h4>
+                    <p className="text-muted-foreground text-sm font-medium">
+                      {formatCurrency(event.prizepool, event.price_currency)}
                     </p>
                   </div>
                 </div>

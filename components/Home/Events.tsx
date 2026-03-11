@@ -1,8 +1,9 @@
 import Link from "next/link"
-import { ArrowRight, Calendar, Clock, MapPin, Users, ExternalLink } from "lucide-react"
+import { Calendar, Clock, MapPin, ExternalLink, Trophy } from "lucide-react"
 import { upcomingEvents } from "@/data/index"
 import { GlassCard } from "@/components/glass-card"
 import { Button } from "@/components/ui/button"
+import { formatCurrency } from "@/lib/utils"
 
 const Events = () => {
     const upcomingEventsForHomePage = upcomingEvents.slice(0, 3);
@@ -65,6 +66,12 @@ const Events = () => {
                                     <MapPin className="h-4 w-4 mr-2 text-green-500/80 dark:text-green-400/80" />
                                     <span>{event.location}</span>
                                 </div>
+                                {event.prizepool && event.price_currency && (
+                                <div className="flex items-center">
+                                    <Trophy className="h-4 w-4 mr-2 text-amber-500/80 dark:text-amber-400/80" />
+                                    <span className="font-medium">{formatCurrency(event.prizepool, event.price_currency)}</span>
+                                </div>
+                                )}
                             </div>
 
                             {/* Description with fade effect */}

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { Calendar, Clock, MapPin, Users, ExternalLink, ArrowRight } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, ArrowRight, Trophy } from 'lucide-react';
 import { upcomingEvents, pastEvents } from '@/data/index';
 import { Navigation } from '@/components/navigation';
 import { GlassCard } from '@/components/glass-card';
@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import { AnimatedBackground } from '@/components/animated-background';
 import { EventModal } from '@/components/Events/EventModal';
 import { Event } from '@/types';
+import { formatCurrency } from "@/lib/utils";
 
 // Helper function to extract unique academic sessions from events
 const getUniqueSessions= (events: Event[]) => {
@@ -131,6 +132,10 @@ export default function EventsPage() {
                       {event.speaker && <div className="flex items-center">
                         <Users className="h-4 w-4 mr-2 text-purple-500/80 dark:text-purple-400/80" />
                         <span className="font-medium">{event.speaker}</span>
+                      </div>}
+                      {event.prizepool && event.price_currency && <div className="flex items-center">
+                        <Trophy className="h-4 w-4 mr-2 text-amber-500/80 dark:text-amber-400/80" />
+                        <span className="font-medium">{formatCurrency(event.prizepool, event.price_currency)}</span>
                       </div>}
                     </div>
 
@@ -254,6 +259,12 @@ export default function EventsPage() {
                         <div className="flex items-center">
                           <Users className="h-4 w-4 mr-2 text-purple-500/80 dark:text-purple-400/80" />
                           <span className="font-medium">{event.speaker}</span>
+                        </div>
+                      )}
+                      {event.prizepool && event.price_currency && (
+                        <div className="flex items-center">
+                          <Trophy className="h-4 w-4 mr-2 text-amber-500/80 dark:text-amber-400/80" />
+                          <span className="font-medium">{formatCurrency(event.prizepool, event.price_currency)}</span>
                         </div>
                       )}
                     </div>

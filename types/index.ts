@@ -41,4 +41,5 @@ export interface Event {
     pictures?: string[];
     session?: string;
     prizepool?: number;
+    price_currency?: string;
 }
