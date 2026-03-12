@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
-const isStatic = process.env.NEXT_PUBLIC_STATIC_EXPORT === 'true'
+const isStatic = process.env.NEXT_PUBLIC_STATIC_EXPORT === 'true';
 const nextConfig = {
 	output: isStatic ? 'export' : undefined,
 	trailingSlash: true,
 	images: {
-		unoptimized: isStatic
+		unoptimized: isStatic,
 	},
 	eslint: {
 		ignoreDuringBuilds: true,
