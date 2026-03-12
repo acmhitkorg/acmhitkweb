@@ -12,8 +12,72 @@ export const upcomingEvents: Event[] = [
 		type: 'TechQuiz',
 		cardDescription:
 			'Where Logic Strikes Faster Than Light: A flagship high-energy CS showdown that pushes participants beyond conventional formats. Across dynamic, multi-stage rounds, it tests speed, conceptual depth, and creative problem-solving, rewarding those who can think critically, adapt instantly, and outpace the competition.',
-		description:
-			'Where Logic Strikes Faster Than Light: A flagship high-energy CS showdown that pushes participants beyond conventional formats. Across dynamic, multi-stage rounds, it tests speed, conceptual depth, and creative problem-solving, rewarding those who can think critically, adapt instantly, and outpace the competition.',
+		description: `<p>🚀 <strong>Brainstorm'26: Where Logic Strikes Faster Than Light</strong></p>
+<p>
+The Heritage Institute of Technology ACM Student Chapter proudly presents <strong>Brainstorm'26</strong>, an electrifying flagship challenge under <strong>DAKSHH’26</strong>, the Annual Techno-Management Fest of HITK.  
+Designed as a high-energy Computer Science showdown, Brainstorm pushes participants beyond traditional quiz or coding formats. Through dynamic, multi-stage rounds, participants will tackle challenges that test speed, logic, conceptual depth, and creative problem-solving — making it a true battle of minds.
+</p>
+
+<div class="space-y-4">
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Event Details</h3>
+    <ul class="space-y-1">
+      <li><strong>Date:</strong> March 13, 2026 (Friday)</li>
+      <li><strong>Time:</strong> 11:30 AM onwards</li>
+      <li><strong>Venue:</strong> ICT Basement Labs, Heritage Institute of Technology</li>
+      <li><strong>Organizer:</strong> ACM HITK Student Chapter</li>
+      <li><strong>Entry Fee:</strong> Free</li>
+    </ul>
+  </div>
+
+<div>
+  <h3 class="text-lg font-semibold mb-2">Event Format</h3>
+
+  <div class="space-y-2">
+    <div class="bg-muted/50 p-3 rounded-lg">
+      <h4 class="font-medium">Round 1: Rapid Fundamentals</h4>
+      <p class="text-sm text-muted-foreground">
+        A fast-paced round testing core Computer Science fundamentals and quick problem-solving ability.
+      </p>
+    </div>
+
+    <div class="bg-muted/50 p-3 rounded-lg">
+      <h4 class="font-medium">Round 2: Applied Concepts</h4>
+      <p class="text-sm text-muted-foreground">
+        Participants tackle challenges that require applying CS concepts and logical reasoning under time pressure.
+      </p>
+    </div>
+
+    <div class="bg-muted/50 p-3 rounded-lg">
+      <h4 class="font-medium">Round 3: Core CS Showdown</h4>
+      <p class="text-sm text-muted-foreground">
+        The final round focuses on deeper Computer Science reasoning and will act as the tie-breaker if scores are equal.
+      </p>
+    </div>
+  </div>
+
+  <p class="text-base text-muted-foreground mt-2">
+    Final rankings will be determined by cumulative performance across all rounds.
+  </p>
+</div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Prizes & Goodies</h3>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>₹10,000 prize pool for the top performers</li>
+      <li>Exciting goodies and recognition at DAKSHH’26</li>
+      <li>An opportunity to showcase your problem-solving skills among the brightest minds on campus</li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+    <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Important Note</h3>
+    <p class="text-sm text-blue-600 dark:text-blue-200">
+      Registration is mandatory to participate in the event.  
+      Participants are advised to arrive on time and be ready for a fast-paced competition format.
+    </p>
+  </div>
+</div>`,
 		status: 'open',
 		attendees: 0,
 		prizepool: 10000,
@@ -31,8 +95,73 @@ export const upcomingEvents: Event[] = [
 		type: 'Technical Debate',
 		cardDescription:
 			'Ideas Collide. Arguments Ignite. Minds Dominate: A high-intensity technical debate arena challenging participants to defend, critique, and rethink the future of technology.',
-		description:
-			'Ideas Collide. Arguments Ignite. Minds Dominate: A high-intensity technical debate arena challenging participants to defend, critique, and rethink the future of technology.',
+		description: `<p>⚔️ <strong>TechTussle’26: Ideas Collide. Arguments Ignite. Minds Dominate.</strong></p>
+
+<p>
+The Heritage Institute of Technology ACM Student Chapter proudly presents <strong>TechTussle’26</strong>, an intense technical debate arena under <strong>DAKSHH’26</strong>, the Annual Techno-Management Fest of HITK.  
+TechTussle is a high-energy technology debate competition where participants clash with ideas, logic, and reasoning. Designed for those who enjoy challenging perspectives and defending their viewpoints, the event pushes participants to rethink the future of technology through structured arguments and powerful rebuttals.
+</p>
+
+<div class="space-y-4">
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Event Details</h3>
+    <ul class="space-y-1">
+      <li><strong>Date:</strong> March 14, 2026 (Saturday)</li>
+      <li><strong>Time:</strong> 9:30 AM onwards</li>
+      <li><strong>Venue:</strong> CME 108, Heritage Institute of Technology</li>
+      <li><strong>Organizer:</strong> ACM HITK Student Chapter</li>
+      <li><strong>Entry Fee:</strong> ₹100</li>
+      <li><strong>Duration:</strong> Approximately 3 hours</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Event Format</h3>
+
+    <div class="space-y-2">
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">Oxford-Style Debate</h4>
+        <p class="text-sm text-muted-foreground">
+          The competition will follow an Oxford-style debate structure conducted in English, encouraging clear arguments and strong rebuttals.
+        </p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">Dynamic Rounds</h4>
+        <p class="text-sm text-muted-foreground">
+          The event will progress through multiple competitive rounds where participants debate emerging technology topics.
+        </p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">Spontaneous Topics</h4>
+        <p class="text-sm text-muted-foreground">
+          Debate topics will be revealed shortly before each round to test participants’ spontaneity, preparation, and critical thinking.
+        </p>
+      </div>
+    </div>
+
+    <p class="text-base text-muted-foreground mt-2">
+      Winners will be decided based on clarity of arguments, logical structure, reasoning strength, and effectiveness of rebuttals.
+    </p>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Prizes & Goodies</h3>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>₹8,000 prize pool for top performers</li>
+      <li>Exciting goodies and recognition at DAKSHH’26</li>
+      <li>An opportunity to showcase debate, reasoning, and public speaking skills</li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+    <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Important Note</h3>
+    <p class="text-sm text-blue-600 dark:text-blue-200">
+      Registration is mandatory to participate in the event. Seats are limited, and early registration is strongly recommended.
+    </p>
+  </div>
+</div>`,
 		status: 'open',
 		attendees: 0,
 		prizepool: 8000,
@@ -363,7 +492,7 @@ export const pastEvents: Event[] = [
 		photos: [],
 	},
 	{
-		title: "BrainStorm'25",
+		title: "Brainstorm'25",
 		date: 'March 10, 2025',
 		displayDate: '10th March 2025',
 		type: 'Tech Quiz',
