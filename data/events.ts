@@ -173,7 +173,7 @@ TechTussle is a high-energy technology debate competition where participants cla
 		date: '2026-03-24',
 		displayDate: '24th March 2026',
 		time: '09:00 AM - 05:30 PM',
-		location: 'SV Auditorium, CB Block, HITK',
+		location: 'SV Auditorium, Central Block, HITK',
 		type: 'Technical Fest',
 		description: `<p>🌟 <strong>INNOVISTA’26: AI for Social Good</strong></p>
 
@@ -214,7 +214,7 @@ Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</st
     <h3 class="text-lg font-semibold mb-2">Event Details</h3>
     <ul class="space-y-1">
       <li><strong>Date:</strong> March 24, 2026</li>
-      <li><strong>Venue:</strong> Heritage Institute of Technology</li>
+      <li><strong>Venue:</strong> SV Auditorium, Central Block, Heritage Institute of Technology</li>
       <li><strong>Organizer:</strong> ACM HITK Student Chapter</li>
       <li><strong>Entry Fee:</strong> Free for attendees</li>
     </ul>
@@ -239,7 +239,7 @@ Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</st
       </div>
     </div>
 
-    <p class="text-sm text-muted-foreground mt-2">
+    <p class="text-base text-muted-foreground mt-2">
       Final evaluation will be based on innovation, feasibility, impact, and presentation quality.
     </p>
   </div>
