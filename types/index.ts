@@ -32,7 +32,7 @@ export interface Event {
 	status?: string;
 	registration_deadline?: string;
 	registration_link?: string;
-	bannerImage?: string;
+	bannerImages?: string[];
 	speaker?: string;
 	capacity?: string;
 	attendees?: number;

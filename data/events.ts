@@ -82,7 +82,7 @@ Designed as a high-energy Computer Science showdown, Brainstorm pushes participa
 		attendees: 0,
 		prizepool: 10000,
 		price_currency: 'INR',
-		bannerImage: '/Events/webp/Brainstorm-2026.webp',
+		bannerImages: ['/Events/webp/Brainstorm-2026.webp'],
 	},
 	{
 		title: 'TechTussle',
@@ -166,7 +166,7 @@ TechTussle is a high-energy technology debate competition where participants cla
 		attendees: 0,
 		prizepool: 8000,
 		price_currency: 'INR',
-		bannerImage: '/Events/webp/Tech-Tussle.webp',
+		bannerImages: ['/Events/webp/Tech-Tussle.webp'],
 	},
 	{
 		title: "Innovista'26",
@@ -268,6 +268,7 @@ Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</st
 		status: 'open',
 		prizepool: 14000,
 		price_currency: 'INR',
+		bannerImages: ['/Events/webp/Innovista.webp', '/Events/webp/Ideapolis.webp'],
 	},
 ];
 
@@ -328,7 +329,7 @@ export const pastEvents: Event[] = [
 		speaker: 'Dr. Anustuv Pal',
 		capacity: 'Limited seating',
 		status: 'closed',
-		bannerImage: '/Events/webp/turning-keyboard-into-musical-instrument.webp',
+		bannerImages: ['/Events/webp/turning-keyboard-into-musical-instrument.webp'],
 		session: '2025-26',
 		photos: [],
 	},
@@ -413,7 +414,7 @@ export const pastEvents: Event[] = [
 		speaker: 'Mr. Bubai Bal & Mr. Ritwik Ray',
 		capacity: 'Limited seats available',
 		status: 'closed',
-		bannerImage: '/Events/webp/Welcome-yml.webp',
+		bannerImages: ['/Events/webp/Welcome-yml.webp'],
 		session: '2025-26',
 		photos: [],
 	},
@@ -486,7 +487,7 @@ export const pastEvents: Event[] = [
 		status: 'closed',
 		registration_link: 'https://forms.gle/2rqNc18uXhCfox2x9',
 		registration_deadline: '2025-08-31T23:59:00+05:30',
-		bannerImage: '/Events/webp/Put-On-Your-Computing-Cap.webp',
+		bannerImages: ['/Events/webp/Put-On-Your-Computing-Cap.webp'],
 		session: '2025-26',
 		photos: [],
 	},
@@ -560,7 +561,7 @@ export const pastEvents: Event[] = [
 		status: 'closed',
 		registration_link: 'https://forms.gle/bdc6NkxPgExRPEsw5',
 		registration_deadline: '2025-08-06T23:59:00+05:30',
-		bannerImage: '/Events/webp/Program-Paradox-0.webp',
+		bannerImages: ['/Events/webp/Program-Paradox-0.webp'],
 		session: '2025-26',
 		photos: [],
 	},
@@ -576,8 +577,9 @@ export const pastEvents: Event[] = [
 		attendees: 12,
 		speaker: 'Dr. Partha Bhowmick',
 		location: 'ICT 301',
-		bannerImage:
+		bannerImages: [
 			'/Events/webp/curvature-in-the-digital-world-theory-computation-and-applications.webp',
+		],
 		session: '2024-25',
 		photos: [],
 	},
@@ -593,7 +595,7 @@ export const pastEvents: Event[] = [
 		attendees: 19,
 		speaker: 'NA',
 		location: 'ICT B07',
-		bannerImage: '/Events/webp/Brainstorm-2025.webp',
+		bannerImages: ['/Events/webp/Brainstorm-2025.webp'],
 		session: '2024-25',
 		photos: [],
 	},
@@ -609,8 +611,9 @@ export const pastEvents: Event[] = [
 		attendees: 39,
 		speaker: 'Dr. Partha Lahiri',
 		location: 'ICT 301',
-		bannerImage:
+		bannerImages: [
 			'/Events/webp/integrating-survey-data-with-alternative-databases-for-small-area-estimation.webp',
+		],
 		session: '2024-25',
 		photos: [],
 	},
@@ -626,8 +629,9 @@ export const pastEvents: Event[] = [
 		attendees: 39,
 		speaker: 'Prithwish Jana',
 		location: 'ICT 301',
-		bannerImage:
+		bannerImages: [
 			'/Events/webp/neuro-symbolic-approaches-for-fine-tuning-code-language-models.webp',
+		],
 		session: '2024-25',
 		photos: [],
 	},

@@ -1,5 +1,12 @@
 'use client';
 
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from '../ui/carousel';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { formatCurrency } from '@/lib/utils';
@@ -67,10 +74,10 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
 
 				<div className="space-y-6 py-4 px-1 sm:px-0">
 					{/* Banner Image at the top */}
-					{event.bannerImage && (
+					{Array.isArray(event?.bannerImages) && event.bannerImages.length === 1 && (
 						<div className="relative inline-block max-w-full -mx-1 sm:-mx-0">
 							<Image
-								src={event.bannerImage}
+								src={event.bannerImages[0]}
 								alt={event.title}
 								width={0}
 								height={0}
@@ -84,6 +91,28 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
 								}}
 							/>
 						</div>
+					)}
+					{Array.isArray(event?.bannerImages) && event.bannerImages.length > 1 && (
+						<Carousel opts={{ align: 'start' }} className="relative">
+							<CarouselContent>
+								{event.bannerImages.map((image, index) => (
+									<CarouselItem key={index} className="basis-full">
+										<Image
+											src={image}
+											alt={event.title}
+											width={1200}
+											height={600}
+											className="w-full h-auto rounded-lg"
+										/>
+									</CarouselItem>
+								))}
+							</CarouselContent>
+							{/* Controls at bottom center */}
+							<div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+								<CarouselPrevious className="static translate-y-0" />
+								<CarouselNext className="static translate-y-0" />
+							</div>
+						</Carousel>
 					)}
 
 					<div className="space-y-6">
