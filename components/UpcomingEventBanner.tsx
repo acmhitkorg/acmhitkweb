@@ -1,5 +1,5 @@
 'use client';
-
+import { EventModal } from '@/components/Events/EventModal';
 import { Button } from '@/components/ui/button';
 import { useBanner } from '@/context/BannerContext';
 import { Event } from '@/types';
@@ -10,14 +10,15 @@ import { useState, useEffect } from 'react';
 export function UpcomingEventBanner({ event }: { event: Event }) {
 	const { setBannerVisible } = useBanner();
 	const [isVisible, setIsVisible] = useState(true);
+	const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
+
+	const handleEventClick = (event: Event) => {
+		setSelectedEvent(event);
+	};
 
 	useEffect(() => {
 		const dismissedBanner = localStorage.getItem(`banner-dismissed`);
-		if (
-			event &&
-			event.registration_deadline &&
-			event.registration_deadline > new Date().toISOString()
-		) {
+		if (event && event.date && event.date > new Date().toISOString()) {
 			if (dismissedBanner === 'true') {
 				setIsVisible(false);
 				setBannerVisible(false);
@@ -117,12 +118,12 @@ export function UpcomingEventBanner({ event }: { event: Event }) {
 
 						{/* Action Buttons */}
 						<div className="flex-shrink-0 flex items-center gap-2">
-							{event.registration_link && (
+							{event.registration_link ? (
 								<Button
 									asChild
 									variant="outline"
 									size="sm"
-									className="bg-white/10 hover:bg-white/20 border-white/20 text-white hover:text-white backdrop-blur-sm whitespace-nowrap transition-all duration-200 hover:scale-[1.03] active:scale-95"
+									className="bg-white/10 hover:bg-white/20 border-white/20 text-white hover:text-white backdrop-blur-sm whitespace-nowrap transition-all duration-200 hover:scale-[1.03] active:scale-95 cursor-pointer"
 								>
 									<Link
 										href={event.registration_link}
@@ -145,6 +146,31 @@ export function UpcomingEventBanner({ event }: { event: Event }) {
 										</svg>
 									</Link>
 								</Button>
+							) : (
+								<Button
+									asChild
+									variant="outline"
+									size="sm"
+									className="bg-white/10 hover:bg-white/20 border-white/20 text-white hover:text-white backdrop-blur-sm whitespace-nowrap transition-all duration-200 hover:scale-[1.03] active:scale-95 cursor-pointer"
+									onClick={() => handleEventClick(event)}
+								>
+									<span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
+										View Details
+										<svg
+											className="ml-1.5 h-3.5 w-3.5"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="currentColor"
+										>
+											<path
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth={2}
+												d="M14 5l7 7m0 0l-7 7m7-7H3"
+											/>
+										</svg>
+									</span>
+								</Button>
 							)}
 							<Button
 								variant="ghost"
@@ -159,6 +185,11 @@ export function UpcomingEventBanner({ event }: { event: Event }) {
 					</div>
 				</div>
 			</div>
+			<EventModal
+				isOpen={!!selectedEvent}
+				onClose={() => setSelectedEvent(null)}
+				event={selectedEvent}
+			/>
 		</div>
 	);
 }

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	const currentDate = new Date();
 	const upcomingEvent = upcomingEvents.find((event) => {
-		const eventDate = new Date(event.registration_deadline as string);
+		const eventDate = new Date(event.date);
 		if (!eventDate) return false;
 		return eventDate >= currentDate;
 	});
