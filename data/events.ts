@@ -173,13 +173,99 @@ TechTussle is a high-energy technology debate competition where participants cla
 		date: '2026-03-24',
 		displayDate: '24th March 2026',
 		time: '09:00 AM - 05:30 PM',
-		location: 'To be announced',
+		location: 'SV Auditorium, CB Block, HITK',
 		type: 'Technical Fest',
+		description: `<p>🌟 <strong>INNOVISTA’26: AI for Social Good</strong></p>
+
+<p>
+The Heritage Institute of Technology ACM Student Chapter proudly presents <strong>INNOVISTA’26</strong>, a day dedicated to innovation, ideas, and real-world impact.  
+Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</strong>, the event brings together students and innovators to explore how <strong>Artificial Intelligence</strong> can be leveraged to solve pressing societal challenges.
+</p>
+
+<div class="space-y-4">
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Event Highlights</h3>
+
+    <div class="space-y-2">
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">ACM India Eminent Speaker Program</h4>
+        <p class="text-sm text-muted-foreground">
+          Talk on <em>“Multi-Modal Data Integration and Analysis for Cancer Prognosis Using Machine Learning Models”</em> by Dr. Sriparna Saha, Associate Professor, IIT Patna.
+        </p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">Technical Talk</h4>
+        <p class="text-sm text-muted-foreground">
+          Session on <em>“Automation for All: Agentic AI is the Future”</em> by Dr. Soumya Sen, Assistant Professor, University of Calcutta.
+        </p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">IDEAPOLIS’26 – Inter-College Ideathon</h4>
+        <p class="text-sm text-muted-foreground">
+          A competitive ideathon where teams present AI-driven solutions addressing real-world societal challenges through innovation and creativity.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Event Details</h3>
+    <ul class="space-y-1">
+      <li><strong>Date:</strong> March 24, 2026</li>
+      <li><strong>Venue:</strong> Heritage Institute of Technology</li>
+      <li><strong>Organizer:</strong> ACM HITK Student Chapter</li>
+      <li><strong>Entry Fee:</strong> Free for attendees</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-2">IDEAPOLIS Format</h3>
+
+    <div class="space-y-2">
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">Preliminary Round</h4>
+        <p class="text-sm text-muted-foreground">
+          Teams of 4 must submit a short project presentation (PDF). Selected teams will be shortlisted for the final round.
+        </p>
+      </div>
+
+      <div class="bg-muted/50 p-3 rounded-lg">
+        <h4 class="font-medium">Final Round</h4>
+        <p class="text-sm text-muted-foreground">
+          Shortlisted teams will present a 10-minute demo and pitch before a panel of judges during INNOVISTA’26.
+        </p>
+      </div>
+    </div>
+
+    <p class="text-sm text-muted-foreground mt-2">
+      Final evaluation will be based on innovation, feasibility, impact, and presentation quality.
+    </p>
+  </div>
+
+  <div>
+    <h3 class="text-lg font-semibold mb-2">Prizes & Goodies</h3>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>₹14,000 total prize pool</li>
+      <li>Mementoes and certificates for participants</li>
+      <li>Opportunities to interact with speakers, judges, and innovators</li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+    <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Important Note</h3>
+    <p class="text-sm text-blue-600 dark:text-blue-200">
+      Registration is mandatory for both attendees and IDEAPOLIS participants.  
+      Teams must submit their preliminary ideas before the deadline to qualify for the final round.  
+      Participation certificates will be awarded to attendees who attend all sessions.
+    </p>
+  </div>
+</div>
+`,
 		cardDescription:
 			'A flagship inter-college fest by ACM HITK, celebrating creativity, computation, and collaboration. Featuring an inspiring ACM India Eminent Speaker Session and SparkTank, a thrilling idea-pitching challenge that transforms bold visions into real-world innovation.',
 		status: 'open',
-		registration_deadline: '2026-03-23T23:59:00+05:30',
-		registration_link: 'https://forms.gle/HkEKahf1fhxD6X1F7',
 		prizepool: 14000,
 		price_currency: 'INR',
 	},
@@ -471,7 +557,7 @@ export const pastEvents: Event[] = [
       `,
 		speaker: 'Mohak Sarkar & Aryan Ghosh',
 		capacity: 'Limited seats available',
-		status: '',
+		status: 'closed',
 		registration_link: 'https://forms.gle/bdc6NkxPgExRPEsw5',
 		registration_deadline: '2025-08-06T23:59:00+05:30',
 		bannerImage: '/Events/webp/Program-Paradox-0.webp',
