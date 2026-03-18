@@ -269,6 +269,13 @@ Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</st
 		prizepool: 14000,
 		price_currency: 'INR',
 		bannerImages: ['/Events/webp/Innovista.webp', '/Events/webp/Ideapolis.webp'],
+		attachments: [
+			{
+				name: 'Innovista Program Schedule',
+				url: '/attachments/Innovista26-Program-Schedule.pdf',
+			},
+			{ name: 'Ideapolis PPT Template', url: '/attachments/Ideapolis-PPT-Template.pptx' },
+		],
 	},
 ];
 

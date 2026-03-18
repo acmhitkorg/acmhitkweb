@@ -23,6 +23,29 @@ type EventModalProps = {
 };
 
 export function EventModal({ isOpen, onClose, event }: EventModalProps) {
+	const getFileType = (url: string) => {
+		const ext = url.split('.').pop()?.split('?')[0]?.toUpperCase();
+		return ext || 'FILE';
+	};
+
+	const getFileTypeStyle = (type: string) => {
+		switch (type) {
+			case 'PDF':
+				return 'bg-gradient-to-r from-red-50 to-red-100/80 text-red-700 border-red-200/50 dark:from-red-900/30 dark:to-red-800/20 dark:border-red-700/30 dark:text-red-300';
+
+			case 'PPT':
+			case 'PPTX':
+				return 'bg-gradient-to-r from-orange-50 to-orange-100/80 text-orange-700 border-orange-200/50 dark:from-orange-900/30 dark:to-orange-800/20 dark:border-orange-700/30 dark:text-orange-300';
+
+			case 'DOC':
+			case 'DOCX':
+				return 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300';
+
+			default:
+				return 'bg-gradient-to-r from-gray-50 to-gray-100/80 text-gray-700 border-gray-200/50 dark:from-gray-900/30 dark:to-gray-800/20 dark:border-gray-700/30 dark:text-gray-300';
+		}
+	};
+
 	if (!event) return null;
 
 	return (
@@ -48,11 +71,18 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
 					</div>
 
 					<div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-muted-foreground mt-2">
-						<span
-							className={`px-2 py-0.5 bg-primary/10 text-primary rounded-full whitespace-nowrap`}
+						<div
+							className={`relative z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border backdrop-blur-sm
+                              ${
+									event.type === 'Workshop'
+										? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
+										: event.type === 'Seminar'
+											? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
+											: 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
+								}`}
 						>
 							{event.type}
-						</span>
+						</div>
 						<span className="hidden sm:inline">•</span>
 						<span className="whitespace-nowrap">{event.date}</span>
 						{event.location && (
@@ -205,6 +235,46 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
 									<div>{event.cardDescription}</div>
 								)}
 							</div>
+
+							{event.attachments && event.attachments.length > 0 && (
+								<div className="space-y-3">
+									<h4 className="font-medium text-foreground text-sm sm:text-base">
+										Attachments
+									</h4>
+
+									<div className="flex flex-col gap-2">
+										{event.attachments.map((file, index) => (
+											<a
+												key={index}
+												href={file.url}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="w-full"
+											>
+												<Button
+													variant="outline"
+													className="w-full justify-between items-center"
+												>
+													<div className="flex items-center gap-2 min-w-0">
+														<span className="truncate">
+															{file.name}
+														</span>
+
+														<span
+															className={`text-[10px] px-2 py-0.5 rounded-full border backdrop-blur-sm font-medium shrink-0 ${getFileTypeStyle(
+																getFileType(file.url)
+															)}`}
+														>
+															{getFileType(file.url)}
+														</span>
+													</div>
+													<ExternalLink className="h-4 w-4 ml-2" />
+												</Button>
+											</a>
+										))}
+									</div>
+								</div>
+							)}
 
 							<div className="mt-6">
 								{event.registration_link && event.registration_deadline && (

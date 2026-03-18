@@ -42,5 +42,5 @@ export interface Event {
 	session?: string;
 	prizepool?: number;
 	price_currency?: string;
-	attachments?: string[];
+	attachments?: { name: string; url: string }[];
 }
