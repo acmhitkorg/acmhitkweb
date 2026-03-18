@@ -1,3 +1,5 @@
+'use client';
+
 import { GlassCard } from '@/components/glass-card';
 import { Button } from '@/components/ui/button';
 import { upcomingEvents } from '@/data/index';
@@ -7,7 +9,8 @@ import Link from 'next/link';
 
 const Events = () => {
 	const upcomingEventsForHomePage = upcomingEvents.slice(0, 3);
-	// console.log("Status Logs: ", upcomingEventsForHomePage, new Date(upcomingEventsForHomePage?.[0].registration_deadline) > new Date());
+	const isRegistrationOpen = (deadline?: string) => deadline && new Date(deadline) > new Date();
+
 	return (
 		<section className="py-20 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-7xl mx-auto">
@@ -94,8 +97,7 @@ const Events = () => {
 
 							{/* Registration button */}
 							{event.registration_link &&
-							event.registration_deadline &&
-							new Date(event.registration_deadline) > new Date() ? (
+							isRegistrationOpen(event.registration_deadline) ? (
 								<a
 									href={event.registration_link}
 									target="_blank"

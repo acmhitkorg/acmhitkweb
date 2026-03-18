@@ -14,6 +14,21 @@ The **Association for Computing Machinery (ACM)** is the world's largest educati
 
 The **Heritage Institute of Technology (HITK) ACM Student Chapter** is a vibrant and active student-run organization dedicated to fostering a strong computing community within the college. Aligned with ACM's mission, our chapter aims to promote computer science education, facilitate professional development, and encourage innovation among students. We regularly organize workshops, coding competitions, technical talks, and various events to enhance students' skills, connect them with industry professionals, and prepare them for successful careers in technology.
 
+### Timezone Note
+
+All registration/event deadlines must include timezone (`+05:30` for IST).
+
+Example:
+if deadline is 18th March 2026 23:59PM, then write like
+
+```js
+...
+  registration_deadline:`2026-03-18T23:59:00+05:30`
+...
+```
+
+Do NOT omit timezone (e.g. `2026-03-18T23:59:00`) as it leads to incorrect comparisons.
+
 ### Convert image format to Webp
 
 - Install sharp-cli globally, sharp-cli is the CLI for sharp, a high performance Node.js image processing module.
