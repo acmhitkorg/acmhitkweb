@@ -128,17 +128,34 @@ export default function EventsPage() {
 										/>
 
 										{/* Event type badge with gradient */}
-										<div
-											className={`relative z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-4 border backdrop-blur-sm
-                      ${
+										<div className="relative z-10 flex items-center justify-between mb-4">
+											<div
+												className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium border backdrop-blur-sm
+                        ${
 							event.type === 'Workshop'
 								? 'bg-gradient-to-r from-blue-50 to-blue-100/80 text-blue-700 border-blue-200/50 dark:from-blue-900/30 dark:to-blue-800/20 dark:border-blue-700/30 dark:text-blue-300'
 								: event.type === 'Seminar'
 									? 'bg-gradient-to-r from-purple-50 to-purple-100/80 text-purple-700 border-purple-200/50 dark:from-purple-900/30 dark:to-purple-800/20 dark:border-purple-700/30 dark:text-purple-300'
 									: 'bg-gradient-to-r from-teal-50 to-teal-100/80 text-teal-700 border-teal-200/50 dark:from-teal-900/30 dark:to-teal-800/20 dark:border-teal-700/30 dark:text-teal-300'
 						}`}
-										>
-											{event.type}
+											>
+												{event.type}
+											</div>
+											{event.date && (
+												<div className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-400 group-has-[.event-date]:hover:text-gray-700 dark:group-has-[.event-date]:hover:text-gray-300 transition-colors">
+													<Calendar className="h-3.5 w-3.5 mr-1.5 text-gray-400/80 dark:text-gray-500/80" />
+													<span className="event-date">
+														{new Date(event.date).toLocaleDateString(
+															'en-US',
+															{
+																month: 'short',
+																day: 'numeric',
+																year: 'numeric',
+															}
+														)}
+													</span>
+												</div>
+											)}
 										</div>
 
 										<h3 className="relative z-10 text-xl font-bold mb-4 bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-200 bg-clip-text text-transparent transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-700 dark:group-hover:from-white dark:group-hover:to-gray-300">
