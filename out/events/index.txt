@@ -1,96 +1,27 @@
 1:"$Sreact.fragment"
 2:I[493,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"BannerProvider"]
 3:I[7368,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"UpcomingEventBanner"]
-9:I[8986,[],""]
+4:I[4378,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"ThemeProvider"]
+5:I[1298,[],""]
+6:I[2208,[],""]
+7:I[4248,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"Toaster"]
+8:I[3074,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"Analytics"]
+9:I[6147,[],"ClientPageRoot"]
+a:I[6442,["119","static/chunks/119-39891968b583e55d.js","554","static/chunks/554-05177623c3b820f9.js","767","static/chunks/767-2d2791f19dd94831.js","855","static/chunks/855-7c03d957aa2e336f.js","508","static/chunks/508-42f20543d6f9ca19.js","634","static/chunks/app/events/page-b8ca0188340bcd02.js"],"default"]
+d:I[7322,[],"OutletBoundary"]
+f:I[314,[],"AsyncMetadataOutlet"]
+11:I[7322,[],"ViewportBoundary"]
+13:I[7322,[],"MetadataBoundary"]
+14:"$Sreact.suspense"
+16:I[8986,[],""]
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/a8770e44b6c8c7a9.css","style"]
 :HL["/_next/static/css/827658ac991ae42e.css","style"]
-4:Tb9a,<p>🚀 <strong>Brainstorm'26: Where Logic Strikes Faster Than Light</strong></p>
-<p>
-The Heritage Institute of Technology ACM Student Chapter proudly presents <strong>Brainstorm'26</strong>, an electrifying flagship challenge under <strong>DAKSHH’26</strong>, the Annual Techno-Management Fest of HITK.  
-Designed as a high-energy Computer Science showdown, Brainstorm pushes participants beyond traditional quiz or coding formats. Through dynamic, multi-stage rounds, participants will tackle challenges that test speed, logic, conceptual depth, and creative problem-solving — making it a true battle of minds.
-</p>
-
-<div class="space-y-4">
-  <div>
-    <h3 class="text-lg font-semibold mb-2">Event Details</h3>
-    <ul class="space-y-1">
-      <li><strong>Date:</strong> March 13, 2026 (Friday)</li>
-      <li><strong>Time:</strong> 11:30 AM onwards</li>
-      <li><strong>Venue:</strong> ICT Basement Labs, Heritage Institute of Technology</li>
-      <li><strong>Organizer:</strong> ACM HITK Student Chapter</li>
-      <li><strong>Entry Fee:</strong> Free</li>
-    </ul>
-  </div>
-
-<div>
-  <h3 class="text-lg font-semibold mb-2">Event Format</h3>
-
-  <div class="space-y-2">
-    <div class="bg-muted/50 p-3 rounded-lg">
-      <h4 class="font-medium">Round 1: Rapid Fundamentals</h4>
-      <p class="text-sm text-muted-foreground">
-        A fast-paced round testing core Computer Science fundamentals and quick problem-solving ability.
-      </p>
-    </div>
-
-    <div class="bg-muted/50 p-3 rounded-lg">
-      <h4 class="font-medium">Round 2: Applied Concepts</h4>
-      <p class="text-sm text-muted-foreground">
-        Participants tackle challenges that require applying CS concepts and logical reasoning under time pressure.
-      </p>
-    </div>
-
-    <div class="bg-muted/50 p-3 rounded-lg">
-      <h4 class="font-medium">Round 3: Core CS Showdown</h4>
-      <p class="text-sm text-muted-foreground">
-        The final round focuses on deeper Computer Science reasoning and will act as the tie-breaker if scores are equal.
-      </p>
-    </div>
-  </div>
-
-  <p class="text-base text-muted-foreground mt-2">
-    Final rankings will be determined by cumulative performance across all rounds.
-  </p>
-</div>
-
-  <div>
-    <h3 class="text-lg font-semibold mb-2">Prizes & Goodies</h3>
-    <ul class="list-disc pl-5 space-y-1">
-      <li>₹10,000 prize pool for the top performers</li>
-      <li>Exciting goodies and recognition at DAKSHH’26</li>
-      <li>An opportunity to showcase your problem-solving skills among the brightest minds on campus</li>
-    </ul>
-  </div>
-
-  <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-    <h3 class="font-semibold text-blue-700 dark:text-blue-300 mb-2">Important Note</h3>
-    <p class="text-sm text-blue-600 dark:text-blue-200">
-      Registration is mandatory to participate in the event.  
-      Participants are advised to arrive on time and be ready for a fast-paced competition format.
-    </p>
-  </div>
-</div>0:{"P":null,"b":"295w-Ar4ykceWDavs5RYC","p":"","c":["","events",""],"i":false,"f":[[["",{"children":["events",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a8770e44b6c8c7a9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/827658ac991ae42e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"min-h-screen bg-background font-sans antialiased __variable_f367f3","children":["$","$L2",null,{"children":[["$","$L3",null,{"event":{"title":"Brainstorm'26","date":"13 March 2026","displayDate":"13th March 2026","registration_deadline":"2026-03-12T23:59:00","registration_link":"https://www.dakshh-hitk.com/events/69973c71fe82b8a0b28321ee","time":"11:30 AM - 01:30 PM","location":"ICT Basement Labs","type":"TechQuiz","cardDescription":"Where Logic Strikes Faster Than Light: A flagship high-energy CS showdown that pushes participants beyond conventional formats. Across dynamic, multi-stage rounds, it tests speed, conceptual depth, and creative problem-solving, rewarding those who can think critically, adapt instantly, and outpace the competition.","description":"$4","status":"open","attendees":0,"prizepool":10000,"price_currency":"INR","bannerImage":"/Events/webp/Brainstorm-2026.webp"}}],"$L5"]}]}]}]]}],{"children":["events","$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
-a:I[4378,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"ThemeProvider"]
-b:I[1298,[],""]
-c:I[2208,[],""]
-d:I[4248,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"Toaster"]
-e:I[3074,["119","static/chunks/119-39891968b583e55d.js","208","static/chunks/208-41cc342635b49849.js","177","static/chunks/app/layout-884b97b5df6b3e7a.js"],"Analytics"]
-f:I[6147,[],"ClientPageRoot"]
-10:I[6442,["119","static/chunks/119-39891968b583e55d.js","554","static/chunks/554-05177623c3b820f9.js","767","static/chunks/767-2d2791f19dd94831.js","855","static/chunks/855-7c03d957aa2e336f.js","508","static/chunks/508-a031290699a394ce.js","634","static/chunks/app/events/page-c572ec9c4a8e8311.js"],"default"]
-13:I[7322,[],"OutletBoundary"]
-15:I[314,[],"AsyncMetadataOutlet"]
-17:I[7322,[],"ViewportBoundary"]
-19:I[7322,[],"MetadataBoundary"]
-1a:"$Sreact.suspense"
-5:["$","$La",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$Ld",null,{}],["$","$Le",null,{}]]}]
-6:["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
-7:["$","$1","c",{"children":[["$","$Lf",null,{"Component":"$10","searchParams":{},"params":{},"promises":["$@11","$@12"]}],null,["$","$L13",null,{"children":["$L14",["$","$L15",null,{"promise":"$@16"}]]}]]}]
-8:["$","$1","h",{"children":[null,[["$","$L17",null,{"children":"$L18"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L19",null,{"children":["$","div",null,{"hidden":true,"children":["$","$1a",null,{"fallback":null,"children":"$L1b"}]}]}]]}]
-11:{}
-12:"$7:props:children:0:props:params"
-18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-14:null
-1c:I[4722,[],"IconMark"]
-16:{"metadata":[["$","title","0",{"children":"ACM HITK - Heritage Institute of Technology ACM Student Chapter"}],["$","meta","1",{"name":"description","content":"The official ACM Student Chapter of Heritage Institute of Technology, fostering a vibrant community of computing enthusiasts."}],["$","link","2",{"rel":"icon","href":"/acmhitk.ico"}],["$","$L1c","3",{}]],"error":null,"digest":"$undefined"}
-1b:"$16:metadata"
+0:{"P":null,"b":"uxnen-aFeWbvLk12IYMCH","p":"","c":["","events",""],"i":false,"f":[[["",{"children":["events",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a8770e44b6c8c7a9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/827658ac991ae42e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"min-h-screen bg-background font-sans antialiased __variable_f367f3","children":["$","$L2",null,{"children":[["$","$L3",null,{"event":{"title":"Innovista'26","date":"2026-03-24","displayDate":"24th March 2026","time":"09:00 AM - 05:30 PM","location":"To be announced","type":"Technical Fest","cardDescription":"A flagship inter-college fest by ACM HITK, celebrating creativity, computation, and collaboration. Featuring an inspiring ACM India Eminent Speaker Session and SparkTank, a thrilling idea-pitching challenge that transforms bold visions into real-world innovation.","status":"open","registration_deadline":"2026-03-23T23:59:00+05:30","registration_link":"https://forms.gle/HkEKahf1fhxD6X1F7","prizepool":14000,"price_currency":"INR"}}],["$","$L4",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L7",null,{}],["$","$L8",null,{}]]}]]}]}]}]]}],{"children":["events",["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L9",null,{"Component":"$a","searchParams":{},"params":{},"promises":["$@b","$@c"]}],null,["$","$Ld",null,{"children":["$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$L11",null,{"children":"$L12"}],["$","meta",null,{"name":"next-size-adjust","content":""}]],["$","$L13",null,{"children":["$","div",null,{"hidden":true,"children":["$","$14",null,{"fallback":null,"children":"$L15"}]}]}]]}],false]],"m":"$undefined","G":["$16",[]],"s":false,"S":true}
+b:{}
+c:"$0:f:0:1:2:children:2:children:1:props:children:0:props:params"
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+e:null
+17:I[4722,[],"IconMark"]
+10:{"metadata":[["$","title","0",{"children":"ACM HITK - Heritage Institute of Technology ACM Student Chapter"}],["$","meta","1",{"name":"description","content":"The official ACM Student Chapter of Heritage Institute of Technology, fostering a vibrant community of computing enthusiasts."}],["$","link","2",{"rel":"icon","href":"/acmhitk.ico"}],["$","$L17","3",{}]],"error":null,"digest":"$undefined"}
+15:"$10:metadata"
