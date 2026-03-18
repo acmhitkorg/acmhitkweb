@@ -5,7 +5,7 @@
 :HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/css/887fa1321632de3a.css","style"]
 :HL["/_next/static/css/827658ac991ae42e.css","style"]
-4:Tea9,<p>🌟 <strong>INNOVISTA’26: AI for Social Good</strong></p>
+4:Tec9,<p>🌟 <strong>INNOVISTA’26: AI for Social Good</strong></p>
 
 <p>
 The Heritage Institute of Technology ACM Student Chapter proudly presents <strong>INNOVISTA’26</strong>, a day dedicated to innovation, ideas, and real-world impact.  
@@ -44,7 +44,7 @@ Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</st
     <h3 class="text-lg font-semibold mb-2">Event Details</h3>
     <ul class="space-y-1">
       <li><strong>Date:</strong> March 24, 2026</li>
-      <li><strong>Venue:</strong> Heritage Institute of Technology</li>
+      <li><strong>Venue:</strong> SV Auditorium, Central Block, Heritage Institute of Technology</li>
       <li><strong>Organizer:</strong> ACM HITK Student Chapter</li>
       <li><strong>Entry Fee:</strong> Free for attendees</li>
     </ul>
@@ -69,7 +69,7 @@ Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</st
       </div>
     </div>
 
-    <p class="text-sm text-muted-foreground mt-2">
+    <p class="text-base text-muted-foreground mt-2">
       Final evaluation will be based on innovation, feasibility, impact, and presentation quality.
     </p>
   </div>
@@ -92,7 +92,7 @@ Supported by <strong>ACM India under the Activity-Based Funding (ABF) scheme</st
     </p>
   </div>
 </div>
-0:{"P":null,"b":"wDvaZNwZuskGwBlmdCH5O","p":"","c":["","past-members",""],"i":false,"f":[[["",{"children":["past-members",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/887fa1321632de3a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/827658ac991ae42e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"min-h-screen bg-background font-sans antialiased __variable_f367f3","children":["$","$L2",null,{"children":[["$","$L3",null,{"event":{"title":"Innovista'26","date":"2026-03-24","displayDate":"24th March 2026","time":"09:00 AM - 05:30 PM","location":"SV Auditorium, CB Block, HITK","type":"Technical Fest","description":"$4","cardDescription":"A flagship inter-college fest by ACM HITK, celebrating creativity, computation, and collaboration. Featuring an inspiring ACM India Eminent Speaker Session and SparkTank, a thrilling idea-pitching challenge that transforms bold visions into real-world innovation.","status":"open","prizepool":14000,"price_currency":"INR","bannerImages":["/Events/webp/Innovista.webp","/Events/webp/Ideapolis.webp"],"attachments":[{"name":"Innovista Program Schedule","url":"/attachments/Innovista26-Program-Schedule.pdf"},{"name":"Ideapolis PPT Template","url":"/attachments/Ideapolis-PPT-Template.pptx"}]}}],"$L5"]}]}]}]]}],{"children":["past-members","$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
+0:{"P":null,"b":"JMM-83BMPCq8IzW-0xA6r","p":"","c":["","past-members",""],"i":false,"f":[[["",{"children":["past-members",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/887fa1321632de3a.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/827658ac991ae42e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"min-h-screen bg-background font-sans antialiased __variable_f367f3","children":["$","$L2",null,{"children":[["$","$L3",null,{"event":{"title":"Innovista'26","date":"2026-03-24","displayDate":"24th March 2026","time":"09:00 AM - 05:30 PM","location":"SV Auditorium, Central Block, HITK","type":"Technical Fest","description":"$4","cardDescription":"A flagship inter-college fest by ACM HITK, celebrating creativity, computation, and collaboration. Featuring an inspiring ACM India Eminent Speaker Session and SparkTank, a thrilling idea-pitching challenge that transforms bold visions into real-world innovation.","status":"open","prizepool":14000,"price_currency":"INR","bannerImages":["/Events/webp/Innovista.webp","/Events/webp/Ideapolis.webp"],"attachments":[{"name":"Innovista Program Schedule","url":"/attachments/Innovista26-Program-Schedule.pdf"},{"name":"Ideapolis PPT Template","url":"/attachments/Ideapolis-PPT-Template.pptx"}]}}],"$L5"]}]}]}]]}],{"children":["past-members","$L6",{"children":["__PAGE__","$L7",{},null,false]},null,false]},null,false],"$L8",false]],"m":"$undefined","G":["$9",[]],"s":false,"S":true}
 a:I[4378,["573","static/chunks/573-a449371faf8bac02.js","683","static/chunks/683-f545f1fca714490e.js","208","static/chunks/208-41cc342635b49849.js","793","static/chunks/793-00cf073b78e87d16.js","177","static/chunks/app/layout-71b94dfb96779cb6.js"],"ThemeProvider"]
 b:I[1298,[],""]
 c:I[2208,[],""]
