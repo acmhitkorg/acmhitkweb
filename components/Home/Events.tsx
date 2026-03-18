@@ -1,13 +1,16 @@
 'use client';
-
+import { EventModal } from '@/components/Events/EventModal';
 import { GlassCard } from '@/components/glass-card';
 import { Button } from '@/components/ui/button';
 import { upcomingEvents } from '@/data/index';
 import { formatCurrency } from '@/lib/utils';
-import { Calendar, Clock, MapPin, ExternalLink, Trophy } from 'lucide-react';
+import { Event } from '@/types';
+import { Calendar, Clock, MapPin, ExternalLink, ArrowRight, Trophy } from 'lucide-react';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const Events = () => {
+	const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 	const upcomingEventsForHomePage = [...upcomingEvents]
 		.filter((event) => {
 			const eventDate = new Date(event.date);
@@ -20,6 +23,9 @@ const Events = () => {
 
 	const isRegistrationOpen = (deadline?: string) => deadline && new Date(deadline) > new Date();
 
+	const handleEventClick = (event: Event) => {
+		setSelectedEvent(event);
+	};
 	return (
 		<section className="py-20 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-7xl mx-auto">
@@ -105,7 +111,8 @@ const Events = () => {
 							</div>
 
 							{/* Registration button */}
-							{event.registration_link &&
+							{event.status === 'open' &&
+							event.registration_link &&
 							isRegistrationOpen(event.registration_deadline) ? (
 								<a
 									href={event.registration_link}
@@ -124,6 +131,18 @@ const Events = () => {
 										<ExternalLink className="ml-2 h-4 w-4 text-blue-500" />
 									</Button>
 								</a>
+							) : event.status === 'open' && event?.registration_link !== '' ? (
+								<Button
+									variant="outline"
+									size="sm"
+									className="w-full group/button border-gray-200/80 dark:border-gray-700/80 bg-white/70 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-gradient-to-r hover:from-blue-50/80 hover:to-blue-100/50 hover:border-blue-200/70 dark:hover:from-blue-900/20 dark:hover:to-blue-800/10 dark:hover:border-blue-700/50 transition-all duration-300 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
+									onClick={() => handleEventClick(event)}
+								>
+									<span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
+										View Details
+									</span>
+									<ArrowRight className="ml-2 h-4 w-4 text-blue-500 dark:text-blue-400 group-hover/button:translate-x-1 transition-transform" />
+								</Button>
 							) : (
 								<div className="relative z-10 group/button">
 									<Button
@@ -133,9 +152,10 @@ const Events = () => {
 										disabled
 									>
 										<span className="bg-gradient-to-r from-blue-600 to-blue-500 dark:from-blue-400 dark:to-blue-300 bg-clip-text text-transparent font-medium">
-											{event.status === 'open' || event.status === 'closed'
+											{event.status === 'closed'
 												? 'Registration Closed'
 												: 'Registration Coming Soon'}
+											{/* status is upcoming */}
 										</span>
 									</Button>
 									{!event.status && (
@@ -159,6 +179,13 @@ const Events = () => {
 					</Button>
 				</div>
 			</div>
+
+			{/* Event Modal */}
+			<EventModal
+				isOpen={!!selectedEvent}
+				onClose={() => setSelectedEvent(null)}
+				event={selectedEvent}
+			/>
 		</section>
 	);
 };
