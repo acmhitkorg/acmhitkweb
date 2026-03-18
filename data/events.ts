@@ -3,7 +3,7 @@ import { Event } from '@/types';
 export const upcomingEvents: Event[] = [
 	{
 		title: "Brainstorm'26",
-		date: '13 March 2026',
+		date: '2026-03-13',
 		displayDate: '13th March 2026',
 		registration_deadline: '2026-03-12T23:59:00+05:30',
 		registration_link: 'https://www.dakshh-hitk.com/events/69973c71fe82b8a0b28321ee',
@@ -86,7 +86,7 @@ Designed as a high-energy Computer Science showdown, Brainstorm pushes participa
 	},
 	{
 		title: 'TechTussle',
-		date: '14 March 2026',
+		date: '2026-03-14',
 		displayDate: '14th March 2026',
 		registration_deadline: '2026-03-13T23:59:00+05:30',
 		registration_link: 'https://www.dakshh-hitk.com/events/69973c71fe82b8a0b28321ef',
@@ -170,7 +170,7 @@ TechTussle is a high-energy technology debate competition where participants cla
 	},
 	{
 		title: "Innovista'26",
-		date: '24 March 2026',
+		date: '2026-03-24',
 		displayDate: '24th March 2026',
 		time: '09:00 AM - 05:30 PM',
 		location: 'To be announced',

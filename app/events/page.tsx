@@ -30,6 +30,9 @@ export default function EventsPage() {
 	const [selectedSession, setSelectedSession] = useState<string | 'all'>('all');
 	const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 	const [formattedPastEvents, setFormattedPastEvents] = useState<Event[]>(pastEvents);
+	const sortedUpcomingEvents = [...upcomingEvents]
+		.filter((event) => new Date(event.date) >= new Date(new Date().setHours(0, 0, 0, 0)))
+		.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
 	// Get unique academic sessions from past events
 	const availableAcademicSessions = getUniqueSessions(pastEvents);
@@ -48,17 +51,29 @@ export default function EventsPage() {
 	};
 
 	useEffect(() => {
-		setFormattedPastEvents(
-			pastEvents.map((event) => ({
+		const pastFromUpcoming = upcomingEvents
+			.filter((event) => new Date(event.date) < new Date(new Date().setHours(0, 0, 0, 0)))
+			.map((event) => ({
 				...event,
 				year: new Date(event.date).getFullYear(),
 				time: event.time || '',
 				speaker: event.speaker || '',
 				attendees: event.attendees || 0,
 				photos: event.photos || [],
-			}))
-		);
-	}, []);
+			}));
+
+		setFormattedPastEvents([
+			...pastFromUpcoming,
+			...pastEvents.map((event) => ({
+				...event,
+				year: new Date(event.date).getFullYear(),
+				time: event.time || '',
+				speaker: event.speaker || '',
+				attendees: event.attendees || 0,
+				photos: event.photos || [],
+			})),
+		]);
+	}, [upcomingEvents, pastEvents]);
 
 	return (
 		<>
@@ -93,9 +108,9 @@ export default function EventsPage() {
 							</p>
 						</div>
 
-						{upcomingEvents.length > 0 ? (
+						{sortedUpcomingEvents.length > 0 ? (
 							<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-								{upcomingEvents.map((event, index) => (
+								{sortedUpcomingEvents.map((event, index) => (
 									<GlassCard
 										key={index}
 										className="group relative overflow-hidden p-6 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white/95 to-blue-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-200/80 dark:border-gray-700/50 shadow-sm hover:shadow-md hover:shadow-blue-100/50 dark:hover:shadow-blue-900/10"
@@ -244,7 +259,7 @@ export default function EventsPage() {
 							<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 								{filteredPastEvents.map((event, index) => (
 									<GlassCard
-										key={index}
+										key={event.title + index}
 										className="group relative overflow-hidden p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 bg-gradient-to-br from-white/90 to-gray-50/70 dark:from-gray-900/90 dark:to-gray-800/70 backdrop-blur-sm border border-gray-100/60 dark:border-gray-700/50"
 									>
 										{/* Animated gradient background */}

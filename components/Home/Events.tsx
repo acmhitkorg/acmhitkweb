@@ -8,7 +8,16 @@ import { Calendar, Clock, MapPin, ExternalLink, Trophy } from 'lucide-react';
 import Link from 'next/link';
 
 const Events = () => {
-	const upcomingEventsForHomePage = upcomingEvents.slice(0, 3);
+	const upcomingEventsForHomePage = [...upcomingEvents]
+		.filter((event) => {
+			const eventDate = new Date(event.date);
+
+			// keep current day's event as well
+			return eventDate >= new Date(new Date().setHours(0, 0, 0, 0));
+		})
+		.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+		.slice(0, 3);
+
 	const isRegistrationOpen = (deadline?: string) => deadline && new Date(deadline) > new Date();
 
 	return (
