@@ -60,7 +60,8 @@ export default function EventsPage() {
 				speaker: event.speaker || '',
 				attendees: event.attendees || 0,
 				photos: event.photos || [],
-			}));
+			}))
+			.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Sort past events in descending order
 
 		setFormattedPastEvents([
 			...pastFromUpcoming,
