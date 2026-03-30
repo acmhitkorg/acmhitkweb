@@ -41,6 +41,7 @@ pnpm add -g sharp-cli # or npm i -g sharp-cli
 
 ```sh
 sharp --input "png,jpg,jpeg files" \
+  --autoOrient \
   --format webp \
   --quality 70 \
   --output "output-path" # for current folder remove output flag
@@ -49,7 +50,8 @@ sharp --input "png,jpg,jpeg files" \
 Example:
 
 ```sh
-sharp --input "public/Events/*.{png,jpeg}" \
+sharp --input "public/Events/*.{png,jpeg,jpg}" \
+  --autoOrient \
   --format webp \
   --quality 70 \
   --output public/Events/webp
@@ -59,7 +61,8 @@ sharp --input "public/Events/*.{png,jpeg}" \
 
 Notes
 
-- Always use --input when converting multiple files
+- Always use `--autoOrient` to correctly handle portrait images (EXIF orientation)
+- Always use `--input` when converting multiple files
 - Quote glob patterns to avoid shell (zsh) expansion issues
 
 ### Batch convert images to WebP and archive originals
@@ -83,6 +86,7 @@ find path-to-images -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.pn
 
     sharp \
       --input "$img" \
+      --autoOrient \
       --format webp \
       --quality 70 \
       --output "$dir/webp/$base.webp"
