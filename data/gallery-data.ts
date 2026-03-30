@@ -104,6 +104,25 @@ export const gallerySections = [
 			},
 			{
 				date: 'March 2026',
+				name: "Brainstorm'26",
+				path: '/ACM-Pics-2025_26/brainstorm-26/webp',
+				images: [
+					'brainstorm-26-0.webp',
+					'brainstorm-26-1.webp',
+					'brainstorm-26-2.webp',
+					'brainstorm-26-3.webp',
+					'brainstorm-26-4.webp',
+					'brainstorm-26-5.webp',
+					'brainstorm-26-11.webp',
+					'brainstorm-26-6.webp',
+					'brainstorm-26-7.webp',
+					'brainstorm-26-8.webp',
+					'brainstorm-26-9.webp',
+					'brainstorm-26-10.webp',
+				],
+			},
+			{
+				date: 'March 2026',
 				name: "Innovista'26",
 				path: '/ACM-Pics-2025_26/innovista/webp',
 				images: [
