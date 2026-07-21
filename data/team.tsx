@@ -64,7 +64,7 @@ export const currentTeam: TeamMember[] = [
 		roleAtACMHITK: 'Chair',
 		roleAtHITK: "4th Year, CSE'26",
 		image: `${base_url}/Sagnik-Pramanik.webp`,
-		bio: 'Sagnik is a CSE Final Year student with a passion for building impactful, real-world solutions at the intersection of AI, software, and embedded systems. He has worked with multiple US-based companies, also contributing to large-scale projects of the U.S. government and healthcare sectors. A 5x LinkedIn Top Voice in various domains, he holds certifications from Google, AWS, DeepLearning.AI, Stanford University, Imperial College London, and more. He previously served as the Secretary of ACM-HITK 2024-2025 and currently leads the chapter as its Chair',
+		bio: 'Sagnik graduated with a passion for building impactful, real-world solutions at the intersection of AI, software, and embedded systems. He has worked with multiple US-based companies, also contributing to large-scale projects of the U.S. government and healthcare sectors. A 5x LinkedIn Top Voice in various domains, he holds certifications from Google, AWS, DeepLearning.AI, Stanford University, Imperial College London, and more. He previously served as the Secretary of ACM-HITK 2024-2025 and currently leads the chapter as its Chair',
 		achievements: null,
 		socials: [
 			{
