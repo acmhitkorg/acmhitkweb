@@ -1,596 +1,556 @@
 import { TeamMember } from '@/types';
 import { Linkedin, Mail, Globe, Github } from 'lucide-react';
 
-const base_url = '/current-members/webp';
+const base_url = '/current-members';
 
-export const currentTeam: TeamMember[] = [
-	{
-		type: 'faculty',
-		name: 'Prof. (Dr.) Subhashis Majumder',
-		roleAtACMHITK: 'Senior Member & Patron',
-		roleAtHITK: 'Professor and HOD, Department of Computer Science and Engineering',
-		image: '/webp/Dr-Subhashis-Majumder.webp',
+export const currentTeam: TeamMember[] = [{//done
+		type: "faculty",
+		name: "Prof. (Dr.) Subhashis Majumder",
+		roleAtACMHITK: "Senior Member & Patron",
+		roleAtHITK: "Professor and HOD, Department of Computer Science and Engineering",
+		image: "/webp/Dr-Subhashis-Majumder.webp",
 		bio: "Dr. Subhashis Majumder holds an M.Tech degree in Computer Science from the Indian Statistical Institute, Kolkata, and a Ph.D. in Computer Science and Engineering from Jadavpur University. He also served as a research assistant for a year in the Computer Engineering Department of Rutgers University, U.S.A. After completing his undergraduate work in Electronics and Telecommunication Engineering from Jadavpur University in 1993, he began his career at Texas Instruments India Pvt. Ltd. He brings over seven years of industry experience, during which he led product development teams and held the position of General Manager, Technical, at a medium-sized IT company. In 2006, he established Ditsa Technologies, an IT firm focused on algorithm-intensive programming techniques. Since 2003, he has been dedicated to full-time academics and is currently serving as 'Professor and HOD' in the CSE department of Heritage Institute of Technology, Kolkata. His research interests span Data Analysis, Recommendation Algorithms, VLSI Physical Design Algorithms, Combinatorial and Graph Algorithms, Computational Geometry, and Discrete Geometry.",
 		achievements:
-			'Dr. Subhashis Majumder was awarded an NTS scholarship (1987) by NCERT, India. His career includes leading product development teams on innovative technologies. He founded Ditsa Technologies in 2006, where he contributed key fast and efficient scheduling algorithms to Sports Management Software. Academically, he has published over 90 papers in international refereed conferences and archival journals, and he has guided 6 Ph.D. students.',
+			"Dr. Subhashis Majumder was awarded an NTS scholarship (1987) by NCERT, India. His career includes leading product development teams on innovative technologies. He founded Ditsa Technologies in 2006, where he contributed key fast and efficient scheduling algorithms to Sports Management Software. Academically, he has published over 90 papers in international refereed conferences and archival journals, and he has guided 6 Ph.D. students.",
 		socials: [
 			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/subhashis-majumder-2944252/',
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/subhashis-majumder-2944252/",
 				icon: <Linkedin className="h-5 w-5" />,
 			},
 			{
-				name: 'Email',
-				url: 'mailto:subhashis.majumder@heritageit.edu',
+				name: "Email",
+				url: "mailto:subhashis.majumder@heritageit.edu",
 				icon: <Mail className="h-5 w-5" />,
 			},
 			{
-				name: 'Website',
-				url: 'https://scholar.google.com/citations?user=wQaRGIMAAAAJ&hl=en',
+				name: "Website",
+				url: "https://scholar.google.com/citations?user=wQaRGIMAAAAJ&hl=en",
 				icon: <Globe className="h-5 w-5" />,
 			},
 		],
 	},
-	{
-		type: 'faculty',
-		name: 'Dr. Anurina Tarafdar',
-		roleAtACMHITK: 'Faculty Sponsor',
-		roleAtHITK: 'Assistant Professor, Department of Computer Science & Engineering',
+	{//done
+		type: "faculty",
+		name: "Dr. Anurina Tarafdar",
+		roleAtACMHITK: "Faculty Sponsor",
+		roleAtHITK: "Assistant Professor, Department of Computer Science & Engineering",
 		image: `${base_url}/Dr-Anurina-Tarafdar.webp`,
-		bio: 'Dr. Anurina Tarafdar is currently working as an Assistant Professor in the Department of Computer Science and Engineering at Heritage Institute of Technology, Kolkata. Prior to this she was an UGC-NET Senior Research Fellow and PhD Scholar in the Department of Computer Science and Engineering, University of Calcutta. Her domain of research is resource management in the Cloud environment. She is a Machine Learning and Cloud Computing enthusiast. She is a Gold medalist in M.Tech. from the University of Calcutta.',
+		bio: "Dr. Anurina Tarafdar is currently working as an Assistant Professor in the Department of Computer Science and Engineering at Heritage Institute of Technology, Kolkata. Prior to this she was an UGC-NET Senior Research Fellow and PhD Scholar in the Department of Computer Science and Engineering, University of Calcutta. Her domain of research is resource management in the Cloud environment. She is a Machine Learning and Cloud Computing enthusiast. She is a Gold medalist in M.Tech. from the University of Calcutta.",
 		achievements:
-			'Dr. Anurina Tarafdar has conducted research in the fields of Cloud Computing and Machine Learning. Her works have been published in reputed journals and conferences of Springer, IEEE, and Elsevier. She received the UGC-NET Research Fellowship from Government of India between 2018-2023. She also acquired the First Class First position in M.Tech. in CSE from University of Calcutta in 2018. She received TCS Best Student Award for academic excellence in 2015.',
+			"Dr. Anurina Tarafdar has conducted research in the fields of Cloud Computing and Machine Learning. Her works have been published in reputed journals and conferences of Springer, IEEE, and Elsevier. She received the UGC-NET Research Fellowship from Government of India between 2018-2023. She also acquired the First Class First position in M.Tech. in CSE from University of Calcutta in 2018. She received TCS Best Student Award for academic excellence in 2015.",
 		socials: [
 			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/anurina-tarafdar-107971254',
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/anurina-tarafdar-107971254",
 				icon: <Linkedin className="h-5 w-5" />,
 			},
 			{
-				name: 'Email',
-				url: 'mailto:anurina.tarafdar@heritageit.edu',
+				name: "Email",
+				url: "mailto:anurina.tarafdar@heritageit.edu",
 				icon: <Mail className="h-5 w-5" />,
 			},
 			{
-				name: 'Website',
-				url: 'https://scholar.google.com/citations?user=Mhbkvx0AAAAJ&hl=en',
+				name: "Website",
+				url: "https://scholar.google.com/citations?user=Mhbkvx0AAAAJ&hl=en",
 				icon: <Globe className="h-5 w-5" />,
 			},
 		],
 	},
-	{
-		type: 'student',
-		name: 'Sagnik Pramanik',
-		roleAtACMHITK: 'Chair',
-		roleAtHITK: "4th Year, CSE'26",
-		image: `${base_url}/Sagnik-Pramanik.webp`,
-		bio: 'Sagnik is a CSE Final Year student with a passion for building impactful, real-world solutions at the intersection of AI, software, and embedded systems. He has worked with multiple US-based companies, also contributing to large-scale projects of the U.S. government and healthcare sectors. A 5x LinkedIn Top Voice in various domains, he holds certifications from Google, AWS, DeepLearning.AI, Stanford University, Imperial College London, and more. He previously served as the Secretary of ACM-HITK 2024-2025 and currently leads the chapter as its Chair',
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:sagnikpramanik95@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/sagnik-pramanik/',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/sagnik-p',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Aryan Ghosh',
-		roleAtACMHITK: 'Vice Chairperson',
-		roleAtHITK: "3rd year, CSE'27",
+	{//done
+		type: "student",
+		name: "Aryan Ghosh",
+		roleAtACMHITK: "Chair",
+		roleAtHITK: "4th Year, CSE'27",
 		image: `${base_url}/Aryan-Ghosh.webp`,
-		bio: 'Aryan Ghosh is a CSE Junior at Heritage Institute of Technology and the Vice Chairperson of the ACM HITK Student Chapter. A recipient of the prestigious INSPIRE Scholarship for Higher Education (SHE) under DST, Government of India, he is deeply passionate about advancing innovation at the intersection of Artificial Intelligence, Full-Stack Development, and Computational Research. He has spearheaded and contributed to several AI- and ML-driven projects spanning domains such as intelligent systems, digital sustainability, and autonomous computation. Aryan has actively represented HITK in multiple national-level hackathons, with projects like DripTect and AwareOn earning recognition for their societal and technological impact. Driven by a blend of research curiosity and practical design thinking, he continues to explore the confluence of machine learning, system intelligence, and human-computer interaction, mentoring peers and leading initiatives that amplify the chapter’s vision of nurturing future innovators in computing.',
-		achievements:
-			'Aryan has co-organized flagship ACM HITK events such as Program Paradox and Put On Your Computing Cap, driving interdisciplinary engagement and computational learning. He led projects like DripTect, an IoT-ML flood prediction system that won the Hardware Track at StatusCode 2.0 (IIIT Kalyani), and AwareOn, a civic-tech platform for AI-driven citizen engagement and many more. A recipient of the INSPIRE Scholarship (DST, Govt. of India) for outstanding academic merit, Aryan has also triumphed in multiple inter-college coding competitions and currently contributes to the Web Team of the International Conference on Applied Algorithms (ICAA 2026), enhancing global academic accessibility through innovative web engineering. He currently serves the chapter as the Vice-Chair.',
+		bio: "Aryan is an undergraduate Computer Science student at Heritage Institute of Technology with a strong interest in Artificial Intelligence, Machine Learning, and Full-Stack Development. His work spans deep learning, computer vision, natural language processing, Web3, and scalable software engineering, with a focus on building intelligent, real-world solutions. He is currently an AI Labs Intern at IDfy, working on AI-powered enterprise solutions, and a Software Development Intern at GoKids, contributing to scalable full-stack applications. Alongside his internships, he actively explores research in machine learning and intelligent systems, while enjoying hackathons, technical communities, and emerging technologies. He previously served as the Vice Chair of ACM-HITK (2025–26) and currently leads the chapter as its Chair, fostering technical learning and collaborative innovation.",
+		achievements: "Aryan is currently an Intern at AI Labs@IDfy, where he contributes to AI- and machine-learning-driven solutions for enterprise-scale document intelligence and automation. He is also a Software Development Intern at GoKids, leading the complete redevelopment of the organization's digital platform by architecting a modern full-stack application and in-house backend. Alongside his industry work, he is pursuing research in mathematical modelling and machine learning, with ongoing work on nonlinear eco-epidemiological systems currently under review. A passionate hackathon enthusiast, Aryan has won the Hardware Track at StatusCode 2.0 (IIIT Kalyani) among 5,000+ participants with DripTect, secured 1st place at CodeQuest (IEM Kolkata), and is a recipient of the prestigious INSPIRE Scholarship awarded by the Department of Science & Technology, Government of India.",
 		socials: [
 			{
-				name: 'Email',
-				url: 'mailto:ghosharyan05@gmail.com',
+				name: "Email",
+				url: "mailto:ghosharyan05@gmail.com",
 				icon: <Mail className="h-5 w-5" />,
 			},
 			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/aryan-ghosh-83a26631b',
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/aryan-ghosh-83a26631b",
 				icon: <Linkedin className="h-5 w-5" />,
 			},
 			{
-				name: 'GitHub',
-				url: 'https://github.com/Aryan-Ghosh-Code',
+				name: "GitHub",
+				url: "https://github.com/Aryan-Ghosh-Code",
+				icon: <Github className="h-5 w-5" />,
+			},
+			{
+				name: "Website",
+				url: "https://aryan-ghosh-portfolio.vercel.app/",
+				icon: <Globe className="h-5 w-5" />,
+			},
+		],
+	},
+	{//done
+		type: "student",
+		name: "Sarthak Sharan",
+		roleAtACMHITK: "Vice Chairperson",
+		roleAtHITK: "2nd Year, DS'29",
+		image: `${base_url}/Sarthak-Sharan.webp`,
+		bio: "I am a second-year Computer Science and Engineering (Data Science) student with interests in embedded systems, robotics, aerospace engineering, and applied machine learning. Outside academics, I work as a freelance CAD designer and conduct online Fusion 360 training sessions while actively participating in engineering competitions and technical projects. As a member of the ACM Student Chapter, I hope to contribute by organizing technical workshops, hackathons, and project-based learning activities that encourage more students to build practical engineering skills.",
+		achievements:
+			"Freelance CAD Designer & 3D Printing Specialist, working with domestic and international clients; Qualified for the ISRO Robotics Challenge 2026 Semi-Finals with an autonomous drone project. Currently ranked top ~30 in the country; 1st Place – Ideapolis 2026 (ACM HITK) for a non-invasive blood biomarker scanner; 1st Place – Hacktonix 2026 (Future Institute of Engineering & Management); 1st Place – Water Rocket, NSSC 2025, IIT Kharagpur; Winner of 3 events at Dakshh 2026; 1st place - IOT Bidwars, Srijan 2026, Jadavpur University.",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:sarthaksharan006@gmail.com",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/sarthaksharan/",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/sarthaksharan006",
 				icon: <Github className="h-5 w-5" />,
 			},
 		],
 	},
-	{
-		type: 'student',
-		name: 'Mohak Sarkar',
-		roleAtACMHITK: 'Secretary',
-		roleAtHITK: "3rd Year, CSE'27",
+	{//done
+		type: "student",
+		name: "Mohak Sarkar",
+		roleAtACMHITK: "Secretary",
+		roleAtHITK: "4th Year, CSE'27",
 		image: `${base_url}/Mohak-Sarkar.webp`,
-		bio: 'I’m Mohak Sarkar, Secretary of ACM HITK. I’ve worked on machine learning projects, full-stack applications, and tech integrations. I’m passionate about applying innovative solutions to real-world problems and contributing meaningfully to the tech community.',
-		achievements: null,
+		bio: "I’m Mohak Sarkar, Secretary of ACM HITK. I’ve worked on machine learning projects, full-stack applications, and tech integrations. I’m passionate about applying innovative solutions to real-world problems and contributing meaningfully to the tech community. I am an active researcher.",
+		achievements: "Secretary Of ACM HITK Student Chapter.",
 		socials: [
 			{
-				name: 'Email',
-				url: 'mailto:mohak.sarkar.cse27@heritageit.edu.in',
+				name: "Email",
+				url: "mailto:mohak.sarkar.cse27@heritageit.edu.in",
 				icon: <Mail className="h-5 w-5" />,
 			},
 			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/mohak-sarkar-b0522a303/',
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/mohak-sarkar-b0522a303/",
 				icon: <Linkedin className="h-5 w-5" />,
 			},
 		],
 	},
 	{
-		type: 'student',
-		name: 'Rohit Kumar Dey',
-		roleAtACMHITK: 'Webmaster',
-		roleAtHITK: "4th Year, CSE'26",
-		image: `${base_url}/Rohit-Kumar-Dey.webp`,
-		bio: 'Rohit is an experienced full-stack developer with over a year and a half of hands-on experience in building dynamic, responsive web applications. He has gained valuable professional experience working as a Frontend Engineer at a cybersecurity startup and progressing from Frontend Developer to Full-Stack Developer at a blockchain startup. He leverages a robust set of front-end technologies including React, Next.js, SvelteKit, and Tailwind CSS. His backend expertise encompasses Node.js, Express.js, MongoDB, SQL, Golang, Gin, and Flask. Rohit has also explored Zod for validation and Shadcn for UI components, continually experimenting with new tools and frameworks to enhance his skill set. Currently, Rohit is delving into cryptography to expand his knowledge in emerging fields. He has a keen interest in mathematics and algorithms, enjoying the process of uncovering the principles behind technological innovations. He is passionate about building impactful digital experiences that are both user-centered and technically sound.',
-		achievements:
-			"Rohit has a strong record of impactful achievements, including securing First Place at HACKHERITAGE 2023 (among 90+ teams) for the SightX project and First Place at HACK FOR GOOD 2023 (among 114 teams nationwide) for ForestWatchAI. In the academic sphere, he has published two papers: 'SightAssist: A Multi-facility Machine Learning Approach for Empowering the Visually Impaired' at ICDSNE 2024 (Lecture Notes in Networks and Systems, Vol. 1165), and 'Kontho: An AI-Driven Smart Glove for Enhanced Sign Language Communication' at ICAA 2025 (Lecture Notes in Computer Science, Vol. 15505).",
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:hi@rohitdey.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/rohit-kumar-dey-3856891a5/',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/rohits-web03',
-				icon: <Github className="h-5 w-5" />,
-			},
-			{
-				name: 'Website',
-				url: 'https://rohitdey.com/',
-				icon: <Globe className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Debolina Debnath',
-		roleAtACMHITK: 'Treasurer',
-		roleAtHITK: "2nd Year, CSE'28",
-		image: `${base_url}/Debolina-Debnath.webp`,
-		bio: "I'm Debolina Debnath, a 2nd-year CSE student with a strong love for design, creativity, and collaboration. I’ve learned Python, C++, HTML, and CSS, and beyond coding, what excites me the most is designing content, managing events, and bringing visual ideas to life — whether it’s social media posts, posters, or event themes.",
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:debolinadebnath14@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Koushiki Das',
-		roleAtACMHITK: 'Membership Head',
-		roleAtHITK: "4th Year, CSE'26",
-		image: `${base_url}/Koushiki-Das.webp`,
-		bio: `Koushiki Das is a dedicated student from HITK (Class of 2026) with a strong background in research in Artificial Intelligence and Computer Vision. She has gained valuable experience through internships at institutions like IIT Dharwad and New Jersey Institute of Technology, as well as with Indian Oil Corporation Ltd. She is also committed to community service, actively volunteering as a teacher for underserved students.`,
-		achievements: `She focused on finetuning Large Language Models (LLMs) and building an AI-assisted medical appointment bot during her Summer Research Internship at IIT Dharwad. During her Winter Internship at Indian Oil Corp. Ltd, she leveraged computer vision to develop an automated PPE detection system, specifically for safety helmets in a refinery. As a Summer Research Intern at New Jersey Institute of Technology, she worked on solving Fast Fair Bandits using Reinforcement Learning. Koushiki has demonstrated leadership within the ACM HITK student chapter, serving as Vice Membership Head. Additionally, she has been a dedicated Volunteer Teacher at U&I Trust, where she educates underserved students and successfully raised 10K in funds during an annual crowdfunding session.`,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:koushikid2020@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/koushiki-das-572b50289/',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Ankita Roy',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "4th Year, AIML'26",
-		image: `${base_url}/Ankita-Roy.webp`,
-		bio: 'I am keenly interested in machine learning and computational mathematics. I love reading books, both fiction and non fiction.',
-		achievements:
-			'I presented our HITK ACM Student Chapter at the ACM Winter Meet at TCS, Kolkata. I have also held hands-on session on building your own chatbot alond with my mates.',
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:roy864ankita@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/ankita-roy-399367319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi_app',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Anushka Nath',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "4th Year, CSE'26",
-		image: `${base_url}/Anushka-Nath.webp`,
-		bio: 'Enthusiastic web developer interested in neural networks like to read psychological thrillers',
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:anushka.nath.cse26@heritageit.edu.in',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/anushka-nath-574427263',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/anushkanath09',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Anwesha Goswami',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "4th Year, CSE'26",
-		image: `${base_url}/Anwesha-Goswami.webp`,
-		bio: "I am a full stack web developer and also an ML enthusiast. I have built web apps and trained my own ML models. I have done my summer internship from Centre for Railway Information Systems (CRIS) as a web developer. I am currently doing a research internship from IIEST Shibpur where I am working with NLP, CNN and other ML models. I have served as ACM-HITK's Vice Chair in the academic year 2024-2025 and coordinated to conduct different events. I look forward to substantially contribute to the ACM-HITK Student Chapter in this academic year also.",
-		achievements:
-			'Organized and volunteered ACM-HITK\'s event Brainstorm’25 I have worked on a research paper- "Sustainable UAV-Assisted Data Collection in Wireless Sensor Networks Using Renewable Energy and Wireless Charging Platforms" which has been presented at the 12th International Conference on Signal Processing and Integrated Networks (SPIN 2025) organized by Amity University, Noida.',
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:goswamianwesha16@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/anwesha-goswami-388119282',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/anweshagoswami',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Atyasha Bhattacharyya',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "4th Year, Data Science'26",
-		image: `${base_url}/Atyasha-Bhattacharyya.webp`,
-		bio: 'Atyasha is a third-year B.Tech student in Computer Science and Engineering (Data Science) at Heritage Institute of Technology, with a strong passion for machine learning, deep learning, and computer vision. She has contributed to various impactful research projects at IIT Roorkee and IIT Delhi, and she actively participates in innovation-driven competitions. As the ACM SIG Coordinator for Data Science, she aims to foster technical learning and collaborative growth within the ACM chapter.',
-		achievements:
-			"The seminar on 'Technical Debt in Machine Learning Systems' featuring Uday Shaw, Senior Data Engineer at Xperi, was organized by ACM Data Science SIG to promote industry-academia interaction and deepen members' understanding of ML system design challenges. She led the development of JAWAAN, an award-winning AI-powered soldier safety and surveillance system, which secured the Winner position at Smart Bengal Hackathon 2025 and 2nd Runner-Up at IIT Bhubaneswar's Code Relay 3.0. She was selected as a Research Intern at IIT Roorkee and IIT Delhi, where she contributed to trajectory prediction using hybrid deep learning models and tree canopy segmentation using YOLOv8 and UNet, respectively. She has published 4 papers in reputed international conferences (IEEE CIACON, CONFLUENCE, ICCIDS, ICIVC) on topics including forest fire detection, drone-based emergency response, and ML-driven agriculture and healthcare. Additionally, she achieved 1st Runner-Up at EXCAVATE, IIT Kharagpur and Winner at KRACKHACK, IIT Mandi for developing innovative machine learning and smart traffic management systems. She has maintained an academic CGPA of 9.77 till the 3rd year, with consistent top performance across semesters.",
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:atyasha.bhattacharyya.ds26@heritageit.edu.in',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/atyasha-bhattacharyya-025780214',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/atyasha2054',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Shuvayu Dasgupta',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "4th year, AIML'26",
-		image: `${base_url}/Shuvayu-Dasgupta.webp`,
-		bio: 'Shuvayu is currently interested in deep learning, LLMs, Agentic AI. In his previous capacity as Assistant Treasurer of ACM-HITK, he was responsible for looking into the finances for various events and helped organize SIG-AIML events. This time he is looking forward to continue the latter.',
-		achievements:
-			'He has interned at DRDO, Microsoft certified Azure Data Scientist Associate and AI engineer.',
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:shuvayudasgupta91004@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/shuvayu-dasgupta-b0821a281',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/Shuvayu12',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Sneha Lahiri',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "4th Year, CSE'26",
-		image: `${base_url}/Sneha-Lahiri.webp`,
-		bio: 'Sneha is a Web Dev enthusiast, who loves to do Competitive Coding as a side hobby. Apart from this, she has keen interest in Table tennis and Fine Arts.',
-		achievements:
-			'She has won multiple Competitive Coding competitions, interned under DST SSR-SERB government scheme as website developer at Jadavpur University',
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:snehalahiri09@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/sneha-lahiri-11753b22a',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/Sana9909',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Sohom Das',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "4th Year, CSE'26",
-		image: `${base_url}/Sohom-Das.webp`,
-		bio: "Sohom Das is from 4th year, CSE'26. He is a passionate designer who has keen interest in cricket also.",
-		achievements: 'Founder of Webworks Studio',
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:sohom.11a.60.17112003@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/sohom-das-245791267/',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Ankan Das',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "3rd Year, CSE'27",
-		image: `${base_url}/Ankan-Das.webp`,
-		bio: 'I’m Ankan Das, a data science enthusiast with a strong interest in helping fellow students explore advanced concepts in the field. Currently, I contribute to event planning and coordination within our ACM chapter at HITK, aiming to create engaging and impactful learning experiences for the community.',
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:ankandas2@acm.org',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/ankan-das-551916204/',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Debajit Guha',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "3rd Year, CSE'27",
-		image: `${base_url}/Debajit-Guha.webp`,
-		bio: 'Hello geeks! I am Debajit, a 3rd year undergrad, CSE, HITK. I am passionate about image recognition, Deep Learning, programming and currently learning Web Development.Would like to collaborate with industry people and contribute to the betterment of this chapter.',
-		achievements:
-			'1. Co author of a paper presented in ICAA 2025 and published in Springer LNCS. 2. Pursuing Summer Research internship under SRFP (Summer Research Fellowship Program) offered by Indian Academy of Science, Bangalore. 3. Presented a paper on Lung disease detection using Chest x rays at ARET 2025 by Hinweis Research. (Publication under process).',
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:debajit.guha.cse27@heritageit.edu.in',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/debajit-guha-77a0ab28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi_app',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Debeshee Sen',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "3rd Year, CSE'27",
-		image: `${base_url}/Debeshee-Sen.webp`,
-		bio: 'I’m an aspiring Software Engineering and Data Science student at Heritage Institute of Technology, Kolkata. My primary focus lies in Machine Learning, Deep Learning, and the mathematical foundations of ML, where I enjoy solving complex, data driven problems. I also have experience in Full-Stack Web Development, enabling me to build scalable and practical end-to-end solutions. While constantly learning and exploring, I aim to combine strong problem-solving skills with modern technologies to create impactful projects. As a board member of the ACM HITK Chapter, I am committed to driving meaningful contributions in the field of ML and Data Science, while actively organizing and planning impactful events to take the chapter to greater heights.',
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:debeshee.sen.cse27@heritageit.edu.in',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/debeshee-sen-31857527a',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/DebesheeSen',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Shambaditya Sarkar',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "3rd Year, CSE'27",
-		image: `${base_url}/Shambaditya-Sarkar.webp`,
-		bio: "I'm Shambaditya Sarkar, a student much fascinated and learning about AIML like anybody else. I've done a few projects on web development, especially front-end. I often partake in digital art, designs and editing.",
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:shambaditya.sarkar.cse27@heritageit.edu.in',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/shambaditya-sarkar-929443317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=androi_app',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Souryadip Mallick',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "3rd Year, CSE'27",
-		image: `${base_url}/Souryadip-Mallick.webp`,
-		bio: 'Computer Science undergraduate at Heritage Institute of Technology with a passion for full-stack web development and programming in Java, C++, Python, and JavaScript. My fields of interest are Data Science and Machine Learning, which I’m currently exploring, and I’m also strengthening my problem-solving skills through Data Structures and Algorithms.',
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:souryadipmallick@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/souryadip-mallick-03b303294',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/souryadip-official',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Srijit Roy',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "3rd Year, CSE'27",
+		type: "student",
+		name: "Srijit Roy",
+		roleAtACMHITK: "Web Master",
+		roleAtHITK: "4th Year, CSE'27",
 		image: `${base_url}/Srijit-Roy.webp`,
-		bio: 'Aspiring Web Developer (Frontend Development) and also delving into Machine Learning & algorithms for future ventures.',
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:rsrijit436@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/srijit-roy-2351214h/',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-			{
-				name: 'GitHub',
-				url: 'https://github.com/Srijit27',
-				icon: <Github className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Mehul Roy',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "2nd Year, CSE'28",
-		image: `${base_url}/Mehul-Roy.webp`,
-		bio: "I'm a second-year Computer Science and Engineering student. Always curious and eager to learn, I'm diving into front-end while also experimenting with ML models.",
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:mehulroy6840@gmail.com',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/mehul-roy-319b58323',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Sohon Ganguly',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "2nd Year, CSE'28",
-		image: `${base_url}/Sohon-Ganguly.webp`,
-		bio: 'Hi, I’m Sohon, a Computer Science undergrad with a deep interest in technology, creative writing, and art. I enjoy blending creativity with logic, whether it’s coding in C, exploring fintech, or contributing to tech communities like ACM through engaging and meaningful initiatives.',
-		achievements: null,
-		socials: [
-			{
-				name: 'Email',
-				url: 'mailto:sohan.ganguly.cse28@heritageit.edu.in',
-				icon: <Mail className="h-5 w-5" />,
-			},
-			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/sohon-ganguly-44b508313',
-				icon: <Linkedin className="h-5 w-5" />,
-			},
-		],
-	},
-	{
-		type: 'student',
-		name: 'Yogesh Kumar',
-		roleAtACMHITK: 'Board Member',
-		roleAtHITK: "2nd Year, CSE'28",
-		image: `${base_url}/Yogesh-Kumar.webp`,
-		bio: 'I create AI automations. Python is my first love. Talk to me about LLMs, agents, mcp',
+		bio: "I am a final-year B.Tech student in Computer Science at Heritage Institute of Technology with a strong foundation in Computer Science fundamentals and a passion for building scalable, real-world software solutions. My primary interests lie in Full Stack Web Development, Data Structures & Algorithms, and Machine Learning, where I enjoy transforming complex ideas into efficient and user-centric applications. I have hands-on experience with modern technologies including HTML5, CSS3, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, Python, PyTorch, Git, GitHub, Docker, and RESTful APIs, while continuously exploring emerging tools and frameworks. Through academic and personal projects, I have strengthened my problem-solving abilities, software engineering practices, and understanding of production-ready development. I aspire to leverage my technical expertise, analytical thinking, and passion for innovation to develop impactful, scalable products that solve meaningful real-world challenges while continuously growing as a software engineer.",
 		achievements:
-			"Yogesh stood 3rd in ACM brainstorm'25, 1st in Ideatex 2025 in session zero by GDGHITK and is a SIH 24 Finalist",
+			"Srijit previously served as a Board Member for the ACM HITK Student Chapter (25-26), for which he has been awarded with 'Outstanding Contribution to the Chapter (25-26)'; He acted as the SPOC for Design Team, leveraging design ideas and deliver visually appealing and impactful design motions; He is presently a Research Intern under Dr. Uma Das at IIIT Kalyani, where he is developing and evaluating lightweight deep learning models for satellite-based rainfall reconstruction using INSAT multispectral imagery as part of an ongoing research project; He stood 2nd in CodeQuest, organized as a part of Converge 25' at IEM-Kolkata; He got elected as the Webmaster for ACM HITK Student Chapter (26-27), presently handling and maintaining the ACM HITK website.",
 		socials: [
 			{
-				name: 'Email',
-				url: 'mailto:fbyogesh111@gmail.com',
+				name: "Email",
+				url: "mailto:rsrijit436@gmail.com",
 				icon: <Mail className="h-5 w-5" />,
 			},
 			{
-				name: 'LinkedIn',
-				url: 'https://www.linkedin.com/in/yogesh-kumar-299298260/',
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/srijit-roy-2351214h/",
 				icon: <Linkedin className="h-5 w-5" />,
 			},
 			{
-				name: 'GitHub',
-				url: 'https://github.com/Coden-inja',
+				name: "GitHub",
+				url: "https://github.com/Srijit27",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Modhura Banerjee",
+		roleAtACMHITK: "Treasurer",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Modhura-Banerjee.webp`,
+		bio: "I am currently a 3rd-year Computer Science Engineering student with basic knowledge of web development and experience working on web projects during hackathons. I am currently learning deep learning and CNNs while exploring AI through practical projects. I have also been part of the Hult organizing committee, contributing to workshop and team management. I would like to join ACM to connect with like-minded peers, learn, and contribute actively to the community.",
+		achievements: "I have a GPA of 9.946 across three semesters.",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:modhura.banerjee@gmail.com",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://linkedin.com/in/modhura-banerjee-84b746332",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/Modhura002",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Debnil Pal",
+		roleAtACMHITK: "Membership Head",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Debnil-Pal.webp`,
+		bio: "I am Debnil Pal, a B.Tech Computer Science and Engineering student who is passionate about learning new technologies and improving my technical and leadership skills. Through the ACM Student Chapter, I have contributed by helping organize technical events, workshops, and student activities while collaborating with team members to ensure their smooth execution. These experiences have strengthened my communication, teamwork, event management, and organizational abilities.",
+		achievements: "Gemini Student Ambassador.",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:debnil.pal.04@gmail.com",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/debnil-pal-960502285",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/DEBNILPAL",
 				icon: <Github className="h-5 w-5" />,
 			},
 			{
-				name: 'Website',
-				url: 'https://yogesh-portfolio-nu-swart.vercel.app/',
+				name: "Website",
+				url: "https://debnil-portfolio.netlify.app/",
 				icon: <Globe className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Abhroneel Chakraborty",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "4th Year, AEIE'27",
+		image: `${base_url}/Abhroneel-Chakraborty.webp`,
+		bio: "I am a final-year AEIE student passionate about embedded systems, edge computing, AI , ML. My technical contributions include designing end-to-end IoT pipelines, AI pipelines , 3D digital twins for structural health monitoring, and publishing research on explainable AI architectures. As a member of the ACM chapter, I am dedicated to contributing to hardware and software innovation while collaborating on technical workshops and peer-led engineering initiatives.",
+		achievements: "SIH'25 FINALIST",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:abhroneel.chakraborty.aeie27@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/abhroneel-chakraborty-2284b9317/",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/neel-09",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Ronil Shah",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "4th Year, CSE'27",
+		image: `${base_url}/Ronil-Shah.webp`,
+		bio: "As an ACM Student Chapter member, I gained valuable knowledge, skills and connections through various events and activities. Becoming a Board Member would allow me to give back by organizing impactful initiatives and encouraging greater student participation.",
+		achievements: null,
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:ronil.shah.cse27@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Sohon Ganguly",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Sohon-Ganguly.webp`,
+		bio: "I'm a curious builder who enjoys learning by creating. Whether it's developing AI applications, designing full-stack software, or exploring new technologies, I enjoy tackling challenging problems and continuously improving my skills. I hope to contribute to ACM by sharing knowledge, collaborating on meaningful initiatives, and helping create an engaging environment for students interested in technology.",
+		achievements: "Winner, HackHeritage '25 Finalist, Biznez Plan Competition (Srijan '26) Participant, Hult Prize 2026 Developed a full-stack e-commerce platform for an international leather products startup using Node.js, Express.js, TypeScript, PostgreSQL, Prisma, and Next.js.",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:sohan.ganguly.cse28@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://linkedin.com/in/sohon-ganguly-44b508313",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/sohongan-2811",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Mehul Roy",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Mehul-Roy.webp`,
+		bio: "I am a student of CSE department, 3rd year. My interests include backend development, cybersecurity and artificial intelligence. I was a board member of the ACM student chapter in the previous year, where I contributed to poster designing and was a part of the organization team for various ACM student chapter events.",
+		achievements: "N/A",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:mehul.roy.cse28@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://linkedin.com/in/mehul-roy-319b58323",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Debolina Debnath",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Debolina-Debnath.webp`,
+		bio: "I am a CSE student with a strong interest in marketing, design, and creative communication. During my tenure as an ACM board member in 2025–26, I gained valuable experience working with teams and contributing to various initiatives. I enjoy combining technical knowledge with design and promotional strategies to enhance engagement and outreach. I am eager to continue contributing to ACM and take on greater responsibilities this year. With the experience I have gained and a renewed commitment to active participation, I am determined to work hard, contribute consistently, and give my very best to help ACM grow and succeed.",
+		achievements: "N/A",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:debolina.debnath.cse28@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Alina Datta",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Alina-Datta.webp`,
+		bio: "I am a computer science student with a keen interest in programming, artificial intelligence, and emerging technologies. As a Board Member of the ACM chapter, I would like to help organize events and initiatives that promote technical learning, collaboration, and professional growth within the student community.",
+		achievements: "N/A",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:alina.datta.cse28@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/alina-datta-692050376",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/alinadatta",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Ankit Kumar",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Ankit-Kumar.webp`,
+		bio: "I am a B.Tech Computer Science and Engineering student at Heritage Institute of Technology with a strong interest in full-stack development. I am passionate about learning new technologies and collaborating with others to solve real-world problems. Through the ACM Student Chapter, I would like to contribute by organizing and managing technical events, supporting technical initiatives, and helping create an engaging learning environment for fellow students.",
+		achievements: "N/A",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:ankit.kumar.cse28@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://linkedin.com/in/ankit-kumar-91a82035a",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Rajdeep Mandal",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "3rd Year, DS'28",
+		image: `${base_url}/Rajdeep-Mandal.webp`,
+		bio: "Passionate about Artificial Intelligence, Machine Learning, and Data Science, I enjoy building technology-driven solutions to real-world problems. I actively participate in hackathons and technical competitions, and as an ACM Board Member, I look forward to contributing to impactful initiatives and fostering a collaborative learning environment.",
+		achievements: "App Development Intern at Vigilantia Praesidium Pvt. Ltd. (in association with IIM Calcutta Innovation Park). Winner – BioTexpression 2026. 1st Runner-up – Ureckon 2026. Finalist – COMPOSIT 2026, IIT Kharagpur, and multiple hackathons and innovation competitions with AI-driven healthcare and forensic projects. SEBI Investor Certification Examination – Scored 45/50.",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:rajdeep.mandal.ds28@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://linkedin.com/in/rajdeep-mandal-41661a32a",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/Rajdeepofficial26",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Shrabani Neogi",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "3rd Year, CSE'28",
+		image: `${base_url}/Shrabani-Neogi.webp`,
+		bio: "I am a dedicated member of the Heritage Institute of Technology ACM Student Chapter, where I serve as a Lead/PoC for the Design, Content Creation & Documentation Team. Additionally, I actively contribute to both the Outreach and PR Team and the Event Management Team. I am passionate about creating engaging content, promoting our chapter's initiatives, and helping organize impactful events for our tech community.",
+		achievements: "N/A",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:shrabanineogi2005@gmail.com",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/shrabani-neogi-177652324/",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/shrabani-stack",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Debadrito Batabyal",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "2nd Year, IoTCS'29",
+		image: `${base_url}/Debadrito-Batabyal.webp`,
+		bio: "I am a sophomore Computer Science student passionate about AI and software development. Excited to learn, collaborate, and contribute to the ACM Student Chapter.",
+		achievements: "Hult Prize Campus Participant Built multiple AI-powered projects School Captain (2024–25)",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:debadritobatabyal@gmail.com",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/debadrito-batabyal-b98187258?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/debadritobatabyal-dotcom",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Debmalya Ray",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "2nd Year, CSE'29",
+		image: `${base_url}/Debmalya-Ray.webp`,
+		bio: "Hi! I'm Debmalya Ray, a CSE undergrad student currently in 2nd year, having a keen interest in artificial intelligence and machine learning field. I enjoy learning new technologies, taking on challenging problems, and connecting with people who share a passion for innovation.",
+		achievements: "Debmalya stood 1st in \"Marketing Gimmick\" under HITK E'Summit'25, 2nd in \"Melange\" under Dakshh'26",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:ray.debmalya25@gmail.com",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/debmalya-ray-b42a07371/",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Manindra Nath Seth",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "2nd Year, IoTCS'29",
+		image: `${base_url}/Manindra-Seth.webp`,
+		bio: "I am a passionate and creative individual with strong interests in designing, coding, drama, and drawing. I would like to contribute to the chapter through event management, design work, content creation, and outreach/PR activities to help build an engaging and impactful community.",
+		achievements: "I got 9.85 SGPA in 1st Semester",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:manindraseth2@gmail.com",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/manindra-nath-seth-36557b376?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/Manindra-NS",
+				icon: <Github className="h-5 w-5" />,
+			},
+			{
+				name: "Website",
+				url: "https://manindra-portfolio.netlify.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAb21jcAS1_fpleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeOPrDJ7Clqdx1ZI3i3en2xsttTTB9LiML5i-11HyigObqzzwnuntRuLVYbAA_aem_-qt8kEwbDsrTgpq9vNDRcw",
+				icon: <Globe className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Aheen Chatterjee",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "2nd Year, CSBS'29",
+		image: `${base_url}/Aheen-Chatterjee.webp`,
+		bio: "Dakshh 2026 CTF Winner, Session Zero 2026 Muse Winner,  2x Hackathon Winner. Currently leading a 6 person team building opzami.com  I love building things, turning ideas into projects and taking initiative.   As a board member i would love to contribute by organising engaging and impactful tech events.   Looking forward to working together with peers who are equally passionate about technology.",
+		achievements: "Dakshh 2026 CTF Winner, Session Zero 2026 Muse Winner",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:aheen.chatterjee.csbs29@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/aheen-chatterjee-76b189291",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/Aheen-Chatterjee",
+				icon: <Github className="h-5 w-5" />,
+			},
+		],
+	},
+	{
+		type: "student",
+		name: "Rupsha Sen",
+		roleAtACMHITK: "Board Member",
+		roleAtHITK: "2nd Year, IoTCS'29",
+		image: `${base_url}/Rupsha-Sen.webp`,
+		bio: "I am a second-year B.Tech student in Computer Science and Engineering (IoT & Cyber Security) with a strong interest in programming, web development, UI/UX design, and emerging technologies. I enjoy building personal projects that help me apply and improve my technical skills while continuously exploring new tools and technologies. As an ACM student chapter board member, I look forward to contributing to technical events, collaborative initiatives, and creating opportunities that encourage learning and innovation within our community.",
+		achievements: "Participant – SnapSyntax 2025 (SRIJAN), Jadavpur University: Competed in a web development challenge focused on HTML/CSS, UI replication, and problem-solving under time constraints. Developed personal web development and UI/UX design projects.",
+		socials: [
+			{
+				name: "Email",
+				url: "mailto:rupsha.sen.iotcs29@heritageit.edu.in",
+				icon: <Mail className="h-5 w-5" />,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://linkedin.com/in/rupsha-sen-b98a50350",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/rupsha777",
+				icon: <Github className="h-5 w-5" />,
 			},
 		],
 	},
@@ -598,18 +558,18 @@ export const currentTeam: TeamMember[] = [
 
 export const teamContacts = [
 	{
-		name: 'Sagnik Pramanik',
-		role: 'Chapter Chair',
-		email: 'sagnikpramanik95@gmail.com',
-		linkedinUrl: 'https://www.linkedin.com/in/sagnik-pramanik/',
-		image: `${base_url}/Sagnik-Pramanik.webp`,
-	},
-	{
 		name: 'Aryan Ghosh',
-		role: 'Vice Chair',
+		role: 'Chair',
 		email: 'ghosharyan05@gmail.com',
 		linkedinUrl: 'www.linkedin.com/in/aryan-ghosh-83a26631b',
 		image: `${base_url}/Aryan-Ghosh.webp`,
+	},
+	{
+		name: 'Sarthak Sharan',
+		role: 'Vice Chairperson',
+		email: 'sarthaksharan006@gmail.com',
+		linkedinUrl: 'https://www.linkedin.com/in/sarthaksharan/',
+		image: `${base_url}/Sarthak-Sharan.webp`,
 	},
 	{
 		name: 'Mohak Sarkar',
@@ -619,10 +579,10 @@ export const teamContacts = [
 		image: `${base_url}/Mohak-Sarkar.webp`,
 	},
 	{
-		name: 'Rohit Kumar Dey',
-		role: 'Webmaster',
-		email: 'rohit.dey302003@gmail.com',
-		linkedinUrl: 'https://www.linkedin.com/in/rohit-kumar-dey-3856891a5/',
-		image: `${base_url}/Rohit-Kumar-Dey.webp`,
+		name: 'Srijit Roy',
+		role: 'Web Master',
+		email: 'rsrijit436@gmail.com',
+		linkedinUrl: 'https://www.linkedin.com/in/srijit-roy-2351214h/',
+		image: `${base_url}/Srijit-Roy.webp`,
 	},
 ];

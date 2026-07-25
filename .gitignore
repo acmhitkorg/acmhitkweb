@@ -127,3 +127,6 @@ yarn-error.log*
 .env.development
 .env.production
 .env.test
+
+/Dump
+/assets
