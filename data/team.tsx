@@ -144,7 +144,7 @@ export const currentTeam: TeamMember[] = [{//done
 		image: `${base_url}/Srijit-Roy.webp`,
 		bio: "I am a final-year B.Tech student in Computer Science at Heritage Institute of Technology with a strong foundation in Computer Science fundamentals and a passion for building scalable, real-world software solutions. My primary interests lie in Full Stack Web Development, Data Structures & Algorithms, and Machine Learning, where I enjoy transforming complex ideas into efficient and user-centric applications. I have hands-on experience with modern technologies including HTML5, CSS3, JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, MongoDB, MySQL, Python, PyTorch, Git, GitHub, Docker, and RESTful APIs, while continuously exploring emerging tools and frameworks. Through academic and personal projects, I have strengthened my problem-solving abilities, software engineering practices, and understanding of production-ready development. I aspire to leverage my technical expertise, analytical thinking, and passion for innovation to develop impactful, scalable products that solve meaningful real-world challenges while continuously growing as a software engineer.",
 		achievements:
-			"Srijit previously served as a Board Member for the ACM HITK Student Chapter (25-26), for which he has been awarded with 'Outstanding Contribution to the Chapter (25-26)'; He acted as the SPOC for Design Team, leveraging design ideas and deliver visually appealing and impactful design motions; He is presently a Research Intern under Dr. Uma Das at IIIT Kalyani, where he is developing and evaluating lightweight deep learning models for satellite-based rainfall reconstruction using INSAT multispectral imagery as part of an ongoing research project; He stood 2nd in CodeQuest, organized as a part of Converge 25' at IEM-Kolkata; He got elected as the Webmaster for ACM HITK Student Chapter (26-27), presently handling and maintaining the ACM HITK website.",
+			"Srijit previously served as a Board Member for the ACM HITK Student Chapter (25-26), for which he has been awarded with 'Outstanding Contribution to the Chapter (25-26)'. He acted as the SPOC for Design Team, leveraging design ideas and deliver visually appealing and impactful design motions. He is presently a Research Intern under Dr. Uma Das at IIIT Kalyani, where he is developing and evaluating lightweight deep learning models for satellite-based rainfall reconstruction using INSAT multispectral imagery as part of an ongoing research project. He stood 2nd in CodeQuest, organized as a part of Converge 25' at IEM-Kolkata. He got elected as the Webmaster for ACM HITK Student Chapter (26-27), presently handling and maintaining the ACM HITK website.",
 		socials: [
 			{
 				name: "Email",
@@ -170,7 +170,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "3rd Year, CSE'28",
 		image: `${base_url}/Modhura-Banerjee.webp`,
 		bio: "I am currently a 3rd-year Computer Science Engineering student with basic knowledge of web development and experience working on web projects during hackathons. I am currently learning deep learning and CNNs while exploring AI through practical projects. I have also been part of the Hult organizing committee, contributing to workshop and team management. I would like to join ACM to connect with like-minded peers, learn, and contribute actively to the community.",
-		achievements: "I have a GPA of 9.946 across three semesters.",
+		achievements: null,
 		socials: [
 			{
 				name: "Email",
@@ -260,6 +260,11 @@ export const currentTeam: TeamMember[] = [{//done
 				url: "mailto:ronil.shah.cse27@heritageit.edu.in",
 				icon: <Mail className="h-5 w-5" />,
 			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/ronil-shah-0344a3359/",
+				icon: <Linkedin className="h-5 w-5" />,
+			},
 		],
 	},
 	{
@@ -295,7 +300,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "3rd Year, CSE'28",
 		image: `${base_url}/Mehul-Roy.webp`,
 		bio: "I am a student of CSE department, 3rd year. My interests include backend development, cybersecurity and artificial intelligence. I was a board member of the ACM student chapter in the previous year, where I contributed to poster designing and was a part of the organization team for various ACM student chapter events.",
-		achievements: "N/A",
+		achievements: null,
 		socials: [
 			{
 				name: "Email",
@@ -316,7 +321,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "3rd Year, CSE'28",
 		image: `${base_url}/Debolina-Debnath.webp`,
 		bio: "I am a CSE student with a strong interest in marketing, design, and creative communication. During my tenure as an ACM board member in 2025–26, I gained valuable experience working with teams and contributing to various initiatives. I enjoy combining technical knowledge with design and promotional strategies to enhance engagement and outreach. I am eager to continue contributing to ACM and take on greater responsibilities this year. With the experience I have gained and a renewed commitment to active participation, I am determined to work hard, contribute consistently, and give my very best to help ACM grow and succeed.",
-		achievements: "N/A",
+		achievements: null,
 		socials: [
 			{
 				name: "Email",
@@ -332,7 +337,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "3rd Year, CSE'28",
 		image: `${base_url}/Alina-Datta.webp`,
 		bio: "I am a computer science student with a keen interest in programming, artificial intelligence, and emerging technologies. As a Board Member of the ACM chapter, I would like to help organize events and initiatives that promote technical learning, collaboration, and professional growth within the student community.",
-		achievements: "N/A",
+		achievements: null,
 		socials: [
 			{
 				name: "Email",
@@ -358,7 +363,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "3rd Year, CSE'28",
 		image: `${base_url}/Ankit-Kumar.webp`,
 		bio: "I am a B.Tech Computer Science and Engineering student at Heritage Institute of Technology with a strong interest in full-stack development. I am passionate about learning new technologies and collaborating with others to solve real-world problems. Through the ACM Student Chapter, I would like to contribute by organizing and managing technical events, supporting technical initiatives, and helping create an engaging learning environment for fellow students.",
-		achievements: "N/A",
+		achievements: null,
 		socials: [
 			{
 				name: "Email",
@@ -379,7 +384,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "3rd Year, DS'28",
 		image: `${base_url}/Rajdeep-Mandal.webp`,
 		bio: "Passionate about Artificial Intelligence, Machine Learning, and Data Science, I enjoy building technology-driven solutions to real-world problems. I actively participate in hackathons and technical competitions, and as an ACM Board Member, I look forward to contributing to impactful initiatives and fostering a collaborative learning environment.",
-		achievements: "App Development Intern at Vigilantia Praesidium Pvt. Ltd. (in association with IIM Calcutta Innovation Park). Winner – BioTexpression 2026. 1st Runner-up – Ureckon 2026. Finalist – COMPOSIT 2026, IIT Kharagpur, and multiple hackathons and innovation competitions with AI-driven healthcare and forensic projects. SEBI Investor Certification Examination – Scored 45/50.",
+		achievements: "App Development Intern at Vigilantia Praesidium Pvt. Ltd. (in association with IIM Calcutta Innovation Park). Winner – BioTexpression 2026. 1st Runner-up – Ureckon 2026; Finalist – COMPOSIT 2026, IIT Kharagpur, and multiple hackathons and innovation competitions with AI-driven healthcare and forensic projects. SEBI Investor Certification Examination – Scored 45/50.",
 		socials: [
 			{
 				name: "Email",
@@ -405,7 +410,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "3rd Year, CSE'28",
 		image: `${base_url}/Shrabani-Neogi.webp`,
 		bio: "I am a dedicated member of the Heritage Institute of Technology ACM Student Chapter, where I serve as a Lead/PoC for the Design, Content Creation & Documentation Team. Additionally, I actively contribute to both the Outreach and PR Team and the Event Management Team. I am passionate about creating engaging content, promoting our chapter's initiatives, and helping organize impactful events for our tech community.",
-		achievements: "N/A",
+		achievements: null,
 		socials: [
 			{
 				name: "Email",
@@ -431,7 +436,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "2nd Year, IoTCS'29",
 		image: `${base_url}/Debadrito-Batabyal.webp`,
 		bio: "I am a sophomore Computer Science student passionate about AI and software development. Excited to learn, collaborate, and contribute to the ACM Student Chapter.",
-		achievements: "Hult Prize Campus Participant Built multiple AI-powered projects School Captain (2024–25)",
+		achievements: "Hult Prize Campus Participant Built multiple AI-powered projects School Captain (2024–25).",
 		socials: [
 			{
 				name: "Email",
@@ -457,7 +462,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "2nd Year, CSE'29",
 		image: `${base_url}/Debmalya-Ray.webp`,
 		bio: "Hi! I'm Debmalya Ray, a CSE undergrad student currently in 2nd year, having a keen interest in artificial intelligence and machine learning field. I enjoy learning new technologies, taking on challenging problems, and connecting with people who share a passion for innovation.",
-		achievements: "Debmalya stood 1st in \"Marketing Gimmick\" under HITK E'Summit'25, 2nd in \"Melange\" under Dakshh'26",
+		achievements: "Debmalya stood 1st in \"Marketing Gimmick\" under HITK E'Summit'25, 2nd in \"Melange\" under Dakshh'26.",
 		socials: [
 			{
 				name: "Email",
@@ -478,7 +483,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "2nd Year, IoTCS'29",
 		image: `${base_url}/Manindra-Seth.webp`,
 		bio: "I am a passionate and creative individual with strong interests in designing, coding, drama, and drawing. I would like to contribute to the chapter through event management, design work, content creation, and outreach/PR activities to help build an engaging and impactful community.",
-		achievements: "I got 9.85 SGPA in 1st Semester",
+		achievements: null,
 		socials: [
 			{
 				name: "Email",
@@ -509,7 +514,7 @@ export const currentTeam: TeamMember[] = [{//done
 		roleAtHITK: "2nd Year, CSBS'29",
 		image: `${base_url}/Aheen-Chatterjee.webp`,
 		bio: "Dakshh 2026 CTF Winner, Session Zero 2026 Muse Winner,  2x Hackathon Winner. Currently leading a 6 person team building opzami.com  I love building things, turning ideas into projects and taking initiative.   As a board member i would love to contribute by organising engaging and impactful tech events.   Looking forward to working together with peers who are equally passionate about technology.",
-		achievements: "Dakshh 2026 CTF Winner, Session Zero 2026 Muse Winner",
+		achievements: "Dakshh 2026 CTF Winner, Session Zero 2026 Muse Winner.",
 		socials: [
 			{
 				name: "Email",
