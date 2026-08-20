@@ -45,11 +45,10 @@ export function EventModal({ isOpen, onClose, event }: EventModalProps) {
 				return 'bg-gradient-to-r from-gray-50 to-gray-100/80 text-gray-700 border-gray-200/50 dark:from-gray-900/30 dark:to-gray-800/20 dark:border-gray-700/30 dark:text-gray-300';
 		}
 	};
+	if (!event) return null;
 
 	const hasMultipleBanners =
-		Array.isArray(event?.bannerImages) && event.bannerImages.length > 1;
-
-	if (!event) return null;
+		Array.isArray(event.bannerImages) && event.bannerImages.length > 1;
 
 	return (
 		<Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>

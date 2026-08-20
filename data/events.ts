@@ -198,7 +198,7 @@ TechTussle is a high-energy technology debate competition where participants cla
 		bannerImages: ['/Events/webp/Tech-Tussle.webp'],
 	},
 	{
-		title: "Innovista'26",
+		title: "Innovista'26 - AI for Social Good",
 		date: '2026-03-24',
 		displayDate: '24th March 2026',
 		time: '09:00 AM - 05:30 PM',
