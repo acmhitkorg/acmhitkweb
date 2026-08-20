@@ -7,6 +7,7 @@ export const upcomingEvents: Event[] = [
     date: '2026-08-24',
     displayDate: '24th August 2026',
     registration_link: 'https://forms.gle/F951jYQeno4vT8F48',
+    registration_deadline: '2026-08-24T11:59:00+05:30',
     time: '12:00 PM onwards',
     location: 'CME 108',
     type: 'Industry Interaction Session',
