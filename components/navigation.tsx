@@ -41,7 +41,7 @@ export function Navigation() {
 		<nav
 			className={cn(
 				'fixed left-0 right-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/50 transition-all duration-200',
-				isBannerVisible ? 'top-[4.3rem] md:top-[3.5rem]' : 'top-0'
+				isBannerVisible ? 'top-0 md:top-[3.5rem]' : 'top-0'
 			)}
 		>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

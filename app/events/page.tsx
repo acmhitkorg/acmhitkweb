@@ -12,11 +12,27 @@ import { Calendar, Clock, MapPin, Users, ArrowRight, Trophy } from 'lucide-react
 import Link from 'next/link';
 import { useState, useEffect, useMemo } from 'react';
 
+/**
+ * Returns the academic session label for a given date.
+ * Academic year runs from April of year N to March of year N+1.
+ * e.g. April 2025 – March 2026  →  '2025-26'
+ *      April 2024 – March 2025  →  '2024-25'
+ */
+const getAcademicSession = (dateStr: string): string => {
+	const d = new Date(dateStr);
+	const year = d.getFullYear();
+	const month = d.getMonth(); // 0-indexed; 0 = Jan, 3 = Apr
+	// If the month is January–March (0–2), the academic year started the previous calendar year
+	const sessionStart = month < 3 ? year - 1 : year;
+	const sessionEnd = (sessionStart + 1).toString().slice(-2);
+	return `${sessionStart}-${sessionEnd}`;
+};
+
 // Helper function to extract unique academic sessions from events
 const getUniqueSessions = (events: Event[]) => {
 	const sessions = new Set<string>();
 	events.forEach((event) => {
-		const session = event.session;
+		const session = event.session || (event.date ? getAcademicSession(event.date) : undefined);
 		if (session) sessions.add(session);
 	});
 	return Array.from(sessions).sort((a, b) => {
@@ -41,7 +57,9 @@ export default function EventsPage() {
 	const filteredPastEvents = useMemo(() => {
 		return formattedPastEvents.filter((event) => {
 			if (selectedSession === 'all') return true;
-			const eventAcademicSession = event.session;
+			// Use the stored session field if present; otherwise derive it from the event date
+			const eventAcademicSession =
+				event.session || (event.date ? getAcademicSession(event.date) : undefined);
 			return eventAcademicSession === selectedSession;
 		});
 	}, [formattedPastEvents, selectedSession]);
@@ -60,6 +78,8 @@ export default function EventsPage() {
 				speaker: event.speaker || '',
 				attendees: event.attendees || 0,
 				photos: event.photos || [],
+				// Derive the academic session from the event date using the April boundary rule
+				session: event.session || getAcademicSession(event.date),
 			}))
 			.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Sort past events in descending order
 
@@ -72,6 +92,8 @@ export default function EventsPage() {
 				speaker: event.speaker || '',
 				attendees: event.attendees || 0,
 				photos: event.photos || [],
+				// Ensure every past event also has a derived session if missing
+				session: event.session || getAcademicSession(event.date),
 			})),
 		]);
 	}, [upcomingEvents, pastEvents]);
