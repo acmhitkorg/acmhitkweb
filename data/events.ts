@@ -11,23 +11,21 @@ export const upcomingEvents: Event[] = [
     location: 'CME 108',
     type: 'Industry Interaction Session',
     cardDescription:
-        'An industry interaction session exploring engineering real-world systems across IoT, hardware, robotics, AI, and software.',
+        'An industry interaction session exploring the engineering real-world systems across IoT, Hardware, Robotics, AI, and Software.',
     description: `
         <p><strong>Engineering Real-World Systems — From Hardware to AI to Software</strong></p>
-        <p>Heritage Institute of Technology ACM Student Chapter presents an
-           industry interaction session on engineering real-world systems,
-           covering the journey from hardware and IoT to robotics, AI, and software.</p>
+        <p>The Heritage Institute of Technology ACM Student Chapter presents an industry interaction session on engineering real-world systems, covering the journey from hardware and IoT to robotics, AI, and software.</p>
         <p><strong>Speaker:</strong> Arijit Das<br />
            Co-Founder & Director, Aeonix Research & Innovations LLP<br />
            M.Tech, Computer Science, IIT Patna</p>
         <p><strong>Date:</strong> 24th August 2026<br />
            <strong>Time:</strong> 12:00 PM onwards<br />
            <strong>Venue:</strong> CME 108, Heritage Institute of Technology</p>
-        <p>The session will explore real-world engineering systems and the
-           integration of IoT, hardware, robotics, AI, and software.</p>
+        <p>This session will explore real-world engineering systems and the integration of IoT, hardware, robotics, AI, and software.</p>
     `,
     status: 'open',
     //attendees: 0,
+    speaker: 'Arijit Das',
     bannerImages: ['/Events/webp/Engineering-Real-World-Systems.webp'],
   },
 
