@@ -27,7 +27,7 @@ export const upcomingEvents: Event[] = [
            integration of IoT, hardware, robotics, AI, and software.</p>
     `,
     status: 'open',
-    attendees: 0,
+    //attendees: 0,
     bannerImages: ['/Events/webp/Engineering-Real-World-Systems.webp'],
   },
 
