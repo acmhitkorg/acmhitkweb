@@ -1,6 +1,36 @@
 import { Event } from '@/types';
 
 export const upcomingEvents: Event[] = [
+
+  {
+    title: 'Engineering Real-World Systems — From Hardware to AI to Software',
+    date: '2026-08-24',
+    displayDate: '24th August 2026',
+    registration_link: 'https://forms.gle/F951jYQeno4vT8F48',
+    time: '12:00 PM onwards',
+    location: 'CME 108',
+    type: 'Industry Interaction Session',
+    cardDescription:
+        'An industry interaction session exploring engineering real-world systems across IoT, hardware, robotics, AI, and software.',
+    description: `
+        <p><strong>Engineering Real-World Systems — From Hardware to AI to Software</strong></p>
+        <p>Heritage Institute of Technology ACM Student Chapter presents an
+           industry interaction session on engineering real-world systems,
+           covering the journey from hardware and IoT to robotics, AI, and software.</p>
+        <p><strong>Speaker:</strong> Arijit Das<br />
+           Co-Founder & Director, Aeonix Research & Innovations LLP<br />
+           M.Tech, Computer Science, IIT Patna</p>
+        <p><strong>Date:</strong> 24th August 2026<br />
+           <strong>Time:</strong> 12:00 PM onwards<br />
+           <strong>Venue:</strong> CME 108, Heritage Institute of Technology</p>
+        <p>The session will explore real-world engineering systems and the
+           integration of IoT, hardware, robotics, AI, and software.</p>
+    `,
+    status: 'open',
+    attendees: 0,
+    bannerImages: ['/Events/webp/Engineering-Real-World-Systems.webp'],
+  },
+
 	{
 		title: "Brainstorm'26",
 		date: '2026-03-13',
